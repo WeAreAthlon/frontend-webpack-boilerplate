@@ -30,7 +30,7 @@ const localServer = {
 
 * Execute `npm install`
 * Execute `npm run build`
-* Enable source files watching `npm run watch` (*Define any other files that needs syncing in `files:[]` section under `BrowserSyncPlugin` in `webpack.config.js`)
+* Enable source files watching `npm run watch` (*Define any other files that needs syncing in `files:[]` section under `BrowserSyncPlugin` in `webpack.config.js`*)
 * Optimize assets for production with `npm run production`
 
 ### Processed Assets
