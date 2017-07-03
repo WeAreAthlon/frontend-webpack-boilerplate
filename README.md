@@ -11,7 +11,7 @@
     * Specify your project package repository url.
     * Specify your project package license.
 * Configure `webpack.config.js`
-    * Define at the beginning of the file the server path to your WordPress Installation
+    * Define at the beginning of the file the server path to your project location.
 ```js
 const localServer = {
   path: 'localhost/',
