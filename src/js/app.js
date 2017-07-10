@@ -1,3 +1,5 @@
 import '../scss/app.scss';
 
-console.log('App loaded!');
+$(function() {
+  console.log("Hello from jQuery!");
+});

@@ -79,6 +79,10 @@ const config = {
       logPrefix: 'wepback',
       notify: true,
       reloadDelay: 0
+    }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
     })
   ]
 };
