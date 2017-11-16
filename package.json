@@ -6,7 +6,9 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "production": "cross-env NODE_ENV=production webpack"
+    "production": "cross-env NODE_ENV=production webpack",
+    "lint-sass": "sass-lint -v -q --format=compact",
+    "lint-js": "eslint --ext .js src/js/custom"
   },
   "keywords": [
     "webpack",
@@ -31,12 +33,19 @@
     "node-sass": "^4.5.3",
     "optimize-css-assets-webpack-plugin": "^2.0.0",
     "postcss-loader": "^2.0.6",
+    "sass-lint": "^1.10.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
-    "uglify-es": "^3.0.21",
-    "webpack-uglifyes-plugin": "0.0.2",
-    "file-loader": "^0.11.2",
+    "uglify-es": "^3.1.5",
     "url-loader": "^0.5.9",
-    "webpack": "^3.0.0"
+    "webpack": "^3.0.0",
+    "webpack-uglifyes-plugin": "0.0.2"
+  },
+  "dependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0"
   }
 }
