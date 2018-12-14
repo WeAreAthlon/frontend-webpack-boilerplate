@@ -26,6 +26,7 @@ const localServer = {
 * _JavaScript_ files with support of _ES6_ files are located under `/src/js/`
 * _Images_ are located in `/src/images/`
 * _Fonts_ are located in `/src/fonts/`
+* _HTML_ files are located in `/src/` 
 
 ### Run Code Style Linters
 
@@ -45,3 +46,4 @@ const localServer = {
 * _JavaScript_ files with support of _ES6_ files are located under `/dist/js/`
 * _Images_ are located in `/dist/images/`
 * _Fonts_ are located in `/dist/fonts/`
+* _HTML_ files are located in `/dist/`

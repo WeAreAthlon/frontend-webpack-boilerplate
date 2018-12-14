@@ -1,4 +1,3 @@
 import '../scss/app.scss';
 
-$(function() {
-});
+// Your JS Code goes here

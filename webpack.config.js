@@ -2,19 +2,17 @@
  * Assets Config file
  */
 
-process.noDeprecation = true;
-
 const localServer = {
-  path: 'localhost/',
+  path: 'localhost/dist/',
   port: 3000,
 };
 
 const path = require('path');
-const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const UglifyJSPlugin = require('webpack-uglifyes-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const config = {
   entry: {
@@ -28,18 +26,12 @@ const config = {
     rules: [
       {
         test: /\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader', 'postcss-loader', 'sass-loader'],
-        }),
+        use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
       },
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
-        options: {
-          presets: ['es2015'],
-        },
       },
       {
         test: /\.(png|gif|jpg|jpeg)$/,
@@ -62,7 +54,6 @@ const config = {
     ],
   },
   plugins: [
-    new ExtractTextPlugin('css/[name].css'),
     new BrowserSyncPlugin({
       proxy: localServer.path,
       port: localServer.port,
@@ -80,16 +71,21 @@ const config = {
       notify: true,
       reloadDelay: 0,
     }),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
+    new CleanWebpackPlugin('dist', {}),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './src/index.html',
+      filename: 'index.html',
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].css',
     }),
   ],
 };
 
 if (process.env.NODE_ENV === 'production') {
   config.plugins.push(
-    new UglifyJSPlugin(),
     new OptimizeCssAssetsPlugin(),
   );
 }
