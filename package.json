@@ -1,5 +1,5 @@
 {
-  "name": "ProjectName",
+  "name": "@weareathlon/project-name",
   "version": "1.0.0",
   "description": "Project short description.",
   "main": "app.js",
@@ -8,7 +8,7 @@
     "watch": "webpack --watch",
     "production": "cross-env NODE_ENV=production webpack",
     "lint-sass": "sass-lint -v -q --format=compact",
-    "lint-js": "eslint --ext .js src/js/custom"
+    "lint-js": "eslint --ext .js src/js/"
   },
   "keywords": [
     "webpack",
@@ -19,33 +19,34 @@
   "license": "GPL-3.0",
   "repository": "git@github.com:WeAreAthlon/frontend-webpack-boilerplate.git",
   "devDependencies": {
-    "autoprefixer": "^7.2.6",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-es2015": "^6.24.1",
-    "browser-sync": "^2.24.7",
-    "browser-sync-webpack-plugin": "^1.2.0",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
     "cross-env": "^5.2.0",
     "css-loader": "^0.28.11",
-    "cssnano": "^3.10.0",
-    "extract-text-webpack-plugin": "^2.1.2",
-    "jquery": "^3.3.1",
-    "node-sass": "^4.9.3",
-    "optimize-css-assets-webpack-plugin": "^2.0.0",
-    "postcss-loader": "^2.1.6",
-    "sass-lint": "^1.10.2",
-    "sass-loader": "^6.0.7",
-    "style-loader": "^0.18.2",
-    "uglify-es": "^3.3.10",
-    "url-loader": "^0.5.9",
+    "cssnano": "^4.1.7",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^2.0.0",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^3.2.0",
+    "postcss-loader": "^3.0.0",
+    "sass-lint": "^1.12.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglify-es": "^3.3.9",
+    "url-loader": "^1.1.2",
     "webpack": "^3.12.0",
     "webpack-uglifyes-plugin": "0.0.2"
   },
   "dependencies": {
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^15.0.2",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.11.1"
+    "jquery": "^3.3.1",
+    "autoprefixer": "^9.4.2"
   }
 }

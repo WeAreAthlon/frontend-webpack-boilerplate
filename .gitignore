@@ -17,5 +17,6 @@ nbproject/*
 Thumbs.db
 
 npm-debug.log
+
 node_modules/
 dist/

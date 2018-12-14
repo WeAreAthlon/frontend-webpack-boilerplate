@@ -2,7 +2,7 @@
 
 ## Managing assets ##
 
-### Define Package
+### Define Package Metadata
 
 * Amend `package.json`
     * Specify your project package name.
@@ -12,6 +12,7 @@
     * Specify your project package license.
 * Configure `webpack.config.js`
     * Define at the beginning of the file the server path to your project location.
+
 ```js
 const localServer = {
   path: 'localhost/',
@@ -25,6 +26,11 @@ const localServer = {
 * _JavaScript_ files with support of _ES6_ files are located under `/src/js/`
 * _Images_ are located in `/src/images/`
 * _Fonts_ are located in `/src/fonts/`
+
+### Run Code Style Linters
+
+* _SASS_ - `npm run lint-sass`
+* _JS_ - `npm run lint-js`
 
 ### Build Assets
 
