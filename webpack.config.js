@@ -53,6 +53,11 @@ const config = {
       },
     ],
   },
+  optimization: {
+    minimizer: [
+      new OptimizeCssAssetsPlugin({}),
+    ],
+  },
   plugins: [
     new BrowserSyncPlugin({
       proxy: localServer.path,
@@ -83,11 +88,5 @@ const config = {
     }),
   ],
 };
-
-if (process.env.NODE_ENV === 'production') {
-  config.plugins.push(
-    new OptimizeCssAssetsPlugin(),
-  );
-}
 
 module.exports = config;
