@@ -1,20 +1,31 @@
 # Webpack 4 Boilerplate
 
-[![Dependency Status](https://img.shields.io/david/WeAreAthlon/frontend-webpack-boilerplate.svg)](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate) 
-[![devDependency Status](https://img.shields.io/david/dev/WeAreAthlon/frontend-webpack-boilerplate.svg)](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate)
+[![Dependency Status](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate.svg)](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate) 
+[![devDependency Status](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate/dev-status.svg)](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate)
 
-## Managing assets ##
+## Requirements
 
-### Define Package Metadata
+* `node` _>=_ `6.11.5`
+* `npm`
 
-* Amend `package.json`
-    * Specify your project package name.
-    * Specify your project package version.
-    * Specify your project package description.
-    * Specify your project package repository url.
-    * Specify your project package license.
+## Setup
+
+* Install dependencies
+
+```sh 
+$ npm install
+```
+
+## Define Package Metadata
+
+* Amend `package.json` and specify:
+    * `name`
+    * `version`
+    * `description`
+    * `repository url`
+    * `license`
 * Configure `webpack.config.js`
-    * Define at the beginning of the file the server path to your project location.
+    * Define at the beginning of the file the local public server path to your project location.
 
 ```js
 const localServer = {
@@ -23,30 +34,50 @@ const localServer = {
 };
 ```
 
+## Development / Build Assets
+
 ### Assets Source
 
 * _SASS_ files are located under `/src/scss/`
-* _JavaScript_ files with support of _ES6_ files are located under `/src/js/`
-* _Images_ are located in `/src/images/`
-* _Fonts_ are located in `/src/fonts/`
-* _HTML_ files are located in `/src/` 
+* _JavaScript_ files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `/src/js/`
+* _Image_ files are located under `/src/images/`
+* _Font_ files are located under `/src/fonts/`
+* _HTML_ files are located under `/src/` 
 
-### Run Code Style Linters
+* Build assets by:
 
-* _SASS_ - `npm run lint-sass`
-* _JS_ - `npm run lint-js`
+```sh
+$ npm run build
+```
 
-### Build Assets
+* Enable source files watching `$ npm run watch` 
+  * *Define any other files that needs syncing in `files:[]` section under `BrowserSyncPlugin` in `webpack.config.js`*
 
-* Execute `npm install`
-* Execute `npm run build`
-* Enable source files watching `npm run watch` (*Define any other files that needs syncing in `files:[]` section under `BrowserSyncPlugin` in `webpack.config.js`*)
-* Optimize assets for production with `npm run production`
+## Production / Build Assets
 
-### Processed Assets
+* Optimize assets for production by:
+
+```sh 
+$ npm run production
+```
+
+## Processed built assets
 
 * _CSS_ files are located under `/dist/css/`
-* _JavaScript_ files with support of _ES6_ files are located under `/dist/js/`
-* _Images_ are located in `/dist/images/`
-* _Fonts_ are located in `/dist/fonts/`
-* _HTML_ files are located in `/dist/`
+* _JavaScript_ files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `/dist/js/`
+* _Images_ are located under `/dist/images/`
+* _Fonts_ are located under `/dist/fonts/`
+* _HTML_ files are located under `/dist/`
+
+## Run Code Style Linters
+
+* _SASS_
+
+```sh
+$ npm run lint-sass
+```
+* _JS_
+
+```sh
+$ npm run lint-js
+```
