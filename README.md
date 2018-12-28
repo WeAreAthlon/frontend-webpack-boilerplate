@@ -1,4 +1,7 @@
-# Front-end Webpack Boilerplate
+# Webpack 4 Boilerplate
+
+[![Dependency Status](https://img.shields.io/david/WeAreAthlon/frontend-webpack-boilerplate.svg)](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate) 
+[![devDependency Status](https://img.shields.io/david/dev/WeAreAthlon/frontend-webpack-boilerplate.svg)](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate)
 
 ## Managing assets ##
 
