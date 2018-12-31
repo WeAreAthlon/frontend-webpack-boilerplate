@@ -25,7 +25,7 @@ $ npm install
     * `repository url`
     * `license`
 * Configure `webpack.config.js`
-    * Define at the beginning of the file the local public server path to your project location.
+    * Define at the beginning of the file the local web server path to your project location.
 
 ```js
 const localServer = {
