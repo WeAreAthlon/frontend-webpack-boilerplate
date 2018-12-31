@@ -16,7 +16,7 @@
     "setup"
   ],
   "author": "WeAreAthlon",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "repository": "git@github.com:WeAreAthlon/frontend-webpack-boilerplate.git",
   "devDependencies": {
     "@babel/core": "^7.2.0",
