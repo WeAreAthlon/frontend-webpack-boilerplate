@@ -13,6 +13,7 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const config = {
   entry: {
@@ -55,6 +56,9 @@ const config = {
   },
   optimization: {
     minimizer: [
+      new UglifyJsPlugin({
+        parallel: true,
+      }),
       new OptimizeCssAssetsPlugin({}),
     ],
   },

@@ -4,9 +4,9 @@
   "description": "Project short description.",
   "main": "app.js",
   "scripts": {
-    "build": "webpack --mode=development",
-    "watch": "webpack --mode=development --watch",
-    "production": "cross-env NODE_ENV=production webpack --mode=production",
+    "build": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "production": "cross-env NODE_ENV=production webpack --mode production",
     "lint-sass": "sass-lint -v -q --format=compact",
     "lint-js": "eslint --ext .js src/js/"
   },
@@ -18,6 +18,9 @@
   "author": "WeAreAthlon",
   "license": "MIT",
   "repository": "git@github.com:WeAreAthlon/frontend-webpack-boilerplate.git",
+  "dependencies": {
+    "autoprefixer": "^9.4.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
@@ -43,12 +46,9 @@
     "sass-lint": "^1.12.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "uglify-es": "^3.3.9",
+    "uglifyjs-webpack-plugin": "^2.1.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.28.3",
     "webpack-cli": "^3.1.2"
-  },
-  "dependencies": {
-    "autoprefixer": "^9.4.2"
   }
 }
