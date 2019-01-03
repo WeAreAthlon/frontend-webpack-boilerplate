@@ -42,9 +42,9 @@ const localServer = {
 * _JavaScript_ files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `/src/js/`
 * _Image_ files are located under `/src/images/`
 * _Font_ files are located under `/src/fonts/`
-* _HTML_ files are located under `/src/` 
+* _HTML_ files are located under `/src/`
 
-### Build assets:
+### Build assets
 
 ```sh
 $ npm run build
@@ -70,7 +70,7 @@ $ npm run bundle
 
 * Optimize assets for production by:
 
-```sh 
+```sh
 $ npm run production
 ```
 
