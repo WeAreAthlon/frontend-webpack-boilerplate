@@ -1,5 +1,20 @@
 # Change log
 
+
+## [2.3.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v2.3.0)
+#### 03/01/2019
+
+### Added
+
+* NPM package `bundle` script which runs `install` and `watch` tasks in a single call.
+
+### Updated
+
+* README file
+* Packages
+  * `eslint-plugin-react@7.12.2`
+  * `webpack-cli@3.2.0`
+ 
 ## [2.2.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v2.2.0)
 #### 02/01/2019
 
@@ -12,7 +27,7 @@ js minimization features
 
 * `autoprefixer` package
 
-#### Removed
+### Removed
 
 * `uglify-es` package
 
@@ -25,6 +40,7 @@ js minimization features
 * [MIT](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/blob/master/LICENSE) License
 
 ### Updated
+
 * [README](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/blob/master/README.md) - more detailed setup and usage instructions 
 * Webpack `4.28.3`
 * NPM Audit fixed packages, after running `npm audit fix`
@@ -46,7 +62,7 @@ js minimization features
   * Added `.babelrc` file for preset definitions
 * Cleanup of dist directory upon build
 
-#### Removed
+### Removed
 
 * `jQuery` - it can be added per project basis if needed;
 

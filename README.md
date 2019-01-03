@@ -44,14 +44,27 @@ const localServer = {
 * _Font_ files are located under `/src/fonts/`
 * _HTML_ files are located under `/src/` 
 
-* Build assets by:
+### Build assets:
 
 ```sh
 $ npm run build
 ```
 
-* Enable source files watching `$ npm run watch` 
-  * *Define any other files that needs syncing in `files:[]` section under `BrowserSyncPlugin` in `webpack.config.js`*
+### Enable source files watcher
+
+```sh
+$ npm run watch
+```
+
+> Define any other files that needs syncing in `files:[]` section under `BrowserSyncPlugin` in `webpack.config.js`
+
+### Bundle
+
+Executes both `install` and `watch` tasks in a single command convenient for development:
+
+```sh
+$ npm run bundle
+```
 
 ## Production / Build Assets
 
