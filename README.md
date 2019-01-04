@@ -3,12 +3,34 @@
 [![Dependency Status](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate.svg)](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate) 
 [![devDependency Status](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate/dev-status.svg)](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate?type=dev)
 
+## Features
+
+* Simple **setup** instructions
+  * Start development of a project right away with *simple*, *configured*, *browser synced*, *linter monitored* asset files.
+* Starter assets directory for reference and **demo** building of:
+  * JavaScript
+  * SASS
+  * Images
+  * Fonts
+* Support for **assets optimization** for production:
+  * **Minification** of *JavaScript* and *CSS* files.
+  * **Inlining** **images** / **fonts** files having filezie below a *configurable* treshold value.
+* Code style and formatting **linters** configuration and setup for:
+  * SASS
+  * JavaScript
+* Latest [Webpack](https://github.com/webpack/webpack) (`webpack 4.28.3`) - javascript module bundler.
+* Latest [SASS/CSS](https://github.com/sass/node-sass) compiler based on `node-sass 4.11.0` which provides bindings to libsass.
+* Latest [Babel](https://github.com/babel/babel) (`babel 7.2.5`) - JavaScript compiler - _Use next generation JavaScript, today._
+* Configured and ready to use **BrowserSync** plugin - `browser-sync-webpack-plugin`
+
 ## Requirements
 
 * `node` _>=_ `6.11.5`
 * `npm`
 
-## Setup
+# Setup
+
+## Installation
 
 * Install dependencies
 
