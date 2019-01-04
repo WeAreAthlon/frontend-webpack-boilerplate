@@ -14,13 +14,13 @@
   * Fonts
 * Support for **assets optimization** for production:
   * **Minification** of *JavaScript* and *CSS* files.
-  * **Inlining** **images** / **fonts** files having filezie below a *configurable* treshold value.
+  * **Inline** **images** / **fonts** files having file size below a *configurable* threshold value.
 * Code style and formatting **linters** configuration and setup for:
   * SASS
   * JavaScript
 * Latest [Webpack](https://github.com/webpack/webpack) (`webpack 4.28.3`) - javascript module bundler.
-* Latest [SASS/CSS](https://github.com/sass/node-sass) compiler based on `node-sass 4.11.0` which provides bindings to libsass.
-* Latest [Babel](https://github.com/babel/babel) (`babel 7.2.5`) - JavaScript compiler - _Use next generation JavaScript, today._
+* Latest [SASS/CSS](https://github.com/sass/node-sass) compiler based on `node-sass 4.11.0` which provides bindings to `libsass`.
+* Latest [Babel](https://github.com/babel/babel) (`@babel/core 7.2.2`) - JavaScript compiler - _Use next generation JavaScript, today._
 * Configured and ready to use **BrowserSync** plugin - `browser-sync-webpack-plugin`
 
 ## Requirements
