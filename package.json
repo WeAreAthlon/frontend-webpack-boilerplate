@@ -1,6 +1,6 @@
 {
   "name": "@weareathlon/frontend-webpack-boilerplate",
-  "version": "1.0.0",
+  "version": "2.3.0",
   "description": "Sample project short description.",
   "homepage": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate#readme",
   "scripts": {
