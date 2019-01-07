@@ -1,8 +1,8 @@
 {
-  "name": "@weareathlon/project-name",
+  "name": "@weareathlon/frontend-webpack-boilerplate",
   "version": "1.0.0",
-  "description": "Project short description.",
-  "main": "app.js",
+  "description": "Sample project short description.",
+  "homepage": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate#readme",
   "scripts": {
     "build": "webpack --mode=development",
     "watch": "webpack --mode=development --watch",
@@ -16,28 +16,45 @@
     "boilerplate",
     "setup"
   ],
-  "author": "WeAreAthlon",
+  "author": "WeAreAthlon <hello@weareathlon.com> (https://www.weareathlon.com)",
+  "contributors": [
+    {
+      "name": "Plamen Nikolov",
+      "email": "me@pnikoloff.com",
+      "url": "https://pnikoloff.com"
+    }
+  ],
   "license": "MIT",
-  "repository": "git@github.com:WeAreAthlon/frontend-webpack-boilerplate.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:WeAreAthlon/frontend-webpack-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues",
+    "email": "plamen@athlonsofia.com"
+  },
+  "engines": {
+    "node": ">=6.11.5"
+  },
   "dependencies": {
-    "autoprefixer": "^9.4.3"
+    "autoprefixer": "^9.4.4"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "ajv": "^6.6.2",
-    "babel-loader": "^8.0.4",
+    "babel-loader": "^8.0.5",
     "browser-sync": "^2.26.3",
     "browser-sync-webpack-plugin": "^2.2.2",
     "clean-webpack-plugin": "^1.0.0",
     "cross-env": "^5.2.0",
     "css-loader": "^2.1.0",
     "cssnano": "^4.1.8",
-    "eslint": "^5.11.1",
+    "eslint": "^5.12.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.12.2",
+    "eslint-plugin-react": "^7.12.3",
     "file-loader": "^3.0.1",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.5.0",
@@ -50,6 +67,6 @@
     "uglifyjs-webpack-plugin": "^2.1.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.28.3",
-    "webpack-cli": "^3.2.0"
+    "webpack-cli": "^3.2.1"
   }
 }

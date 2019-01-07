@@ -20,9 +20,9 @@
 * Code style and formatting **linters** configuration and setup for:
   * SASS
   * JavaScript
-* Latest [Webpack](https://github.com/webpack/webpack) (`webpack 4.28.3`) - javascript module bundler.
-* Latest [SASS/CSS](https://github.com/sass/node-sass) compiler based on `node-sass 4.11.0` which provides bindings to `libsass`.
-* Latest [Babel](https://github.com/babel/babel) (`@babel/core 7.2.2`) - JavaScript compiler - _Use next generation JavaScript, today._
+* Latest [Webpack 4](https://github.com/webpack/webpack) - JavaScript module bundler.
+* Latest [SASS/CSS](https://github.com/sass/node-sass) compiler based on `node-sass` which provides bindings to `libsass`.
+* Latest [Babel 7](https://github.com/babel/babel) (`@babel/core`) - JavaScript compiler - _Use next generation JavaScript, today._
 * Configured and ready to use **BrowserSync** plugin - `browser-sync-webpack-plugin`
 
 ## Requirements
@@ -42,12 +42,15 @@ $ npm install
 
 ## Define Package Metadata
 
-* Amend `package.json` and specify:
-    * `name`
-    * `version`
-    * `description`
-    * `repository url`
-    * `license`
+* Amend `package.json` and optionally specify:
+    * `name` - Name of your project. A name can be optionally prefixed by a scope, e.g. `@myorg/mypackage`.
+    * `version` - Specify and maintain a version number indicator for your project code.
+    * `author` - Your organisation or just yourself. You can also specify [`contributors`](https://docs.npmjs.com/files/package.json#people-fields-author-contributors).
+    * `description` - Short description of your project.
+    * `keywords` - Put keywords in it. It’s an array of strings.
+    * `repository` - Specify the place where your code lives.
+    * `license` - Announce your code license, figure out the license from [Choose an Open Source License](https://choosealicense.com) .
+    * `engines` - Specify the version of `node` that your stuff works on.
 * Configure `webpack.config.js`
     * Define at the beginning of the file the local web server path to your project location.
 
@@ -108,12 +111,12 @@ $ npm run production
 
 ## Run Code Style Linters
 
-* _SASS_
+* **SASS**
 
 ```sh
 $ npm run lint-sass
 ```
-* _JS_
+* **JS**
 
 ```sh
 $ npm run lint-js
