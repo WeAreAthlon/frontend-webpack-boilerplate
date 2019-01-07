@@ -1,7 +1,7 @@
 {
   "name": "@weareathlon/frontend-webpack-boilerplate",
   "version": "2.3.0",
-  "description": "Sample project short description.",
+  "description": "Webpack based boilerplate with SASS and babel ES6/7 support.",
   "homepage": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate#readme",
   "scripts": {
     "build": "webpack --mode=development",
