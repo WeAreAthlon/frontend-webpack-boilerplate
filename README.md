@@ -34,7 +34,9 @@
 
 ## Installation
 
-* Install dependencies
+1. Choose and download the template from [List of Releases](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases).
+1. Extract the release archive to a new directory, rename it to your project name and browse the directory.
+1. Install all dependencies using `npm`
 
 ```sh 
 $ npm install
@@ -52,7 +54,9 @@ $ npm install
     * `license` - Announce your code license, figure out the license from [Choose an Open Source License](https://choosealicense.com) .
     * `engines` - Specify the version of `node` that your stuff works on.
 * Configure `webpack.config.js`
-    * Define at the beginning of the file the local web server path to your project location.
+    * Edit the configuration of the local web server path to your project location.
+    
+    > Note this development server should be already started, currently this package does not include web server
 
 ```js
 const localServer = {
