@@ -14,6 +14,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+var ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 const config = {
   entry: {
@@ -90,6 +92,14 @@ const config = {
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
     }),
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, 'src'),
+        to: path.resolve(__dirname, 'dist'),
+        toType: 'dir',
+      },
+    ]),
+    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
   ],
 };
 
