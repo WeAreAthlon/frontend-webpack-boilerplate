@@ -14,6 +14,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 const config = {
   entry: {
@@ -39,7 +41,7 @@ const config = {
         use: [
           {
             loader: 'url-loader',
-            options: { name: 'images/[name].[hash:6].[ext]', publicPath: '../', limit: 8192 },
+            options: { name: 'images/design/[name].[hash:6].[ext]', publicPath: '../', limit: 8192 },
           },
         ],
       },
@@ -82,14 +84,22 @@ const config = {
     }),
     new CleanWebpackPlugin('dist', {}),
     new HtmlWebpackPlugin({
-      inject: false,
-      hash: true,
+      inject: true,
+      hash: false,
       template: './src/index.html',
       filename: 'index.html',
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
     }),
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, 'src', 'images', 'content'),
+        to: path.resolve(__dirname, 'dist', 'images', 'content'),
+        toType: 'dir',
+      },
+    ]),
+    new ImageminPlugin({ test: /\.(jpg|jpeg|png|gif|svg)$/i }),
   ],
 };
 
