@@ -41,7 +41,7 @@ const config = {
         use: [
           {
             loader: 'url-loader',
-            options: { name: 'images/[name].[hash:6].[ext]', publicPath: '../', limit: 8192 },
+            options: { name: 'images/design/[name].[hash:6].[ext]', publicPath: '../', limit: 8192 },
           },
         ],
       },
@@ -84,8 +84,8 @@ const config = {
     }),
     new CleanWebpackPlugin('dist', {}),
     new HtmlWebpackPlugin({
-      inject: false,
-      hash: true,
+      inject: true,
+      hash: false,
       template: './src/index.html',
       filename: 'index.html',
     }),
@@ -94,8 +94,8 @@ const config = {
     }),
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, 'src'),
-        to: path.resolve(__dirname, 'dist'),
+        from: path.resolve(__dirname, 'src', 'images', 'content'),
+        to: path.resolve(__dirname, 'dist', 'images', 'content'),
         toType: 'dir',
       },
     ]),
