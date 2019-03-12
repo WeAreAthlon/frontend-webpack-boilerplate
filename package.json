@@ -14,6 +14,7 @@
   "keywords": [
     "webpack",
     "boilerplate",
+    "template",
     "setup"
   ],
   "author": "WeAreAthlon <hello@weareathlon.com> (https://www.weareathlon.com)",
@@ -37,28 +38,28 @@
     "node": ">=6.11.5"
   },
   "dependencies": {
-    "autoprefixer": "^9.4.4"
+    "autoprefixer": "^9.4.10"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
-    "ajv": "^6.6.2",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "ajv": "^6.10.0",
     "babel-loader": "^8.0.5",
-    "browser-sync": "^2.26.3",
-    "browser-sync-webpack-plugin": "^2.2.2",
-    "clean-webpack-plugin": "^1.0.0",
+    "browser-sync": "^2.3.2",
+    "browser-sync-webpack-plugin": "2.2.2",
+    "clean-webpack-plugin": "^1.0.1",
     "copy-webpack-plugin": "^4.6.0",
     "cross-env": "^5.2.0",
-    "css-loader": "^2.1.0",
-    "cssnano": "^4.1.8",
-    "eslint": "^5.12.0",
+    "css-loader": "^2.1.1",
+    "cssnano": "^4.1.10",
+    "eslint": "^5.15.1",
     "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.12.3",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
     "file-loader": "^3.0.1",
     "html-webpack-plugin": "^3.2.0",
-    "imagemin-webpack-plugin": "^2.4.0",
+    "imagemin-webpack-plugin": "^2.4.2",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
@@ -66,9 +67,9 @@
     "sass-lint": "^1.12.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "uglifyjs-webpack-plugin": "^2.1.1",
+    "terser-webpack-plugin": "^1.2.3",
     "url-loader": "^1.1.2",
-    "webpack": "^4.28.3",
-    "webpack-cli": "^3.2.1"
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
   }
 }

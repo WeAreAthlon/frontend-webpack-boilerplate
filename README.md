@@ -110,6 +110,8 @@ $ npm run production
 * _CSS_ files are located under `/dist/css/`
 * _JavaScript_ files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `/dist/js/`
 * _Images_ are located under `/dist/images/`
+  * Images part of the _design_ (_usually referenced in the CSS_) are located under `/dist/images/design/`
+  * Images part of the _content_ (_usually referenced via `<img>` tags_) are located under `/dist/images/content/`
 * _Fonts_ are located under `/dist/fonts/`
 * _HTML_ files are located under `/dist/`
 

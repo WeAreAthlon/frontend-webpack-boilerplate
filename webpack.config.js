@@ -13,9 +13,9 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const ImageMinPlugin = require('imagemin-webpack-plugin').default;
 
 const config = {
   entry: {
@@ -58,7 +58,7 @@ const config = {
   },
   optimization: {
     minimizer: [
-      new UglifyJsPlugin({
+      new TerserPlugin({
         parallel: true,
       }),
       new OptimizeCssAssetsPlugin({}),
@@ -88,6 +88,7 @@ const config = {
       hash: false,
       template: './src/index.html',
       filename: 'index.html',
+      favicon: './src/images/favicon.ico',
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
@@ -99,7 +100,7 @@ const config = {
         toType: 'dir',
       },
     ]),
-    new ImageminPlugin({ test: /\.(jpg|jpeg|png|gif|svg)$/i }),
+    new ImageMinPlugin({ test: /\.(jpg|jpeg|png|gif|svg)$/i }),
   ],
 };
 

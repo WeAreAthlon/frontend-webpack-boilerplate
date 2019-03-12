@@ -1,5 +1,23 @@
 # Change log
 
+## [2.4.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v2.4.0)
+#### 08/01/2019
+
+### Added
+
+* [`copy-webpack-plugin`](https://github.com/webpack-contrib/copy-webpack-plugin) to copy images that are part of the content (_referenced by `<img>` tags_)
+* [`terser-webpack-plugin`](https://github.com/webpack-contrib/terser-webpack-plugin) to optimize JavaScript files for production
+  * This plugin is dependency of `webpack` itself
+* Support for favicon in the produced HTML
+
+### Updated
+
+* README
+* Dependencies
+
+### Removed
+
+* `uglifyjs-webpack-plugin` - in favor of the webpack included `terser-webpack-plugin`
 
 ## [2.3.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v2.3.0)
 #### 03/01/2019
