@@ -15,7 +15,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-var ImageminPlugin = require('imagemin-webpack-plugin').default;
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 const config = {
   entry: {
@@ -99,7 +99,7 @@ const config = {
         toType: 'dir',
       },
     ]),
-    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
+    new ImageminPlugin({ test: /\.(jpg|jpeg|png|gif|svg)$/i }),
   ],
 };
 
