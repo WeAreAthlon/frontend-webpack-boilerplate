@@ -32,7 +32,7 @@
 
 # Setup
 
-## Installation
+## Initial Installation
 
 1. Choose and download the template from [List of Releases](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases).
 1. Extract the release archive to a new directory, rename it to your project name and browse the directory.
@@ -40,6 +40,14 @@
 
 ```sh 
 $ npm install
+```
+
+### Clean install after update from older release of this setup
+
+To update an older of this setup to newer release after pulling the latest file changes execute the npm **clean install** command:
+
+```sh
+$ npm ci
 ```
 
 ## Define Package Metadata

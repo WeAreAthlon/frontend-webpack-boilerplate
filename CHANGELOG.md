@@ -1,5 +1,18 @@
 # Change log
 
+## [2.4.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v2.4.0)
+#### 14/04/2019
+
+### Updated
+
+* NPM audit review and dependency packages updates
+  * Auto fixing with `npm audit fix`
+  * Manually updated
+    * updated `tar` to `4.4.2` dependency path `node-sass > node-gyp > tar` - [more info](https://npmjs.com/advisories/803)
+    * updated `braces` to `2.3.2` dependency path `browser-sync > micromatch > braces` - [more info](https://npmjs.com/advisories/786)
+* _README_ file updated
+  * Added instructions hot to update/migrate to newer version of this setup.
+
 ## [2.4.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v2.4.0)
 #### 08/01/2019
 
