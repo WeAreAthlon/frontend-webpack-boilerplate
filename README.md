@@ -44,7 +44,7 @@ $ npm install
 
 ### Clean install after update from older release of this setup
 
-To update an older of this setup to newer release after pulling the latest file changes execute the npm **clean install** command:
+To update an older release of this setup to a newer after pulling the latest code changes execute the npm **clean install** command:
 
 ```sh
 $ npm ci

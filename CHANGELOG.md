@@ -1,6 +1,23 @@
 # Change log
 
-## [2.4.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v2.4.0)
+## [2.4.2](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v2.4.2)
+#### 17/04/2019
+
+### Added
+
+* Issue Template
+* Pull Request Template
+
+### Updated
+
+* Package dependencies
+  * `clean-webpack-plugin` from `1.0.1` to `2.0.1` (breaking changes, see the updated `webpack.config.js`)
+  * `copy-webpack-plugin` from `4.6.0` to `5.0.2`
+  * `mini-css-extract-plugin` from `0.5.0` to `0.6.0`
+* Package dependencies trees
+* README
+
+## [2.4.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v2.4.1)
 #### 14/04/2019
 
 ### Updated

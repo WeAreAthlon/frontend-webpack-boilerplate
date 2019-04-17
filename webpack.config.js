@@ -82,7 +82,7 @@ const config = {
       notify: true,
       reloadDelay: 0,
     }),
-    new CleanWebpackPlugin('dist', {}),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       inject: true,
       hash: false,
