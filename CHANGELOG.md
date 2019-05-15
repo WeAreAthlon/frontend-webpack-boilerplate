@@ -1,5 +1,16 @@
 # Change log
 
+## [2.5.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v2.5.0)
+#### 15/05/2019
+
+### Updated
+
+* Wepback configuration - use `path.resolve` in all file system references.
+* Package dependencies
+  * Downgraded `clean-webpack-plugin` from `2.0.1` to `1.0.1` (breaking changes, see the updated `webpack.config.js`) due to strange behaviour during `watch` mode.
+* Package dependencies trees
+* README - _added additional note for NFS and containerized development environments_
+
 ## [2.4.2](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v2.4.2)
 #### 17/04/2019
 

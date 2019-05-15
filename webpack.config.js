@@ -82,17 +82,18 @@ const config = {
       notify: true,
       reloadDelay: 0,
     }),
-    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       inject: true,
       hash: false,
-      template: './src/index.html',
       filename: 'index.html',
-      favicon: './src/images/favicon.ico',
+      template: path.resolve(__dirname, 'src', 'index.html'),
+      favicon: path.resolve(__dirname, 'src', 'images', 'favicon.ico'),
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
     }),
+    new ImageMinPlugin({ test: /\.(jpg|jpeg|png|gif|svg)$/i }),
+    new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([
       {
         from: path.resolve(__dirname, 'src', 'images', 'content'),
@@ -100,7 +101,6 @@ const config = {
         toType: 'dir',
       },
     ]),
-    new ImageMinPlugin({ test: /\.(jpg|jpeg|png|gif|svg)$/i }),
   ],
 };
 

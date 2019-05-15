@@ -97,6 +97,17 @@ $ npm run watch
 
 > Define any other files that needs syncing in `files:[]` section under `BrowserSyncPlugin` in `webpack.config.js`
 
+*Note:* Watching does not work with NFS (Windows) and machines in VirtualBox. Extend the configuration in such cases by:
+
+```js
+module.exports = {
+  //...
+  watchOptions: {
+    poll: 1000 // Check for changes every second
+  }
+};
+```
+
 ### Bundle
 
 Executes both `install` and `watch` tasks in a single command convenient for development:
