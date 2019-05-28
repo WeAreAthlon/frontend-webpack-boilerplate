@@ -1,16 +1,24 @@
 # Change log
 
+## [2.6.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v2.6.1)
+#### 15/05/2019
+
+### Updated
+
+* Security audit fixes
+  * `fstream` updated to `1.0.12` [more info](https://npmjs.com/advisories/886)
+  * `tar` updated to `2.2.2` [more info](https://nvd.nist.gov/vuln/detail/CVE-2018-20834)
+
 ## [2.6.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v2.6.0)
 #### 15/05/2019
 
 ### Updated
 
-* Wepback configuration - use `path.resolve` in all file system references.
+* `wepback` configuration - use `path.resolve` in all file system references.
 * Package dependencies
   * Downgraded `clean-webpack-plugin` from `2.0.1` to `1.0.1` (breaking changes, see the updated `webpack.config.js`) due to strange behaviour during `watch` mode.
 * Package dependencies trees
 * README - _added additional note for NFS and containerized development environments_
-
 
 ## [2.5.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v2.5.0)
 #### 22/04/2019
@@ -19,7 +27,7 @@
 
 * Switched to using `npm ci` instead of `npm install` for initial install.
   * Updated README
-  * More on the clean install npm command can be read yere [`npm ci`](https://docs.npmjs.com/cli/ci.html)
+  * More on the clean install npm command can be read here [`npm ci`](https://docs.npmjs.com/cli/ci.html)
 * NPM audit review and dependency packages updates due to reverting them accidentally
   * Updated `tar` to `4.4.2` dependency path `node-sass > node-gyp > tar` - [more info](https://npmjs.com/advisories/803)
   * Updated `braces` to `2.3.2` dependency path `browser-sync > micromatch > braces` - [more info](https://npmjs.com/advisories/786)
