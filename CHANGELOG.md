@@ -1,5 +1,36 @@
 # Change log
 
+## [3.0.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v3.0.0)
+#### 15/05/2019
+
+### Breaking Changes
+
+* **Removed `node` 6 support**, `node` must be `>=8.9.0`
+* `clean-webpack-plugin` to `v3.0.0` see changes here [Clean Wepback Plugin v3.0.0](https://github.com/johnagan/clean-webpack-plugin/releases/tag/v3.0.0)
+  * Updated configuration in [`webpack.config.js`](./webpack.config.js)
+* `file-loader` to `4.0.0` see changes here [Webpack file loader v4.0.0](https://github.com/webpack-contrib/file-loader/releases/tag/v4.0.0)
+  
+### Minor Package Updates
+
+* `autoprefixer` to `9.6.0`
+* `@babel/core` to `7.4.5`
+* `@babel/preset-env` to `7.4.5`
+* `eslint-plugin-import` to `2.17.3`
+* `mini-css-extract-plugin` to `0.7.0`
+* `terser-webpack-plugin` to `1.3.0`
+* `webpack` to `4.33.0`
+  
+### Security audit fixes
+
+* `axios` (*dependency of browser-sync [dev]*) updated to `0.18.11` [more info](https://npmjs.com/advisories/880)
+* `npm audit` output:
+
+>  === npm audit security report ===                        
+>                                                                                  
+>  found 0 vulnerabilities
+>   in 17859 scanned packages
+
+
 ## [2.6.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v2.6.1)
 #### 15/05/2019
 

@@ -27,7 +27,7 @@
 
 ## Requirements
 
-* `node` _>=_ `6.11.5`
+* `node` _>=_ `8.9.0`
 * `npm`
 
 # Setup
