@@ -12,7 +12,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageMinPlugin = require('imagemin-webpack-plugin').default;
@@ -93,7 +93,23 @@ const config = {
       filename: 'css/[name].css',
     }),
     new ImageMinPlugin({ test: /\.(jpg|jpeg|png|gif|svg)$/i }),
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin({
+      /**
+       * Some plugins used do not correctly save to webpack's asset list.
+       * Disable automatic asset cleaning until resolved
+       */
+      cleanStaleWebpackAssets: false,
+      // Alternative:
+      // cleanAfterEveryBuildPatterns: [
+      // copy-webpackPlugin:
+      //   '!images/content/**/*',
+      // url-loader fonts:
+      //   '!**/*.+(eot|svg|ttf|woff|woff2)',
+      // url-loader images:
+      //   '!**/*.+(jpg|jpeg|png|gif|svg)',
+      // ],
+      verbose: true,
+    }),
     new CopyWebpackPlugin([
       {
         from: path.resolve(__dirname, 'src', 'images', 'content'),
