@@ -1,5 +1,19 @@
 # Change log
 
+## [3.1.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v3.1.0)
+### 19/06/2019
+
+### Package Updates
+
+* `css-loader` updated to `3.0.0` here are the [release notes](https://github.com/webpack-contrib/css-loader/releases/tag/v3.0.0)  
+* `url-loader` updated to `2.0.0` here are the [release notes](https://github.com/webpack-contrib/url-loader/releases/tag/v2.0.0)
+
+### Minor Package Updates
+
+* `browser-sync` to `2.26.7`
+* `webpack` to `4.34.0`
+* `webpack-cli` to `3.3.4`
+
 ## [3.0.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v3.0.0)
 #### 15/05/2019
 
