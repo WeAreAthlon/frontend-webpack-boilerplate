@@ -1,5 +1,29 @@
 # Change log
 
+## [3.2.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v3.1.0)
+### 26/07/2019
+
+### Package Updates
+
+* `@babel/core@7.5.5` new features can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.5.5)
+* `@babel/preset-env@7.5.5` new features can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.5.5)
+* `webpack@4.38.0` new features can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v4.38.0)
+* `css-loader@3.1.0` new features can be found on the official [release notes](https://github.com/webpack-contrib/css-loader/releases/tag/v3.1.0)
+* `eslint-plugin-import@2.18.2` new features  can be found on the official [release notes](https://github.com/benmosher/eslint-plugin-import/releases/tag/v2.18.2)
+* `eslint-plugin-react@7.14.3` new features can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.14.3)
+* `file-loader@4.1.0` new features can be found on the official [release notes](https://github.com/webpack-contrib/file-loader/releases/tag/v4.1.0)
+* `url-loader@2.1.0` new features can be found on the official [release notes](https://github.com/webpack-contrib/url-loader/releases/tag/v2.1.0)
+
+### Minor Package Updates
+
+* `autoprefixer@9.6.1`
+* `ajv@6.10.2`
+* `eslint-config-airbnb@17.1.1`
+* `eslint-plugin-react@7.14.3`
+* `eslint-plugin-jsx-a11y@6.2.3`
+* `optimize-css-assets-webpack-plugin@5.0.3`
+* `webpack-cli@3.3.6`
+
 ## [3.1.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v3.1.0)
 ### 19/06/2019
 
@@ -43,7 +67,6 @@
 >                                                                                  
 >  found 0 vulnerabilities
 >   in 17859 scanned packages
-
 
 ## [2.6.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v2.6.1)
 #### 15/05/2019
