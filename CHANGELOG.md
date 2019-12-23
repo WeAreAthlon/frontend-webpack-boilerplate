@@ -5,7 +5,7 @@
 
 ### Breaking Changes
 
-### Updated minimum Node version
+#### Updated minimum Node version
 
 * Minimum required nodejs version is `10.13.0`
 * Rebuild our `node-sass` by running
