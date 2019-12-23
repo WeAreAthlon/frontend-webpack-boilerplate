@@ -1,6 +1,6 @@
 {
   "name": "@weareathlon/frontend-webpack-boilerplate",
-  "version": "3.3.0",
+  "version": "4.0.0",
   "description": "Webpack based boilerplate with SASS and babel ES6/7 support.",
   "homepage": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate#readme",
   "scripts": {
@@ -35,7 +35,7 @@
     "email": "plamen@athlonsofia.com"
   },
   "engines": {
-    "node": ">=8.9.0"
+    "node": ">=10.13.0"
   },
   "dependencies": {
     "autoprefixer": "^9.7.3"
@@ -52,23 +52,26 @@
     "cross-env": "^6.0.3",
     "css-loader": "^3.4.0",
     "cssnano": "^4.1.10",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb": "^17.1.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.17.0",
-    "file-loader": "^4.3.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "fibers": "^4.0.2",
+    "file-loader": "^5.0.2",
     "html-webpack-plugin": "^3.2.0",
     "imagemin-webpack-plugin": "^2.4.2",
-    "mini-css-extract-plugin": "^0.7.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
+    "sass": "^1.24.0",
     "sass-lint": "^1.13.1",
-    "sass-loader": "^7.3.1",
-    "style-loader": "^0.23.1",
-    "terser-webpack-plugin": "^1.4.3",
-    "url-loader": "^2.3.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.1",
+    "terser-webpack-plugin": "^2.3.1",
+    "url-loader": "^3.0.0",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10"
   }

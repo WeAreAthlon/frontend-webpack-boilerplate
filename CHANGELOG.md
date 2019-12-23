@@ -1,39 +1,100 @@
 # Change log
 
+## [4.0.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.0.0)
+### 21/12/2019
+
+### Breaking Changes
+
+### Updated minimum Node version
+
+* Minimum required nodejs version is `10.13.0`
+* Rebuild our `node-sass` by running
+
+```shell script
+$ npm rebuild node-sass
+```
+
+#### File Loader, URL Loader updates
+
+* Rename the `esModules` option to `esModule`
+* Switch to ES modules by default (the option `esModule` is `true` by default)
+
+#### SASS Loader updates
+
+* Move all sass (`includePaths`, `importer`, `functions`) options to the `sassOptions` option. The `functions` option can't be used as `Function`, you should use `sassOption` as `Function` to achieve this.
+* The `data` option was renamed to the `prependData` option
+* Default value of the `sourceMap` option depends on the `devtool` value (`eval`/`false` values don't enable source map generation)
+
+#### Style Loader updates
+
+* The `convertToAbsoluteUrls` option was removed, you don't need this anymore
+* The `attrs` option was renamed to the `attributes` option
+* The `transform` option was removed without replacement
+* The `hmr` option was removed, `webpack` automatically inject HMR code when it is required (when the `HotModuleReplacementPlugin` plugin was used)
+* The `sourceMap` option was removed. The loader automatically inject source maps if the previous loader emit them
+* The `ref`/`unref` api methods were removed for `useable` loader, please use the `use`/`unuse` api methods
+* The `style-loader/url` loader was removed in favor `injectType` option (look the documentation about the `injectType` option)
+* The `style-loader/useable` loader was removed in favor `injectType` option (look the documentation about the `injectType` option)
+* The `singleton` option was removed (look documentation about the `injectType` option)
+* The `insertAt` option was removed in favor the `insert` option (look the documentation about the `insert` option and examples)
+* The `insertInto` options was removed in favor the `insert` option (look the documentation about the `insert` option and examples)
+
+### New dependencies
+
+* [`eslint-plugin-react-hooks`](https://www.npmjs.com/package/eslint-plugin-react-hooks) required by `eslint-config-airbnb@18.0.1`
+* [`sass`](https://www.npmjs.com/package/sass) required by `sass-loader@8.0.0`
+* [`fibers`](https://www.npmjs.com/package/fibers) required by `sass-loader@8.0.0`
+
+### Packages major versions update
+
+* `eslint` from `5.x` to `6.8.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v6.8.0)
+* `eslint-config-airbnb` from `17.x` to `18` change log can be found on the official [release notes](https://github.com/airbnb/javascript/releases/tag/eslint-config-airbnb-v18.0.1)
+* `file-loader` from `4.x` to `5.x` change log can be found on the official [release notes](https://github.com/webpack-contrib/file-loader/releases/tag/v5.0.2)
+* `sass-loader` from `7.x` to `8.x` change log can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v8.0.0)
+* `style-loader` from `0.x` to `1.x` change log can be found on the official [release notes](https://github.com/webpack-contrib/style-loader/releases/tag/v1.1.1)
+* `terser-webpack-plugin` from `1.x` to `2.x` change log can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v2.3.1)
+* `url-loader` from `2.x` to `3.x` change log can be found on the official [release notes](https://github.com/webpack-contrib/url-loader/releases/tag/v3.0.0)
+
+### Packages minor versions update
+
+* `mini-css@0.9.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases/tag/v0.9.0)
+* `browserslist@4.8.2` change log can be found on the official [release notes](https://github.com/browserslist/browserslist/releases/tag/4.8.2)
+* `caniuse-lite@1.0.30001016` change log can be found on the official [release notes](https://github.com/ben-eb/caniuse-lite/releases)
+
 ## [3.3.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v3.3.0)
-### 25/11/2019
+### 20/12/2019
 
 ### Package Updates Full Change Set
 
-* `autoprefixer@9.7.3` new features can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/9.7.3)
-* `sass-loader@8.0.0` new features can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v8.0.0)
-* `copy-webpack-plugin@5.1.5` new features can be found on the official [release notes](https://github.com/webpack-contrib/copy-webpack-plugin/releases/tag/v5.1.5)
-* `css-loader@3.4.0` new features can be found on the official [release notes](https://github.com/webpack-contrib/css-loader/releases/tag/v3.4.0)
-* `file-loader@4.3.0` new features can be found on the official [release notes](https://github.com/webpack-contrib/file-loader/releases/tag/v4.3.0)
-* `node-sass@4.13.0` new features can be found on the official [release notes](https://github.com/sass/node-sass/releases/tag/v4.13.0)
-* `cross-env@5.2.1` new features can be found on the official [release notes](https://github.com/kentcdodds/cross-env/releases/tag/v6.0.3)
-* `eslint-plugin-react@7.17.0` new features can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.17.0)
-* `eslint-plugin-import@2.19.1` new features can be found on the official [release notes](https://github.com/benmosher/eslint-plugin-import/releases/tag/v2.19.1)
-* `url-loader@2.3.0` new features can be found on the official [release notes](https://github.com/webpack-contrib/url-loader/releases/tag/v2.3.0)
-* `terser-webpack-plugin@1.4.3` new features can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v1.4.3)
-* `webpack@4.41.4` new features can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v4.41.4)
-* `webpack-cli@3.3.10` new features can be found on the official [release notes](https://github.com/webpack/webpack-cli/releases/tag/v3.3.10)
-* `@babel/preset-env@7.7.7` new features can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.7.7)
-* `@babel/core@7.7.7` new features can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.7.7)
+* `autoprefixer@9.7.3` new features can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/9.7.3).
+* `sass-loader@8.0.0` new features can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v8.0.0).
+* `copy-webpack-plugin@5.1.5` new features can be found on the official [release notes](https://github.com/webpack-contrib/copy-webpack-plugin/releases/tag/v5.1.5).
+* `css-loader@3.4.0` new features can be found on the official [release notes](https://github.com/webpack-contrib/css-loader/releases/tag/v3.4.0).
+* `file-loader@4.3.0` new features can be found on the official [release notes](https://github.com/webpack-contrib/file-loader/releases/tag/v4.3.0).
+* `node-sass@4.13.0` new features can be found on the official [release notes](https://github.com/sass/node-sass/releases/tag/v4.13.0).
+* `cross-env@5.2.1` new features can be found on the official [release notes](https://github.com/kentcdodds/cross-env/releases/tag/v6.0.3).
+* `eslint-plugin-react@7.17.0` new features can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.17.0).
+* `eslint-plugin-import@2.19.1` new features can be found on the official [release notes](https://github.com/benmosher/eslint-plugin-import/releases/tag/v2.19.1).
+* `url-loader@2.3.0` new features can be found on the official [release notes](https://github.com/webpack-contrib/url-loader/releases/tag/v2.3.0).
+* `terser-webpack-plugin@1.4.3` new features can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v1.4.3).
+* `webpack@4.41.4` new features can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v4.41.4).
+* `webpack-cli@3.3.10` new features can be found on the official [release notes](https://github.com/webpack/webpack-cli/releases/tag/v3.3.10).
+* `@babel/preset-env@7.7.7` new features can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.7.7).
+* `@babel/core@7.7.7` new features can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.7.7).
 
 ## [3.2.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v3.1.0)
 ### 26/07/2019
 
 ### Package Updates
 
-* `@babel/core@7.5.5` new features can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.5.5)
-* `@babel/preset-env@7.5.5` new features can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.5.5)
-* `webpack@4.38.0` new features can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v4.38.0)
-* `css-loader@3.1.0` new features can be found on the official [release notes](https://github.com/webpack-contrib/css-loader/releases/tag/v3.1.0)
-* `eslint-plugin-import@2.18.2` new features  can be found on the official [release notes](https://github.com/benmosher/eslint-plugin-import/releases/tag/v2.18.2)
-* `eslint-plugin-react@7.14.3` new features can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.14.3)
-* `file-loader@4.1.0` new features can be found on the official [release notes](https://github.com/webpack-contrib/file-loader/releases/tag/v4.1.0)
-* `url-loader@2.1.0` new features can be found on the official [release notes](https://github.com/webpack-contrib/url-loader/releases/tag/v2.1.0)
+* `@babel/core@7.5.5` new features can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.5.5).
+* `@babel/preset-env@7.5.5` new features can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.5.5).
+* `webpack@4.38.0` new features can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v4.38.0).
+* `css-loader@3.1.0` new features can be found on the official [release notes](https://github.com/webpack-contrib/css-loader/releases/tag/v3.1.0).
+* `eslint-plugin-import@2.18.2` new features  can be found on the official [release notes](https://github.com/benmosher/eslint-plugin-import/releases/tag/v2.18.2).
+* `eslint-plugin-react@7.14.3` new features can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.14.3).
+* `file-loader@4.1.0` new features can be found on the official [release notes](https://github.com/webpack-contrib/file-loader/releases/tag/v4.1.0).
+* `url-loader@2.1.0` new features can be found on the official [release notes](https://github.com/webpack-contrib/url-loader/releases/tag/v2.1.0).
 
 ### Minor Package Updates
 
@@ -50,8 +111,8 @@
 
 ### Package Updates
 
-* `css-loader` updated to `3.0.0` here are the [release notes](https://github.com/webpack-contrib/css-loader/releases/tag/v3.0.0)  
-* `url-loader` updated to `2.0.0` here are the [release notes](https://github.com/webpack-contrib/url-loader/releases/tag/v2.0.0)
+* `css-loader` updated to `3.0.0` here are the [release notes](https://github.com/webpack-contrib/css-loader/releases/tag/v3.0.0). 
+* `url-loader` updated to `2.0.0` here are the [release notes](https://github.com/webpack-contrib/url-loader/releases/tag/v2.0.0).
 
 ### Minor Package Updates
 
