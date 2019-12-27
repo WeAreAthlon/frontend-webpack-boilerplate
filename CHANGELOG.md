@@ -1,5 +1,17 @@
 # Change log
 
+## [4.0.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.0.1)
+### 27/12/2019
+
+### Updates
+
+* Package dependencies
+* _README_ file to note the minimal `node` version.
+
+### Package Minor Updates
+
+* `style-loader@1.1.2` change log can be found on the official [release notes](https://github.com/webpack-contrib/style-loader/releases/tag/v1.1.2)
+
 ## [4.0.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.0.0)
 ### 21/12/2019
 
