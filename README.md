@@ -58,14 +58,19 @@ $ npm ci
     * `license` - Announce your code license, figure out the license from [Choose an Open Source License](https://choosealicense.com) .
     * `engines` - Specify the version of `node` that your stuff works on.
 * Configure `webpack.config.js`
-    * Edit the configuration of the local web server path to your project location.
+  * You can either use the default built-in internal serving capabilities of `browser-sync` package or configure to use an external already running server of your existing web back-end powered application.
     
-    > Note this development server should be already started, currently this package does not include web server
-
 ```js
-const localServer = {
-  path: 'localhost/',
-  port: 3000
+const serverConfiguration = {
+  internal: {
+    server: {
+      baseDir: 'dist',
+    },
+    port: 3000,
+  },
+  external: {
+    proxy: 'http://localhost:9000/path/to/project/',
+  },
 };
 ```
 
@@ -93,6 +98,27 @@ $ npm run watch
 
 > Define any other files that needs syncing in `files:[]` section under `BrowserSyncPlugin` in `webpack.config.js`
 
+Browser Sync UI can be reached by default on this location: http://localhost:3001
+
+### Enable source files watcher using an existing running webserver
+
+```sh
+$ npm run watch:externalServer
+```
+
+Configure the URL to your running external web server in the `webpack.config.json` project under:
+
+```js
+const serverConfiguration = {
+  // ...,
+  external: {
+    proxy: 'http://localhost:3000/path/to/project/',
+  },
+};
+```
+
+> Define any other files that needs syncing in `files:[]` section under `BrowserSyncPlugin` in `webpack.config.js`
+
 *Note:* Watching does not work with NFS (Windows) and machines in VirtualBox. Extend the configuration in such cases by:
 
 ```js
@@ -110,6 +136,14 @@ Executes both `install` and `watch` tasks in a single command convenient for dev
 
 ```sh
 $ npm run bundle
+```
+
+### Bundle (using exterinal server for preview)
+
+Executes both `install` and `watch:externalServer` tasks in a single command convenient for development with existing webserver back-end powered application:
+
+```sh
+$ npm run bundle:externalServer
 ```
 
 ## Production / Build Assets

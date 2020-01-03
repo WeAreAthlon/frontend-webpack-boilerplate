@@ -1,12 +1,14 @@
 {
   "name": "@weareathlon/frontend-webpack-boilerplate",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "description": "Webpack based boilerplate with SASS and babel ES6/7 support.",
   "homepage": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate#readme",
   "scripts": {
     "build": "webpack --mode=development",
     "watch": "webpack --mode=development --watch",
+    "watch:externalServer": "webpack --mode=development --watch --externalServer",
     "bundle": "npm ci && npm run watch",
+    "bundle:externalServer": "npm ci && npm run watch:externalServer",
     "production": "cross-env NODE_ENV=production webpack --mode=production",
     "lint-sass": "sass-lint -v -q --format=compact",
     "lint-js": "eslint --ext .js src/js/"
@@ -66,13 +68,13 @@
     "node-sass": "^4.13.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
-    "sass": "^1.24.0",
+    "sass": "^1.24.1",
     "sass-lint": "^1.13.1",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.1.2",
     "terser-webpack-plugin": "^2.3.1",
     "url-loader": "^3.0.0",
-    "webpack": "^4.41.4",
+    "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   }
 }

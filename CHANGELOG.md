@@ -1,5 +1,25 @@
 # Change log
 
+## [4.1.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.1.0)
+### 03/01/2020
+
+### Updates
+
+* **Important** Updated `webpack` configuration to enable serving the webpack build files using the built-in serving functionality of the `browser-sync` package.
+  * Ability to configure the usage of a demo built-in server or using an existing server via the proxy feature of `browser sync`
+  * Definition of `serverConfiguration` object.
+  * Configuration of `watchOptions` to support.
+    * If watching does not work for you, try out this option. Watching does might work with *NFS* and machines in *VirtualBox*.
+* New package npm command `npm run watch:externalServer` to monitor file changes when using an existing web application server, refer to the *README* for more details.
+* New package npm command `npm run bundle:externalServer` to install and monitor file changes when using an existing web application server, refer to the *README* for more details.
+* Package dependencies updates.
+* _README_ file to note all configuration changes.
+
+### Package Minor Updates
+
+* `sass@1.24.1` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.24.1)
+* `webpack@4.41.5` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v4.41.5)
+
 ## [4.0.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.0.1)
 ### 27/12/2019
 
