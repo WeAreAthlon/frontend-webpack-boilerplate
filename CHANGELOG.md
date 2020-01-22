@@ -1,5 +1,29 @@
 # Change log
 
+## [4.1.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.1.1)
+### 22/01/2019
+
+### Updated 
+
+* `README.md`
+  * Badges for `npmjs.org` downloads, open issues, license
+  * Cover repository photo.
+
+### Package Updates Full Change Set
+
+* `ajv@6.11.0` new features can be found on the official [release notes](https://github.com/epoberezkin/ajv/releases/tag/v6.11.0).
+* `autoprefixer@9.7.4` bugfixes can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/9.7.4).
+* `@babel/core@7.8.3` new features can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.8.3).
+* `@babel/preset-env@7.8.3` new features can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.8.3).
+* `css-loader@3.4.2` bugfixes can be found on the official [release notes](https://github.com/webpack-contrib/css-loader/releases/tag/v3.4.2).
+* `eslint-plugin-import@2.20.0` new features can be found on the official [release notes](https://github.com/benmosher/eslint-plugin-import/releases/tag/v2.20.0).
+* `eslint-plugin-react@7.18.0` new features can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.18.0).
+* `node-sass@4.13.1` bugfixes can be found on the official [release notes](https://github.com/sass/node-sass/releases/tag/v4.13.1).
+* `sass@1.25.0` new features can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.25.0).
+* `sass-loader@8.0.2` bugfixes can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v8.0.2).
+* `style-loader@1.1.3` bugfixes can be found on the official [release notes](https://github.com/webpack-contrib/style-loader/releases/tag/v1.1.3).
+* `terser-webpack-plugin@2.3.2` new features can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v2.3.2).
+
 ## [4.1.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.1.0)
 ### 03/01/2020
 
