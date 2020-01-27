@@ -1,5 +1,17 @@
 # Change log
 
+## [4.1.2](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.1.2)
+### 22/01/2019
+
+### Updated 
+
+* `README.md`
+  * Text formatting
+
+### Package Updates Full Change Set
+
+* `cross-env@7.0.0` new features can be found on the official [release notes](https://github.com/kentcdodds/cross-env/releases/tag/v7.0.0).
+
 ## [4.1.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.1.1)
 ### 22/01/2019
 

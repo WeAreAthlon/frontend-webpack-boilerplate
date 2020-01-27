@@ -1,6 +1,6 @@
 {
   "name": "@weareathlon/frontend-webpack-boilerplate",
-  "version": "4.1.1",
+  "version": "4.1.2",
   "description": "Webpack based boilerplate with SASS and babel ES6/7 support.",
   "homepage": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate#readme",
   "scripts": {
@@ -51,7 +51,7 @@
     "browser-sync-webpack-plugin": "2.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.1.1",
-    "cross-env": "^6.0.3",
+    "cross-env": "^7.0.0",
     "css-loader": "^3.4.2",
     "cssnano": "^4.1.10",
     "eslint": "^6.8.0",

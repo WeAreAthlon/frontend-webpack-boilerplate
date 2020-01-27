@@ -11,32 +11,32 @@
 
 ## Features
 
-* Simple **setup** instructions
+* **Simple setup** instructions
   * Start development of a project right away with *simple*, *configured*, *browser synced*, *linter monitored* asset files.
 * Starter assets directory for reference and **demo** building of:
-  * JavaScript
-  * SASS
-  * Images
-  * Fonts
+  * *JavaScript*
+  * *SASS*
+  * *Images*
+  * *Fonts*
 * Support for **assets optimization** for production:
   * **Minification** of *JavaScript* and *CSS* files.
   * **Inline** **images** / **fonts** files having file size below a *configurable* threshold value.
 * Code style and formatting **linters** configuration and setup for:
-  * SASS
-  * JavaScript
-* Latest [Webpack 4](https://github.com/webpack/webpack) - JavaScript module bundler.
+  * *SASS*
+  * *JavaScript*
+* Latest [Webpack 4](https://github.com/webpack/webpack) - *JavaScript* module bundler.
 * Latest [SASS/CSS](https://github.com/sass/node-sass) compiler based on `node-sass` which provides bindings to `libsass`.
 * Latest [Babel 7](https://github.com/babel/babel) (`@babel/core`) - JavaScript compiler - _Use next generation JavaScript, today._
 * Configured and ready to use **BrowserSync** plugin - `browser-sync-webpack-plugin`
 
 ## Requirements
 
-* `node` _>=_ `10.13.0`
+* `node` **>=** `10.13.0`
 * `npm`
 
 # Setup
 
-## Initial Installation
+## Installation
 
 1. Choose and download the template from [List of Releases](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases).
 2. Extract the release archive to a new directory, rename it to your project name and browse the directory.
@@ -52,7 +52,7 @@ $ npm ci
 
 ## Define Package Metadata
 
-* Amend `package.json` and optionally specify:
+* Amend `package.json` file and optionally specify:
     * `name` - Name of your project. A name can be optionally prefixed by a scope, e.g. `@myorg/mypackage`.
     * `version` - Specify and maintain a version number indicator for your project code.
     * `author` - Your organisation or just yourself. You can also specify [`contributors`](https://docs.npmjs.com/files/package.json#people-fields-author-contributors).
@@ -88,13 +88,13 @@ const serverConfiguration = {
 * _Font_ files are located under `/src/fonts/`
 * _HTML_ files are located under `/src/`
 
-### Build assets
+### Build Assets
 
 ```sh
 $ npm run build
 ```
 
-### Enable source files watcher
+### Enable Source Files Watcher
 
 ```sh
 $ npm run watch
@@ -102,9 +102,9 @@ $ npm run watch
 
 > Define any other files that needs syncing in `files:[]` section under `BrowserSyncPlugin` in `webpack.config.js`
 
-Browser Sync UI can be reached by default on this location: http://localhost:3001
+*BrowserSync UI* can be reached by default on this location: http://localhost:3001
 
-### Enable source files watcher using an existing running webserver
+### Enable Source Files Watcher Using an Existing Webserver
 
 ```sh
 $ npm run watch:externalServer
@@ -123,7 +123,7 @@ const serverConfiguration = {
 
 > Define any other files that needs syncing in `files:[]` section under `BrowserSyncPlugin` in `webpack.config.js`
 
-*Note:* Watching does not work with NFS (Windows) and machines in VirtualBox. Extend the configuration in such cases by:
+*Note:* Watching does not work with *NFS* (*Windows*) and machines in *VirtualBox*. Extend the configuration in such cases by:
 
 ```js
 module.exports = {
@@ -158,7 +158,7 @@ $ npm run bundle:externalServer
 $ npm run production
 ```
 
-## Processed built assets
+## Processed Built Assets
 
 * _CSS_ files are located under `/dist/css/`
 * _JavaScript_ files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `/dist/js/`
