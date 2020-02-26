@@ -1,7 +1,16 @@
 # Change log
 
+## [4.1.4](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.1.4)
+### 26/02/2020
+
+### Package Updates Full Change Set
+
+* `ajv@6.12.0` change log can be found on the official [release notes](https://github.com/epoberezkin/ajv/releases/tag/v6.12.0).
+* `file-loader@5.1.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/file-loader/releases/tag/v5.1.0).
+* `sass@1.26.1` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.26.1).
+
 ## [4.1.3](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.1.3)
-### 19/02/2019
+### 19/02/2020
 
 ### Package Updates Full Change Set
 
@@ -9,12 +18,12 @@
 * `eslint-plugin-react@7.18.3` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.18.3).
 * `@babel/core@7.8.4` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.8.4).
 * `@babel/preset-env@7.8.4` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.8.4).
-* `terser-webpack-plugin@2.3.5` change log can be found on the official [release notes](ttps://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v2.3.5).
+* `terser-webpack-plugin@2.3.5` change log can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v2.3.5).
 * `webpack-cli@3.3.11` change log can be found on the official [release notes](https://github.com/webpack/webpack-cli/releases/tag/v3.3.11).
 * `webpack@4.41.6` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v4.41.6).
 
 ## [4.1.2](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.1.2)
-### 22/01/2019
+### 22/01/2020
 
 ### Updated 
 
@@ -26,7 +35,7 @@
 * `cross-env@7.0.0` new features can be found on the official [release notes](https://github.com/kentcdodds/cross-env/releases/tag/v7.0.0).
 
 ## [4.1.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.1.1)
-### 22/01/2019
+### 22/01/2020
 
 ### Updated 
 
