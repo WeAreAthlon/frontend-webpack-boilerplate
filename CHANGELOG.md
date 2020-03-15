@@ -1,5 +1,18 @@
 # Change log
 
+## [4.1.5](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.1.5)
+### 15/03/2020
+
+### Package Updates Full Change Set
+
+* `@babel/core@7.8.7` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.8.7).
+* `*@babel/preset-env@7.8.7` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.8.7).
+* `cross-env@7.0.2` change log can be found on the official [release notes](https://github.com/kentcdodds/cross-env/releases/tag/v7.0.2). 
+* `eslint-config-airbnb@18.1.0` change log can be found on the official [release notes](https://github.com/airbnb/javascript/releases/tag/eslint-config-airbnb-v18.1.0). 
+* `eslint-plugin-react@7.19.0` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.19.0).
+* `sass@1.26.3` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.26.3).
+* `webpack@4.42.0` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v4.42.0).
+
 ## [4.1.4](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.1.4)
 ### 26/02/2020
 
