@@ -30,6 +30,8 @@
 * Latest [SASS/CSS](https://github.com/sass/node-sass) compiler based on `node-sass` which provides bindings to `libsass`.
 * Latest [Babel 7](https://github.com/babel/babel) (`@babel/core`) - JavaScript compiler - _Use next generation JavaScript, today._
 * Configured and ready to use **BrowserSync** plugin - `browser-sync-webpack-plugin`
+* Integration with [Travis CI](https://travis-ci.org/)
+  * Demo deployment available on [Frontend Webpack Boilerplate](https://weareathlon.github.io/frontend-webpack-boilerplate/)
 
 ## Requirements
 

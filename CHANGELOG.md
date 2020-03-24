@@ -8,7 +8,7 @@
 * Introduced `.github/` directory to group all _GitHub_ community development related templates.
   * New issue templates for _bug_, _feature_, _support_ requests.
 * [Travis CI](https://travis-ci.org/) integration configuration.
-  * Deploy to _GitHub_ pages.
+  * Deploy to _GitHub_ pages. Demo deployment available on [Frontend Webpack Boilerplate](https://weareathlon.github.io/frontend-webpack-boilerplate/)
 
 ### Package Updates Full Change Set
 
