@@ -1,5 +1,16 @@
 # Change log
 
+## [4.2.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.1)
+### 24/03/2020
+
+### Updates
+
+* Updated demo page with brief description and link to the _GitHub_ repository.
+  * Demo deployment available on [Frontend Webpack Boilerplate](https://weareathlon.github.io/frontend-webpack-boilerplate/)
+* Cleanup webpack config from side comments.
+* README file update
+  * Updated build badge URL link.
+
 ## [4.2.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.0)
 ### 24/03/2020
 

@@ -40,6 +40,20 @@ header {
   background-size: 160px;
 }
 
+main {
+  color: $foreground-color;
+  text-align: center;
+  padding: 10px;
+}
+
+a {
+  color: $link-color;
+}
+
+address {
+  color: $accent-color;
+}
+
 .logo {
   margin: 0 auto;
   display: block;

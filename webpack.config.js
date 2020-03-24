@@ -116,15 +116,6 @@ const config = function(env, args) {
          * Disable automatic asset cleaning until resolved
          */
         cleanStaleWebpackAssets: false,
-        // Alternative:
-        // cleanAfterEveryBuildPatterns: [
-        // copy-webpackPlugin:
-        //   '!images/content/**/*',
-        // url-loader fonts:
-        //   '!**/*.+(eot|svg|ttf|woff|woff2)',
-        // url-loader images:
-        //   '!**/*.+(jpg|jpeg|png|gif|svg)',
-        // ],
         verbose: true,
       }),
       new CopyWebpackPlugin([
