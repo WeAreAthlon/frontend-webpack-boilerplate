@@ -5,8 +5,8 @@ node_js:
 install:
   - npm ci
 script:
-  - npm run lint:sass
-  - npm run lint:js
+  - npm run lint-sass
+  - npm run lint-js
   - npm run production
 deploy:
   provider: pages
