@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - node
+  - lts/*
+install:
+  - npm ci
+script:
+  - npm run lint:sass
+  - npm run lint:js
+  - npm run production
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  local-dir: dist
+  on:
+    branch: master
+    node: 'lts/*'

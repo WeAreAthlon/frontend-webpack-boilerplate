@@ -1,5 +1,7 @@
 # Webpack 4 Boilerplate
 
+[![GitHub Version](https://badge.fury.io/gh/weareathlon%2Ffrontend-webpack-boilerplate.svg)](https://badge.fury.io/gh/weareathlon%2Ffrontend-webpack-boilerplate)
+[![Build Status](https://api.travis-ci.org/weareathlon/frontend-webpack-boilerplate.svg?branch=master)](https://travis-ci.org/weareathlon%2Ffrontend-webpack-boilerplate)
 [![GitHub Issues](https://img.shields.io/github/issues-raw/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues)
 [![Known Vulnerabilities](https://snyk.io/test/github/WeAreAthlon/frontend-webpack-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/WeAreAthlon/frontend-webpack-boilerplate?targetFile=package.json)
 [![Dependency Status](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate.svg)](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate) 
@@ -13,7 +15,7 @@
 
 * **Simple setup** instructions
   * Start development of a project right away with *simple*, *configured*, *browser synced*, *linter monitored* asset files.
-* Starter assets directory for reference and **demo** building of:
+* Example assets directory for reference and **demo** building of:
   * *JavaScript*
   * *SASS*
   * *Images*
@@ -180,3 +182,9 @@ $ npm run lint-sass
 ```sh
 $ npm run lint-js
 ```
+
+## Continuous Integration
+
+This boilerplate template contains integration with [Travis CI](https://travis-ci.org/). The build system runs all linting scripts and deploys production optimized pages to _GitHub_ pages upon push to the `master` branch. However, note that this deployment flow only works for _Project Pages_, as User and Organization pages [only support the master branch flow](https://help.github.com/articles/user-organization-and-project-pages/).
+
+For more information on how to set up alternative deployment processes, check out the [Travis CI documentation on deployment](https://docs.travis-ci.com/user/deployment). The service can deploy to dozens of cloud providers, including Heroku, AWS, and Firebase.

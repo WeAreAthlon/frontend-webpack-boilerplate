@@ -1,5 +1,23 @@
 # Change log
 
+## [4.2.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.0)
+### 24/03/2020
+
+### Repository File Structure Reorganisation
+
+* Introduced `.github/` directory to group all _GitHub_ community development related templates.
+  * New issue templates for _bug_, _feature_, _support_ requests.
+* [Travis CI](https://travis-ci.org/) integration configuration.
+  * Deploy to _GitHub_ pages.
+
+### Package Updates Full Change Set
+
+* `@babel/core@7.9.0` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.9.0).
+* `@babel/preset-env@7.9.0` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.9.0).
+* `autoprefixer@9.7.5` change log can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/9.7.5).
+* `babel-loader@8.1.0` change log can be found on the official [release notes](https://github.com/babel/babel-loader/releases/tag/v8.1.0).
+* `webpack@4.42.1` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v4.42.1).
+
 ## [4.1.5](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.1.5)
 ### 15/03/2020
 
