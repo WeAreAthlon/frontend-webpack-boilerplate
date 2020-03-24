@@ -1,5 +1,12 @@
 # Change log
 
+## [4.2.2](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.2)
+### 24/03/2020
+
+### Updates
+
+* Fix SASS linter errors on the updated demo page.
+
 ## [4.2.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.1)
 ### 24/03/2020
 
