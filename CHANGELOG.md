@@ -6,6 +6,7 @@
 ### Updates
 
 * Sucurity audit fixes.
+* README - update link to demo deployment page.
 
 ### Package Updates Full Change Set
 

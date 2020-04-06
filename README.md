@@ -15,6 +15,8 @@
 
 * **Simple setup** instructions
   * Start development of a project right away with *simple*, *configured*, *browser synced*, *linter monitored* asset files.
+* Integration with [Travis CI](https://travis-ci.org/)
+  * [Demo deployment available to github pages](https://weareathlon.github.io/frontend-webpack-boilerplate/)
 * Example assets directory for reference and **demo** building of:
   * *JavaScript*
   * *SASS*
@@ -30,8 +32,6 @@
 * Latest [SASS/CSS](https://github.com/sass/node-sass) compiler based on `node-sass` which provides bindings to `libsass`.
 * Latest [Babel 7](https://github.com/babel/babel) (`@babel/core`) - JavaScript compiler - _Use next generation JavaScript, today._
 * Configured and ready to use **BrowserSync** plugin - `browser-sync-webpack-plugin`
-* Integration with [Travis CI](https://travis-ci.org/)
-  * Demo deployment available on [Frontend Webpack Boilerplate](https://weareathlon.github.io/frontend-webpack-boilerplate/)
 
 ## Requirements
 
