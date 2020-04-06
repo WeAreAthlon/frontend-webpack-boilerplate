@@ -1,5 +1,16 @@
 # Change log
 
+## [4.2.3](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.3)
+### 05/04/2020
+
+### Updates
+
+* Sucurity audit fixes.
+
+### Package Updates Full Change Set
+
+* `eslint-plugin-import@2.20.2` change log can be found on the official [release notes](https://github.com/benmosher/eslint-plugin-import/releases/tag/v2.20.2).
+
 ## [4.2.2](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.2)
 ### 24/03/2020
 
