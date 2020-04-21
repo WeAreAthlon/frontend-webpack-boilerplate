@@ -1,5 +1,18 @@
 # Change log
 
+## [4.2.4](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.4)
+### 05/04/2020
+
+### Updates
+
+### Package Updates Full Change Set
+
+* `@babel/preset-env@7.9.5` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.9.5).
+* `autoprefixer@9.7.6` change log can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/9.7.6).
+* `ajv@6.12.2` change log can be found on the official [release notes](https://github.com/epoberezkin/ajv/releases/tag/v6.12.2).
+* `css-loader@3.5.2` change log can be found on the official [release notes](https://github.com/webpack-contrib/css-loader/releases/tag/v3.5.2).
+* `style-loader@1.1.4` change log can be found on the official [release notes](https://github.com/webpack-contrib/style-loader/releases/tag/v1.1.4).
+
 ## [4.2.3](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.3)
 ### 05/04/2020
 
