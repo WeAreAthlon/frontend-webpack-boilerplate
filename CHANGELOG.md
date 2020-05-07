@@ -1,5 +1,22 @@
 # Change log
 
+## [4.2.5](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.5)
+### 07/05/2020
+
+### Updates
+
+### Package Updates Full Change Set
+
+* `@babel/core@7.9.6` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.9.6).
+* `@babel/preset-env@7.9.6` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.9.6).
+* `css-loader@3.5.3` change log can be found on the official [release notes](https://github.com/webpack-contrib/css-loader/releases/tag/v3.5.3).
+* `style-loader@1.2.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/style-loader/releases/tag/v1.2.1).
+* `node-sass@4.14.1` change log can be found on the official [release notes](https://github.com/sass/node-sass/releases/tag/v4.14.1).
+* `fibers@4.0.3` change log can be found on the official [release notes](https://github.com/laverdet/node-fibers/releases/tag/v4.0.3).
+* `sass@1.26.5` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.26.5).
+* `terser-webpack-plugin@2.3.6` change log can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v2.3.6).
+* `webpack@4.43.0` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v4.43.0).
+
 ## [4.2.4](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.4)
 ### 05/04/2020
 
