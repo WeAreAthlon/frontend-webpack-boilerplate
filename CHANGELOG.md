@@ -1,5 +1,22 @@
 # Change log
 
+## [4.2.7](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.7)
+### 03/06/2020
+
+### Updates
+
+### Package Updates Full Change Set
+
+* `@babel/preset-env@7.10.3` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.10.3)
+* `@babel/core@7.10.3` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.10.3)
+* `autoprefixer@9.8.4` change log can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/9.8.4)
+* `css-loader@3.6.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/css-loader/releases/tag/v3.6.0)
+* `eslint-config-airbnb@18.2.0` change log can be found on the official [release notes](https://github.com/airbnb/javascript/releases/tag/eslint-config-airbnb-v18.2.0). 
+* `eslint-plugin-jsx-a11y@6.3.1` change log can be found on the official [release notes](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/releases/tag/v6.3.1)
+* `eslint-plugin-import@2.21.2` change log can be found on the official [release notes](https://github.com/benmosher/eslint-plugin-import/releases/tag/v2.21.2).
+* `sass@1.26.9` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.26.9)
+* `webpack-cli@3.3.12` change log can be found on the official [release notes](https://github.com/webpack/webpack-cli/releases/tag/v3.3.12)
+
 ## [4.2.6](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.6)
 ### 03/06/2020
 
