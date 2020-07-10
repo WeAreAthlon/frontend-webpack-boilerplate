@@ -1,9 +1,19 @@
 # Change log
 
-## [4.2.7](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.7)
-### 03/06/2020
+## [4.2.8](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.8)
+### 10/08/2020
 
-### Updates
+### Package Updates Full Change Set
+
+* `@babel/core@7.10.4` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.10.4).
+* @babel/preset-env@7.10.4 change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.10.4).
+* `ajv@6.12.3` change log can be found on the official [release notes](https://github.com/epoberezkin/ajv/releases/tag/v6.12.3).
+* `eslint-plugin-import@2.22.0` change log can be found on the official [release notes](https://github.com/benmosher/eslint-plugin-import/releases/tag/v2.22.0).
+* `eslint-plugin-react@7.20.3` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.20.3)
+* `sass@1.26.10` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.26.10)
+
+## [4.2.7](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.7)
+### 25/06/2020
 
 ### Package Updates Full Change Set
 
@@ -20,8 +30,6 @@
 ## [4.2.6](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.6)
 ### 03/06/2020
 
-### Updates
-
 ### Package Updates Full Change Set
 
 * `@babel/core@7.10.2` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.10.2)
@@ -33,8 +41,6 @@
 
 ## [4.2.5](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.5)
 ### 07/05/2020
-
-### Updates
 
 ### Package Updates Full Change Set
 
@@ -50,8 +56,6 @@
 
 ## [4.2.4](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.4)
 ### 05/04/2020
-
-### Updates
 
 ### Package Updates Full Change Set
 

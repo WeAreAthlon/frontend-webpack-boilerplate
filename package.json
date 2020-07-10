@@ -1,6 +1,6 @@
 {
   "name": "@weareathlon/frontend-webpack-boilerplate",
-  "version": "4.2.7",
+  "version": "4.2.8",
   "description": "Starter project template boilerplate based on Webpack with SASS and babel ES6/7 support.",
   "homepage": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate#readme",
   "scripts": {
@@ -43,9 +43,9 @@
     "autoprefixer": "^9.8.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.3",
-    "@babel/preset-env": "^7.10.3",
-    "ajv": "^6.12.2",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "ajv": "^6.12.3",
     "babel-loader": "^8.1.0",
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "2.2.2",
@@ -56,9 +56,9 @@
     "cssnano": "^4.1.10",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.2.0",
-    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^1.7.0",
     "fibers": "^4.0.3",
     "file-loader": "^5.1.0",
@@ -68,7 +68,7 @@
     "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
-    "sass": "^1.26.9",
+    "sass": "^1.26.10",
     "sass-lint": "^1.13.1",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
