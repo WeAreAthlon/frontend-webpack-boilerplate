@@ -1,5 +1,32 @@
 # Change log
 
+## [4.3.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.3.0)
+### 13/08/2020
+
+## Configuration Updates
+
+* The latest version of `copy-webpack-plugin` has new a way of passing configuration patterns
+  * the plugin now accepts an object, you should change `new CopyPlugin(patterns, options)` to `new CopyPlugin({ patterns, options })`
+
+### Packages Major Version Updates
+
+* `copy-webpack-plugin@6.0.3` from `5.x` new features can be found on the official [release notes](https://github.com/webpack-contrib/copy-webpack-plugin/releases/tag/v6.0.3).
+* `eslint@7.4.0` from `6.x` new features can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.4.0).
+* `eslint-plugin-react-hooks@4.0.7` from `1.x` new features can be found on the official [release notes](https://www.npmjs.com/package/eslint-plugin-react-hooks).
+* `file-loader@6.0.0` from `5.x` new features can be found on the official [release notes](https://github.com/webpack-contrib/file-loader/releases/tag/v5.1.0).
+* `html-webpack-plugin@4.3.0` from `3.x` new features can be found on the official [release notes](https://github.com/jantimon/html-webpack-plugin).
+* `sass-loader@9.0.2` from `8.x` new features can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v8.0.2).
+* `terser-webpack-plugin@3.0.6` from `2.x` new features can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v3.0.6).
+* `url-loader@4.1.0` from `3.x` new features can be found on the official [release notes](https://github.com/webpack-contrib/url-loader/releases/tag/v3.0.0).
+
+### Packages Minor Version Updates
+
+* `autoprefixer@9.8.5` change log can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/9.8.4).
+
+### Removed Dependencies
+
+* `fibers` - was required by `sass-loader@8.0.0`.
+
 ## [4.2.8](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.8)
 ### 10/08/2020
 

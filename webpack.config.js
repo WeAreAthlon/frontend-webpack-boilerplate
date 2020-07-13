@@ -118,13 +118,15 @@ const config = function(env, args) {
         cleanStaleWebpackAssets: false,
         verbose: true,
       }),
-      new CopyWebpackPlugin([
-        {
-          from: path.resolve(__dirname, 'src', 'images', 'content'),
-          to: path.resolve(__dirname, 'dist', 'images', 'content'),
-          toType: 'dir',
-        },
-      ]),
+      new CopyWebpackPlugin({
+        patterns: [
+          {
+            from: path.resolve(__dirname, 'src', 'images', 'content'),
+            to: path.resolve(__dirname, 'dist', 'images', 'content'),
+            toType: 'dir',
+          },
+        ],
+      }),
     ],
   };
 };
