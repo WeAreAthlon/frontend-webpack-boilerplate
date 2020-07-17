@@ -50,9 +50,9 @@
 $ npm ci
 ```
 
-> More on the clean install npm command can be read yere [`npm ci`](https://docs.npmjs.com/cli/ci.html)
+> More on the clean install npm command can be read here [`npm ci`](https://docs.npmjs.com/cli/ci.html)
 
-> You can still use `npm install` in cases the `npm ci` raises system error due to specific platfrom incompatibilities.
+> You can still use `npm install` in cases the `npm ci` raises system error due to specific platform incompatibilities.
 
 ## Define Package Metadata
 
@@ -146,7 +146,7 @@ Executes both `install` and `watch` tasks in a single command convenient for dev
 $ npm run bundle
 ```
 
-### Bundle (using exterinal server for preview)
+### Bundle (using external server for preview)
 
 Executes both `install` and `watch:externalServer` tasks in a single command convenient for development with existing webserver back-end powered application:
 
