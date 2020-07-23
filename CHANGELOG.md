@@ -1,5 +1,21 @@
 # Change log
 
+## [4.3.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.3.1)
+### 23/08/2020
+
+### Updates
+
+* `README` - fixed spelling (thanks to [@TammyTee](https://github.com/TammyTee)
+* `npm` audit fixes across all packages.
+
+### Packages Minor Version Updates
+
+* `terser-webpack-plugin@3.0.7` change log can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v3.0.7).
+* `eslint-plugin-react-hooks@4.0.8` change log can be found on the official [release notes](https://www.npmjs.com/package/eslint-plugin-react-hooks).
+* `@babel/core@7.10.5` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.10.5).
+* `browser-sync@2.26.10` change log can be found on the official [release notes](https://github.com/BrowserSync/browser-sync/releases).
+* `eslint@7.5.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.4.0).
+
 ## [4.3.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.3.0)
 ### 13/08/2020
 
