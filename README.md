@@ -1,7 +1,8 @@
 # Webpack 4 Boilerplate
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2020?logo=github)
-[![GitHub Version](https://badge.fury.io/gh/weareathlon%2Ffrontend-webpack-boilerplate.svg)](https://badge.fury.io/gh/weareathlon%2Ffrontend-webpack-boilerplate)
+![webpack-current](https://img.shields.io/badge/webpack-v4.44.1-green?logo=webpack)
+![node-current (scoped)](https://img.shields.io/node/v/@weareathlon/frontend-webpack-boilerplate)
 [![Build Status](https://api.travis-ci.org/weareathlon/frontend-webpack-boilerplate.svg?branch=master)](https://travis-ci.org/weareathlon/frontend-webpack-boilerplate)
 [![GitHub Issues](https://img.shields.io/github/issues-raw/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues)
 [![Known Vulnerabilities](https://snyk.io/test/github/WeAreAthlon/frontend-webpack-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/WeAreAthlon/frontend-webpack-boilerplate?targetFile=package.json)

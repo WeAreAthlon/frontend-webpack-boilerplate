@@ -1,5 +1,32 @@
 # Change log
 
+## [4.4.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.4.0)
+### 23/08/2020
+
+### Updated
+
+* `README.md` - simply badges and add badges to show the current supported `node` version and the used `webpack version`. 
+
+### Removed
+
+* `VERSION` file - use the `package.json` defined version.
+
+### Packages Major Version Updates
+
+* `css-loader@4.2.1` from `3.x` new features can be found on the official [release notes](https://github.com/webpack-contrib/css-loader/releases/tag/v4.0.0).
+* `terser-webpack-plugin@4.0.0` from `3.x` new features can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v3.0.7).
+
+### Packages Minor Version Updates
+
+* `@babel/core@7.11.1` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.11.0)
+* `@babel/preset-env@7.11.0` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.11.0)
+* `autoprefixer@9.8.6` change log can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/9.8.6).
+* `browser-sync@2.26.12` change log can be found on the official [release notes](https://github.com/BrowserSync/browser-sync/releases).
+* `eslint@7.6.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.6.0).
+* `eslint-plugin-react@7.20.5` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.20.5)
+* `sass-loader@9.0.3` change log can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v9.0.3).
+* `webpack@4.44.1` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v4.44.1).
+
 ## [4.3.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.3.1)
 ### 23/08/2020
 
