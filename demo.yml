@@ -1,0 +1,19 @@
+name: Calculate JS Bundle Size
+
+on:
+  pull_request:
+    types: ['opened', 'reopened', 'synchronize']
+jobs:
+  calculate-size:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.0.0'
+      - uses: sarthak-saxena/JSBundleSize@master
+        with:
+          bootstrap: 'yarn install --ignore-engines'
+          build_command: 'yarn run build:crop'
+          dist_path: 'packages/crop/dist'
+          token: ${{ secrets.GITHUB_TOKEN }}

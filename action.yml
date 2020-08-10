@@ -1,0 +1,25 @@
+name: 'Compute JS Bundle size'
+description: 'Github action to compute total JS bundle size'
+author: 'sarthak-saxena'
+inputs:
+  bootstrap:
+    description: 'cli command for installing dependencies ex npm install'
+    required: true
+    default: 'npm install'
+  build_command:
+    description: 'cli command for building repository ex npm run build'
+    required: true
+    default: 'npm run build'
+  dist_path:
+    description: 'output path for the build package'
+    required: true
+    default: 'dist'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+outputs:
+  size: # output will be available to future steps
+    description: 'Build Size'
+branding:
+  icon: 'hard-drive'
+  color: 'blue'
