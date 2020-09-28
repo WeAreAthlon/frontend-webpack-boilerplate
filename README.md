@@ -37,7 +37,7 @@
 
 ## Requirements
 
-* `node` **>=** `10.13.0`
+* `node` : `^10 || ^12 || >=14`
 * `npm`
 
 # Setup

@@ -1,5 +1,36 @@
 # Change log
 
+## [4.5.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.5.0)
+### 27/09/2020
+
+* Updated `README.md`
+
+### Node Version Notes
+
+* The current release supports the following list of node versions: `^10 || ^12 || >=14`. All these versions have no security updates anymore.
+
+### New dependencies
+
+* [`postcss`](https://github.com/postcss/postcss/releases/tag/8.0.0) required by `autoprefixer@10.0.0`
+
+### Packages Major Version Updates
+
+* `autoprefixer@10.0.0` from `9.x` new features and braking changes can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/9.8.6).
+* `postcss-loader@4.0.2` from `3.x` new features and braking changes can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v4.0.0).
+* `sass-loader@10.0.2` from `9.x` new features and braking changes can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v9.0.3).
+
+### Packages Minor Version Updates
+
+* `copy-webpack-plugin@6.1.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/copy-webpack-plugin/releases/tag/v6.1.1).
+* `eslint@7.10.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.10.0).
+* `eslint-plugin-import@2.22.1` change log can be found on the official [release notes](https://github.com/benmosher/eslint-plugin-import/releases/tag/v2.22.1).
+* `eslint-plugin-react@7.21.2` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.21.2)
+** `html-webpack-plugin@4.5.0` change log can be found on the official [release notes](https://github.com/jantimon/html-webpack-plugin/releases/tag/v4.5.0).
+* `mini-css-extract-plugin@0.11.2` change log can be found on the official [release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases/tag/v0.11.2)
+* `sass@1.26.11` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.26.11)
+* `terser-webpack-plugin@4.2.2` change log can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v4.2.2).
+* `webpack@4.44.2` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v4.44.2).
+
 ## [4.4.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.4.0)
 ### 23/08/2020
 
