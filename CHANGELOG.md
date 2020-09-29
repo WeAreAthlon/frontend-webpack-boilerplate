@@ -7,7 +7,7 @@
 
 ### Node Version Notes
 
-* The current release supports the following list of node versions: `^10 || ^12 || >=14`. All these versions have no security updates anymore.
+* The current release supports the following list of node versions: `^10 || ^12 || >=14`. All other versions have no security updates anymore.
 
 ### New dependencies
 
@@ -25,7 +25,7 @@
 * `eslint@7.10.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.10.0).
 * `eslint-plugin-import@2.22.1` change log can be found on the official [release notes](https://github.com/benmosher/eslint-plugin-import/releases/tag/v2.22.1).
 * `eslint-plugin-react@7.21.2` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.21.2)
-** `html-webpack-plugin@4.5.0` change log can be found on the official [release notes](https://github.com/jantimon/html-webpack-plugin/releases/tag/v4.5.0).
+* `html-webpack-plugin@4.5.0` change log can be found on the official [release notes](https://github.com/jantimon/html-webpack-plugin/releases/tag/v4.5.0).
 * `mini-css-extract-plugin@0.11.2` change log can be found on the official [release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases/tag/v0.11.2)
 * `sass@1.26.11` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.26.11)
 * `terser-webpack-plugin@4.2.2` change log can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v4.2.2).
