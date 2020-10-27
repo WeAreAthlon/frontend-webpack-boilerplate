@@ -2,16 +2,12 @@ files:
   # formatter: stylish
   # include: '**/*.s+(a|c)ss'
   ignore:
-    - '/usr/local/lib/node_modules/**/*.scss'
-    - './node_modules/**/*.scss'
     - 'src/scss/vendor/**/*.scss'
     - 'src/scss/base/_reset.scss'
     - 'src/scss/base/_print.scss'
     - 'src/scss/base/_fonts.scss'
     - 'src/scss/base/mixins.scss'
     - 'src/scss/dirty/_hacks.scss'
-    - 'node_modules/**/*.s+(a|c)ss'
-    - 'node_modules/grunt-sass/node_modules/node-sass/test/fixtures/watching/index.sass'
 
 rules:
   # Extends

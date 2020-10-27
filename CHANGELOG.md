@@ -1,7 +1,7 @@
 # Change log
 
 ## [5.0.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.0.0)
-### 26/10/2020
+### 27/10/2020
 
 ### New Features
 
@@ -10,7 +10,7 @@ Configuration per **environment**
   * `development` - [`sourcemaps`](https://webpack.js.org/configuration/devtool/), [`browser synced developmentment server`](https://webpack.js.org/configuration/dev-server/)
   * `production` - [`minification`](https://webpack.js.org/plugins/terser-webpack-plugin/), [`sourcemaps`](https://webpack.js.org/configuration/devtool/)
 * Automatic building of all template HTML files placed under `src/templates/`, no need to manually configure each file anymore.  
-* See the full [README](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/blob/master/README.md) for all new features.
+* See the full [README](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/blob/master/README.md) file for all new features.
 
 ### Breaking Changes
 
@@ -21,7 +21,8 @@ Configuration per **environment**
 * Template files moved from `src/` to `src/templates/`.
 * Removed `npm run bundle` script - no need anymore.
 * JavaScript syntax cheker command changed from `lint-js` to `lint:js`.
-* SASS/PostCSS syntax cheker command changed from `lint-sass` to `lint:sass`. 
+* SASS/PostCSS syntax cheker command changed from `lint-sass` to `lint:sass`.
+  * Configuration file is renamed from `.sass-lint.yml` to `.sasslintrc` for consistency.
 
 ### Updates
 
@@ -29,7 +30,7 @@ Configuration per **environment**
 * Added example demo code in `src/js/demo.js`
 * Updated `README.md`
 
-### Removed from `package.json`
+### Removed Dependencies
 
 * `browser-sync` replaced with `webpack-dev-server`.
 * `browser-sync-webpack-plugin` no need anymore as `webpack-dev-server` is used for this purpose.
@@ -58,7 +59,7 @@ Configuration per **environment**
 * `@babel/preset-env@7.12.1` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.12.1).
 * `ajv@6.12.6` change log can be found on the official [release notes](https://github.com/epoberezkin/ajv/releases/tag/v6.12.6).
 * `copy-webpack-plugin@6.2.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/copy-webpack-plugin/releases/tag/v6.2.1).
-* `eslint@7.12.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.12.0).
+* `eslint@7.12.1` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.12.1).
 * `eslint-plugin-react@7.21.4` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.21.4).
 * `eslint-plugin-react-hooks` change log can be found on the official [release notes](https://www.npmjs.com/package/eslint-plugin-react-hooks).
 * `eslint-plugin-jsx-a11y@6.4.1` change log can be found on the official [release notes](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/releases/tag/v6.4.1)

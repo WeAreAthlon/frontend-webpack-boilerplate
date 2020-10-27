@@ -30,7 +30,7 @@
     "copy-webpack-plugin": "^6.2.1",
     "css-loader": "^5.0.0",
     "css-minimizer-webpack-plugin": "^1.1.5",
-    "eslint": "^7.12.0",
+    "eslint": "^7.12.1",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
@@ -72,7 +72,7 @@
     "watch": "webpack --config configuration/webpack.dev.config.js --mode=development --watch",
     "dev": "webpack serve --config configuration/webpack.dev.config.js --mode=development",
     "production": "webpack --config configuration/webpack.prod.config.js --mode=production",
-    "lint:sass": "sass-lint -v -q --format=compact",
+    "lint:sass": "sass-lint 'src/scss/*' -v -q",
     "lint:js": "eslint --ext .js src/js/"
   },
   "target": "web"

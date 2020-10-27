@@ -39,14 +39,14 @@
 * Support for **assets optimization** for production:
   * **Minification** of *JavaScript* and *CSS* files.
   * **Inline** **images** / **fonts** files having file size below a *configurable* threshold value.
-* Code style and formatting **linters** configuration and setup for:
-  * *SASS*
-  * *JavaScript*
+* Configured Code style and formatting **linters** that analyze source code to flag programming errors, bugs, stylistic errors, and suspicious constructs:
+  * **SASS/PostCSS** - you can change or add additional rules in `.sasslintrc` file. Configuration options can be found on [`sass-lint`](https://github.com/sasstools/sass-lint/blob/master/lib/config/sass-lint.yml) documentation.
+  * **JavaScript** - following the `airbnb` style, you can review and configure the rules in `.eslintrc` file. Configuration options can be found on [`eslint`](https://eslint.org/docs/user-guide/configuring) documentation.
 * Latest [Webpack 5](https://github.com/webpack/webpack) - *JavaScript* module bundler.
-* Latest [SASS/CSS](https://github.com/sass/sass) compiler based on Dart `sass`.
+* Latest [SASS/PostCSS](https://github.com/sass/sass) compiler based on Dart `sass`.
 * Latest [Babel 7](https://github.com/babel/babel) (`@babel/core`) - JavaScript compiler - _Use next generation JavaScript, today._
 * Integration with [Travis CI](https://travis-ci.org/)
-  * [Demo deployment available to github pages](https://weareathlon.github.io/frontend-webpack-boilerplate/)
+  * [Demo deployment available to GitHub pages](https://weareathlon.github.io/frontend-webpack-boilerplate/)
 * Configured and ready to use **Webpack Dev Server** plugin - [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/)
 
 ## Requirements
@@ -88,13 +88,13 @@ $ npm ci
 
 * Edit the [`configuration/environment.js`](configuration/environment.js) if you want to specify:
   * **`server`**: configure development server, specify `host`, `port`. Refer to the full development server configuration options for [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/).
-  * **`limits`**: configure file size tresholds for assets optimisations.
-    * Image/Font files size in bytes. Below this value the image file will be served as DataURL (inline base64).
-  * **`paths`**: `src` or `dist` directories names and filesystem location.
+  * **`limits`**: configure file size thresholds for assets optimizations.
+    * Image/Font files size in bytes. Below this value the image file will be served as Data URL (_inline base64_).
+  * **`paths`**: `src` or `dist` directories names and file system location.
 
 ### Additional `webpack` configuration
 
-You can additionaly configure `webpack` for specific environment:
+You can additionally configure `webpack` for specific environment:
 * `development` - [`configuration/webpack.dev.config.js`](configuration/webpack.dev.config.js)
 * `production` - [`configuration/webpack.prod.config.js`](configuration/webpack.prod.config.js)
 ** Note that if you prefer to build and deploy [`sourcemap`](https://webpack.js.org/configuration/devtool/#production) files:
