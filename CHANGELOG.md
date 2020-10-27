@@ -43,6 +43,7 @@ Configuration per **environment**
 ### New Dependencies
 
 * [`css-minimizer-webpack-plugin`](https://github.com/webpack-contrib/css-minimizer-webpack-plugin/) support for `webpack 5`.
+* [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/) user to simplify development process.
 
 ### Packages Major Version Updates
 
