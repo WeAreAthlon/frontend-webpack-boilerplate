@@ -1,5 +1,74 @@
 # Change log
 
+## [5.0.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.0.0)
+### 26/10/2020
+
+### New Features
+
+* Configurable **browsers versions support**. It uses [`browserslist`](https://github.com/browserslist/browserslist#full-list) - just specify the browsers you want to support in the `package.json` file for `browserslist`.
+Configuration per **environment**
+  * `development` - [`sourcemaps`](https://webpack.js.org/configuration/devtool/), [`browser synced developmentment server`](https://webpack.js.org/configuration/dev-server/)
+  * `production` - [`minification`](https://webpack.js.org/plugins/terser-webpack-plugin/), [`sourcemaps`](https://webpack.js.org/configuration/devtool/)
+* Automatic building of all template HTML files placed under `src/templates/`, no need to manually configure each file anymore.  
+* See the full [README](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/blob/master/README.md) for all new features.
+
+### Breaking Changes
+
+* **Webpack** version update - support for [webpack 5](https://webpack.js.org/blog/2020-10-10-webpack-5-release/)
+  * New `webpack` configuration files.
+  * Webpack configuration restructure - split to `development` and `production` configuration files.
+* Switched to `webpack-dev-server` instead of `browser-sync`.
+* Template files moved from `src/` to `src/templates/`.
+* Removed `npm run bundle` script - no need anymore.
+* JavaScript syntax cheker command changed from `lint-js` to `lint:js`.
+* SASS/PostCSS syntax cheker command changed from `lint-sass` to `lint:sass`. 
+
+### Updates
+
+* `src/scss/app.scss` - grouped all demo page styles in a dedicated file called `demo.scss` for easer removal upon starting a new project.
+* Added example demo code in `src/js/demo.js`
+* Updated `README.md`
+
+### Removed from `package.json`
+
+* `browser-sync` replaced with `webpack-dev-server`.
+* `browser-sync-webpack-plugin` no need anymore as `webpack-dev-server` is used for this purpose.
+* `cross-env` - not needed in this setup.
+* `cssnano` - not needed to be provided explicitly, it is now a dev dependency of `css-minimizer-webpack-plugin`.
+* `node-sass` - use `sass` instead.
+* `optimize-css-assets-webpack-plugin` - missing support for webpack 5, replaced with `css-minimizer-webpack-plugin`.
+* `style-loader` - no more support for inlining CSS with `<style>` tags.
+
+### New Dependencies
+
+* [`css-minimizer-webpack-plugin`](https://github.com/webpack-contrib/css-minimizer-webpack-plugin/) support for `webpack 5`.
+
+### Packages Major Version Updates
+
+* `css-loader@5.0.0` from `4.x` new features can be found on the official [release notes](https://github.com/webpack-contrib/css-loader/releases/tag/v5.0.0).
+* `mini-css-extract-plugin@1.2.0` from `0.x` new features can be found on the official [release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases/tag/v1.2.0)
+* `style-loader@2.0.0` from `1.x` new features can be found on the official [release notes](https://github.com/webpack-contrib/style-loader/releases/tag/v2.0.0).
+* `terser-webpack-plugin@5.0.1` from `4.x` new features can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v5.0.1).
+* `webpack@5.2.0` from `4.x` new features can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.2.0).
+* `webpack-cli@4.1.0` from `3.x` new features can be found on the official [release notes](https://github.com/webpack/webpack-cli/releases/tag/v4.1.0)
+
+### Packages Minor Version Updates
+
+* `@babel/core@7.12.1` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.12.0).
+* `@babel/preset-env@7.12.1` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.12.1).
+* `ajv@6.12.6` change log can be found on the official [release notes](https://github.com/epoberezkin/ajv/releases/tag/v6.12.6).
+* `copy-webpack-plugin@6.2.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/copy-webpack-plugin/releases/tag/v6.2.1).
+* `eslint@7.12.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.12.0).
+* `eslint-plugin-react@7.21.4` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.21.4).
+* `eslint-plugin-react-hooks` change log can be found on the official [release notes](https://www.npmjs.com/package/eslint-plugin-react-hooks).
+* `eslint-plugin-jsx-a11y@6.4.1` change log can be found on the official [release notes](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/releases/tag/v6.4.1)
+* `file-loader@6.1.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/file-loader/releases/tag/v6.1.1).
+* `postcss@8.1.4` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.1.4).
+* `postcss-loader@4.0.4` change log can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v4.0.4).
+* `sass@1.27.0` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.27.0)
+* `sass-loader@10.0.4` change log can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v10.0.4).
+* `url-loader@4.1.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/url-loader/releases/tag/v4.1.1).
+
 ## [4.5.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.5.0)
 ### 27/09/2020
 

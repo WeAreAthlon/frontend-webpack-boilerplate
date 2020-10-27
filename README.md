@@ -1,12 +1,11 @@
-# Webpack 4 Boilerplate
+# Webpack 5 Boilerplate
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2020?logo=github)
-![webpack-current](https://img.shields.io/badge/webpack-v4.44.2-green?logo=webpack)
+![webpack-current](https://img.shields.io/badge/webpack-v5.2.0-green?logo=webpack)
 ![node-current (scoped)](https://img.shields.io/node/v/@weareathlon/frontend-webpack-boilerplate)
 [![Build Status](https://api.travis-ci.org/weareathlon/frontend-webpack-boilerplate.svg?branch=master)](https://travis-ci.org/weareathlon/frontend-webpack-boilerplate)
 [![GitHub Issues](https://img.shields.io/github/issues-raw/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues)
 [![Known Vulnerabilities](https://snyk.io/test/github/WeAreAthlon/frontend-webpack-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/WeAreAthlon/frontend-webpack-boilerplate?targetFile=package.json)
-[![Dependency Status](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate.svg)](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate) 
 [![devDependency Status](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate/dev-status.svg)](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate?type=dev)
 [![npm](https://img.shields.io/npm/dm/@weareathlon/frontend-webpack-boilerplate)](https://www.npmjs.com/package/@weareathlon/frontend-webpack-boilerplate)
 [![GitHub License](https://img.shields.io/github/license/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/blob/master/LICENSE)
@@ -16,12 +15,25 @@
 ## Features
 
 * **Simple setup** instructions
-  * Start development of a project right away with *simple*, *configured*, *browser synced*, *linter monitored* asset files.
-* Integration with [Travis CI](https://travis-ci.org/)
-  * [Demo deployment available to github pages](https://weareathlon.github.io/frontend-webpack-boilerplate/)
-* Example assets directory for reference and **demo** building of:
+  * Start development of a project right away with **simple**, **configured**, **linter enabled**, **browser synced** asset files.
+* Configuration per **environment**
+  * `development` - [`sourcemaps`](https://webpack.js.org/configuration/devtool/), [`browser synced developmentment server`](https://webpack.js.org/configuration/dev-server/)
+  * `production` - [`minification`](https://webpack.js.org/plugins/terser-webpack-plugin/), [`sourcemaps`](https://webpack.js.org/configuration/devtool/)
+* Configurable **browsers versions support**. It uses [`browserslist`](https://github.com/browserslist/browserslist#full-list) - just specify the browsers you want to support in the `package.json` file for `browserslist`:
+
+```js
+"browserslist": [
+    "last 2 versions",
+    "> 5%"
+]
+```
+* The build CSS / JavaScript files will respect the configured supported browsers using the following tools:
+  * [`autoprefixer`](https://github.com/postcss/autoprefixer) - automatically adds vendor prefixes to CSS rules
+  * [`babel-preset-env`](https://babeljs.io/docs/en/babel-preset-env) - smart preset that allows you to use the latest JavaScript without needing to micromanage which syntax transforms (and optionally, browser polyfills) are needed by your target environment(s)
+* Demo project for reference and **demo example** building of:
   * *JavaScript*
-  * *SASS*
+  * *SASS / PostCSS*
+  * *HTML* templates
   * *Images*
   * *Fonts*
 * Support for **assets optimization** for production:
@@ -30,10 +42,12 @@
 * Code style and formatting **linters** configuration and setup for:
   * *SASS*
   * *JavaScript*
-* Latest [Webpack 4](https://github.com/webpack/webpack) - *JavaScript* module bundler.
-* Latest [SASS/CSS](https://github.com/sass/node-sass) compiler based on `node-sass` which provides bindings to `libsass`.
+* Latest [Webpack 5](https://github.com/webpack/webpack) - *JavaScript* module bundler.
+* Latest [SASS/CSS](https://github.com/sass/sass) compiler based on Dart `sass`.
 * Latest [Babel 7](https://github.com/babel/babel) (`@babel/core`) - JavaScript compiler - _Use next generation JavaScript, today._
-* Configured and ready to use **BrowserSync** plugin - `browser-sync-webpack-plugin`
+* Integration with [Travis CI](https://travis-ci.org/)
+  * [Demo deployment available to github pages](https://weareathlon.github.io/frontend-webpack-boilerplate/)
+* Configured and ready to use **Webpack Dev Server** plugin - [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/)
 
 ## Requirements
 
@@ -59,77 +73,62 @@ $ npm ci
 ## Define Package Metadata
 
 * Amend `package.json` file and optionally specify:
-    * `name` - Name of your project. A name can be optionally prefixed by a scope, e.g. `@myorg/mypackage`.
-    * `version` - Specify and maintain a version number indicator for your project code.
-    * `author` - Your organisation or just yourself. You can also specify [`contributors`](https://docs.npmjs.com/files/package.json#people-fields-author-contributors).
-    * `description` - Short description of your project.
-    * `keywords` - Put keywords in it. It’s an array of strings.
-    * `repository` - Specify the place where your code lives.
-    * `license` - Announce your code license, figure out the license from [Choose an Open Source License](https://choosealicense.com) .
-    * `engines` - Specify the version of `node` that your stuff works on.
-* Configure `webpack.config.js`
-  * You can either use the default built-in internal serving capabilities of `browser-sync` package or configure to use an external already running server of your existing web back-end powered application.
-    
-```js
-const serverConfiguration = {
-  internal: {
-    server: {
-      baseDir: 'dist',
-    },
-    port: 3000,
-  },
-  external: {
-    proxy: 'http://localhost:9000/path/to/project/',
-  },
-};
-```
+  * `name` - Name of your project. A name can be optionally prefixed by a scope, e.g. `@myorg/mypackage`.
+  * `version` - Specify and maintain a version number indicator for your project code.
+  * `author` - Your organisation or just yourself. You can also specify [`contributors`](https://docs.npmjs.com/files/package.json#people-fields-author-contributors).
+  * `description` - Short description of your project.
+  * `keywords` - Put keywords in it. It’s an array of strings.
+  * `repository` - Specify the place where your code lives.
+  * `license` - Announce your code license, figure out the license from [Choose an Open Source License](https://choosealicense.com) .
+  * `browserslist` - Specify the supported browsers versions - you can refer to [full list](https://github.com/browserslist/browserslist#full-list) of availalbe options.
 
-## Development / Build Assets
+## Configuration
+
+### Environment Configuration
+
+* Edit the [`configuration/environment.js`](configuration/environment.js) if you want to specify:
+  * **`server`**: configure development server, specify `host`, `port`. Refer to the full development server configuration options for [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/).
+  * **`limits`**: configure file size tresholds for assets optimisations.
+    * Image/Font files size in bytes. Below this value the image file will be served as DataURL (inline base64).
+  * **`paths`**: `src` or `dist` directories names and filesystem location.
+
+### Additional `webpack` configuration
+
+You can additionaly configure `webpack` for specific environment:
+* `development` - [`configuration/webpack.dev.config.js`](configuration/webpack.dev.config.js)
+* `production` - [`configuration/webpack.prod.config.js`](configuration/webpack.prod.config.js)
+** Note that if you prefer to build and deploy [`sourcemap`](https://webpack.js.org/configuration/devtool/#production) files:
+> You should configure your server to disallow access to the Source Map file for normal users!
+
+## Development
 
 ### Assets Source
 
-* _SASS_ files are located under `/src/scss/`
-* _JavaScript_ files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `/src/js/`
-* _Image_ files are located under `/src/images/`
-* _Font_ files are located under `/src/fonts/`
-* _HTML_ files are located under `/src/`
+* **SASS/PostCSS** files are located under `src/scss/`
+* **JavaScript** files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `src/js/`
+* **Image** files are located under `src/images/`
+* **Font** files are located under `src/fonts/`
+* **HTML** files are located under `src/templates/`
+  * It will **automatically** build **all files** placed under `src/templates/` directory, no need to manually configure each template anymore!
 
-### Build Assets
+## Build Assets
+
+### One time build assets for development
 
 ```sh
 $ npm run build
 ```
 
-### Enable Source Files Watcher
+### Build assets and enable source files watcher
 
 ```sh
 $ npm run watch
 ```
 
-> Define any other files that needs syncing in `files:[]` section under `BrowserSyncPlugin` in `webpack.config.js`
+This command is suitable if you develop with external web server.
 
-*BrowserSync UI* can be reached by default on this location: http://localhost:3001
-
-### Enable Source Files Watcher Using an Existing Webserver
-
-```sh
-$ npm run watch:externalServer
-```
-
-Configure the URL to your running external web server in the `webpack.config.json` project under:
-
-```js
-const serverConfiguration = {
-  // ...,
-  external: {
-    proxy: 'http://localhost:3000/path/to/project/',
-  },
-};
-```
-
-> Define any other files that needs syncing in `files:[]` section under `BrowserSyncPlugin` in `webpack.config.js`
-
-*Note:* Watching does not work with *NFS* (*Windows*) and machines in *VirtualBox*. Extend the configuration in such cases by:
+*Note:* Watching does not work with *NFS* (*Windows*) and machines in *VirtualBox*. 
+Extend the configuration in such cases by:
 
 ```js
 module.exports = {
@@ -140,20 +139,10 @@ module.exports = {
 };
 ```
 
-### Bundle
-
-Executes both `install` and `watch` tasks in a single command convenient for development:
+### Start a development server - reloading automatically after each file change.
 
 ```sh
-$ npm run bundle
-```
-
-### Bundle (using external server for preview)
-
-Executes both `install` and `watch:externalServer` tasks in a single command convenient for development with existing webserver back-end powered application:
-
-```sh
-$ npm run bundle:externalServer
+$ npm run dev
 ```
 
 ## Production / Build Assets
@@ -179,12 +168,12 @@ $ npm run production
 * **SASS**
 
 ```sh
-$ npm run lint-sass
+$ npm run lint:sass
 ```
 * **JS**
 
 ```sh
-$ npm run lint-js
+$ npm run lint:js
 ```
 
 ## Continuous Integration

@@ -1,0 +1,40 @@
+body {
+  background: $body-background-color;
+  color: $foreground-color;
+  font-family: 'DINP-R', arial, serif;
+}
+
+header {
+  font-size: 2em;
+  margin: 20px;
+  color: $caption-color;
+  text-align: center;
+  background: $foreground-color url('../images/design/heading.png') center 20px no-repeat;
+  padding: 60px 30px 30px;
+  background-size: 160px;
+}
+
+main {
+  color: $foreground-color;
+  text-align: center;
+  padding: 10px;
+}
+
+.badges {
+  img {
+    display: inline;
+  }
+}
+
+a {
+  color: $link-color;
+}
+
+address {
+  color: $accent-color;
+}
+
+.logo {
+  margin: 0 auto;
+  display: block;
+}
