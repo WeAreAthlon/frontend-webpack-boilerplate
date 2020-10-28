@@ -1,4 +1,6 @@
 language: node_js
+dist: xenial
+os: linux
 node_js:
   - node
   - lts/*
@@ -9,11 +11,11 @@ script:
   - npm run lint:js
   - npm run production
 deploy:
+  strategy: git
   provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
-  local-dir: dist
+  token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  local_dir: dist
   on:
     branch: master
-    node: 'lts/*'
+    node_js: 'lts/*'

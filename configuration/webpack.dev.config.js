@@ -20,7 +20,6 @@ module.exports = merge(webpackConfiguration, {
     compress: true,
     overlay: true,
     hot: false,
-    port: 8080,
     watchOptions: {
       poll: 300,
     },

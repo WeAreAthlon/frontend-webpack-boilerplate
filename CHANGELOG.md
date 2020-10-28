@@ -1,12 +1,28 @@
 # Change log
 
+## [5.0.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.0.1)
+### 28/10/2020
+
+### Updates
+
+* Fix `.travis.yml` configuration warnings.
+* Fix varous spelling errors.
+* Development wepback configuration cleanup.
+
+### Packages Version Updates
+
+* `file-loader@6.2.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/file-loader/releases/tag/v6.2.0).
+* `mini-css-extract-plugin@1.2.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases/tag/v1.2.1).
+* `terser-webpack-plugin@5.0.3` change log can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v5.0.3).
+* `webpack@5.3.0` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.3.0).
+
 ## [5.0.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.0.0)
 ### 27/10/2020
 
 ### New Features
 
 * Configurable **browsers versions support**. It uses [`browserslist`](https://github.com/browserslist/browserslist#full-list) - just specify the browsers you want to support in the `package.json` file for `browserslist`.
-Configuration per **environment**
+* Configuration per **environment**
   * `development` - [`sourcemaps`](https://webpack.js.org/configuration/devtool/), [`browser synced developmentment server`](https://webpack.js.org/configuration/dev-server/)
   * `production` - [`minification`](https://webpack.js.org/plugins/terser-webpack-plugin/), [`sourcemaps`](https://webpack.js.org/configuration/devtool/)
 * Automatic building of all template HTML files placed under `src/templates/`, no need to manually configure each file anymore.  
