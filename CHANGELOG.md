@@ -14,7 +14,7 @@
 * `file-loader@6.2.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/file-loader/releases/tag/v6.2.0).
 * `mini-css-extract-plugin@1.2.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases/tag/v1.2.1).
 * `terser-webpack-plugin@5.0.3` change log can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v5.0.3).
-* `webpack@5.3.0` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.3.0).
+* `webpack@5.3.1` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.3.1).
 
 ## [5.0.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.0.0)
 ### 27/10/2020
