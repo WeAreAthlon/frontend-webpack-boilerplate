@@ -1,7 +1,7 @@
 # Webpack 5 Boilerplate
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2020?logo=github)
-![webpack-current](https://img.shields.io/badge/webpack-v5.3.1-green?logo=webpack)
+![webpack-current](https://img.shields.io/badge/webpack-v5.9.0-green?logo=webpack)
 ![node-current (scoped)](https://img.shields.io/node/v/@weareathlon/frontend-webpack-boilerplate)
 [![Build Status](https://api.travis-ci.org/weareathlon/frontend-webpack-boilerplate.svg?branch=master)](https://travis-ci.org/weareathlon/frontend-webpack-boilerplate)
 [![GitHub Issues](https://img.shields.io/github/issues-raw/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues)
@@ -27,27 +27,28 @@
     "> 5%"
 ]
 ```
-* The build CSS / JavaScript files will respect the configured supported browsers using the following tools:
+* The built CSS / JavaScript files will respect the **configured supported browsers** using the following tools:
   * [`autoprefixer`](https://github.com/postcss/autoprefixer) - automatically adds vendor prefixes to CSS rules
-  * [`babel-preset-env`](https://babeljs.io/docs/en/babel-preset-env) - smart preset that allows you to use the latest JavaScript without needing to micromanage which syntax transforms (and optionally, browser polyfills) are needed by your target environment(s)
-* Demo project for reference and **demo example** building of:
+  * [`babel-preset-env`](https://babeljs.io/docs/en/babel-preset-env) - smart preset that allows you to use the latest JavaScript without needing to micromanage which syntax transforms (*and optionally, browser polyfills*) are needed by your target environment(s).
+* Demo project files to be used as a reference and **demo example** building of:
   * *JavaScript*
   * *SASS / PostCSS*
   * *HTML* templates
-  * *Images*
+  * *Images* (*CSS backgrounds and image tags*)
   * *Fonts*
-* Support for **assets optimization** for production:
-  * **Minification** of *JavaScript* and *CSS* files.
-  * **Inline** **images** / **fonts** files having file size below a *configurable* threshold value.
-* Configured Code style and formatting **linters** that analyze source code to flag programming errors, bugs, stylistic errors, and suspicious constructs:
-  * **SASS/PostCSS** - you can change or add additional rules in `.sasslintrc` file. Configuration options can be found on [`sass-lint`](https://github.com/sasstools/sass-lint/blob/master/lib/config/sass-lint.yml) documentation.
-  * **JavaScript** - following the `airbnb` style, you can review and configure the rules in `.eslintrc` file. Configuration options can be found on [`eslint`](https://eslint.org/docs/user-guide/configuring) documentation.
+* Support for **assets optimization** for production environment with ability to configure:
+  * **Code Minification** of *JavaScript* and *CSS* processed files.
+  * **Optimize Assets Loading** - inline and embed **images** / **fonts** files having file size below a *configurable* threshold value.
+  * **Images Optimisation** - optimize `jpeg`, `jpg`, `png`, `gif`, `svg` filesize and loading type via [`imagemin`](https://github.com/imagemin/imagemin). Plugin and Loader for webpack to optimize (*compress*) all images using `imagemin`. Do not worry about size of images, now they are always optimized/compressed.
+* Support for **source code syntax style and formatting linters** that analyze source code to flag programming errors, bugs, stylistic errors, and suspicious constructs:
+  * **SASS/PostCSS syntax cheker** - you can change or add additional rules in `.sasslintrc` file. Configuration options can be found on [`sass-lint`](https://github.com/sasstools/sass-lint/blob/master/lib/config/sass-lint.yml) documentation.
+  * **JavaScript syntax checker** - following the `airbnb` style, you can review and configure the rules in `.eslintrc` file. Configuration options can be found on [`eslint`](https://eslint.org/docs/user-guide/configuring) documentation.
 * Latest [Webpack 5](https://github.com/webpack/webpack) - *JavaScript* module bundler.
 * Latest [SASS/PostCSS](https://github.com/sass/sass) compiler based on Dart `sass`.
 * Latest [Babel 7](https://github.com/babel/babel) (`@babel/core`) - JavaScript compiler - _Use next generation JavaScript, today._
 * Integration with [Travis CI](https://travis-ci.org/)
   * [Demo deployment available to GitHub pages](https://weareathlon.github.io/frontend-webpack-boilerplate/)
-* Configured and ready to use **Webpack Dev Server** plugin - [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/)
+* Configured and ready to use **Webpack Dev Server** plugin for faster local development - [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/)
 
 ## Requirements
 
@@ -58,9 +59,9 @@
 
 ## Installation
 
-1. Choose and download the template from [List of Releases](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases).
+1. Choose and download the latest template release from [List of Releases](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases).
 2. Extract the release archive to a new directory, rename it to your project name and browse the directory.
-3. Install all dependencies using `npm` clean install. 
+3. Install all dependencies using `npm` *clean install* command. 
 
 ```sh 
 $ npm ci
@@ -97,7 +98,7 @@ $ npm ci
 You can additionally configure `webpack` for specific environment:
 * `development` - [`configuration/webpack.dev.config.js`](configuration/webpack.dev.config.js)
 * `production` - [`configuration/webpack.prod.config.js`](configuration/webpack.prod.config.js)
-** Note that if you prefer to build and deploy [`sourcemap`](https://webpack.js.org/configuration/devtool/#production) files:
+  * Note that if you prefer to build and deploy [`sourcemap`](https://webpack.js.org/configuration/devtool/#production) files:
 > You should configure your server to disallow access to the Source Map file for normal users!
 
 ## Development
@@ -109,7 +110,7 @@ You can additionally configure `webpack` for specific environment:
 * **Image** files are located under `src/images/`
 * **Font** files are located under `src/fonts/`
 * **HTML** files are located under `src/templates/`
-  * It will **automatically** build **all files** placed under `src/templates/` directory, no need to manually configure each template anymore!
+  * It will **automatically** build **all HTML files** placed under `src/templates/` directory, no need to manually configure each template anymore!
 
 ## Build Assets
 
@@ -127,7 +128,7 @@ $ npm run watch
 
 This command is suitable if you develop with external web server.
 
-*Note:* Watching does not work with *NFS* (*Windows*) and machines in *VirtualBox*. 
+**Note:** File watching does not work with *NFS* (*Windows*) and machines in *VirtualBox*. 
 Extend the configuration in such cases by:
 
 ```js

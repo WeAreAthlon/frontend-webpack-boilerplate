@@ -1,5 +1,49 @@
 # Change log
 
+## [5.1.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.1.0)
+### 01/12/2020
+
+### New Features
+
+* Image optimisation is now done using [`image-minimizer-webpack-plugin`](https://github.com/webpack-contrib/image-minimizer-webpack-plugin)
+  * We have **removed** te usage of the [`imagemin-webpack-plugin`](https://github.com/Klathmon/imagemin-webpack-plugin)
+
+### Updates
+
+* Updated `webpack.config.js` to configure the new image optimisation plugin.
+* Updated *README* file with more clear features description and language style fixes.
+
+### Added New Packages
+
+* [`image-minimizer-webpack-plugin@1.0.0`](https://github.com/webpack-contrib/image-minimizer-webpack-plugin) - Plugin and Loader for webpack to optimize (compress) all images using imagemin. Do not worry about size of images, now they are always optimized/compressed.
+* [`imagemin`](https://github.com/imagemin/imagemin) image optimisation packages for *loseless* image optimisation:
+  * [`imagemin-jpegtran@7.0.0`](https://www.npmjs.com/package/imagemin-jpegtran/v/7.0.0) - for optimizing *JPG* images
+  * [`imagemin-optipng@8.0.0`](https://www.npmjs.com/package/imagemin-optipng) - for optimizing *PNG* images
+  * [`imagemin-gifsicle@7.0.0`](https://www.npmjs.com/package/imagemin-gifsicle) - for optimizing *GIF* images
+  * [`imagemin-svgo@8.0.0`](https://www.npmjs.com/package/imagemin-svgo) - for optimizing *SVG* images
+
+### Removed Packags
+
+* [`imagemin-webpack-plugin`](https://github.com/Klathmon/imagemin-webpack-plugin)
+
+### Package Version Updates
+
+* `autoprefixer@10.0.4` change log can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/10.0.4).
+* `@babel/core@7.12.9` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.12.9).
+* `@babel/preset-env@7.12.7` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.12.9).
+* `copy-webpack-plugin@6.3.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/copy-webpack-plugin/releases/tag/v6.3.0).
+* `css-loader@5.0.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v5.0.1).
+* `eslint-config-airbnb@18.2.1` change log can be found on the official [release notes](https://github.com/airbnb/javascript/releases/tag/eslint-config-airbnb-v18.2.1). 
+* `eslint@7.14.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.14.0).
+* `mini-css-extract-plugin@1.3.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases/tag/v1.3.0).
+* `postcss@8.1.6` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.1.6).
+* `postcss-loader@4.1.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v4.1.0).
+* `sass@1.29.0` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.29.0).
+* `sass-loader@10.1.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v10.1.0).
+* `webpack@5.9.0` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.9.0).
+* `webpack-cli@4.2.0` change log can be found on the official [release notes](https://github.com/webpack/webpack-cli/releases/tag/v4.2.0).
+* `webpack-merge@5.4.0` change log can be found on the official [change log](https://github.com/survivejs/webpack-merge/blob/master/CHANGELOG.md).
+
 ## [5.0.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.0.1)
 ### 28/10/2020
 
@@ -72,7 +116,7 @@
 
 ### Packages Minor Version Updates
 
-* `@babel/core@7.12.1` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.12.0).
+* `@babel/core@7.12.1` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.12.1).
 * `@babel/preset-env@7.12.1` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.12.1).
 * `ajv@6.12.6` change log can be found on the official [release notes](https://github.com/epoberezkin/ajv/releases/tag/v6.12.6).
 * `copy-webpack-plugin@6.2.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/copy-webpack-plugin/releases/tag/v6.2.1).
@@ -83,7 +127,7 @@
 * `file-loader@6.1.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/file-loader/releases/tag/v6.1.1).
 * `postcss@8.1.4` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.1.4).
 * `postcss-loader@4.0.4` change log can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v4.0.4).
-* `sass@1.27.0` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.27.0)
+* `sass@1.27.0` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.27.0).
 * `sass-loader@10.0.4` change log can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v10.0.4).
 * `url-loader@4.1.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/url-loader/releases/tag/v4.1.1).
 
@@ -102,7 +146,7 @@
 
 ### Packages Major Version Updates
 
-* `autoprefixer@10.0.0` from `9.x` new features and braking changes can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/9.8.6).
+* `autoprefixer@10.0.0` from `9.x` new features and braking changes can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/10.0.0).
 * `postcss-loader@4.0.2` from `3.x` new features and braking changes can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v4.0.0).
 * `sass-loader@10.0.2` from `9.x` new features and braking changes can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v9.0.3).
 
@@ -212,8 +256,8 @@
 * `eslint-config-airbnb@18.2.0` change log can be found on the official [release notes](https://github.com/airbnb/javascript/releases/tag/eslint-config-airbnb-v18.2.0). 
 * `eslint-plugin-jsx-a11y@6.3.1` change log can be found on the official [release notes](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/releases/tag/v6.3.1)
 * `eslint-plugin-import@2.21.2` change log can be found on the official [release notes](https://github.com/benmosher/eslint-plugin-import/releases/tag/v2.21.2).
-* `sass@1.26.9` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.26.9)
-* `webpack-cli@3.3.12` change log can be found on the official [release notes](https://github.com/webpack/webpack-cli/releases/tag/v3.3.12)
+* `sass@1.26.9` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.26.9).
+* `webpack-cli@3.3.12` change log can be found on the official [release notes](https://github.com/webpack/webpack-cli/releases/tag/v3.3.12).
 
 ## [4.2.6](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v4.2.6)
 ### 03/06/2020
