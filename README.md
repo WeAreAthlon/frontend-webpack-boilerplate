@@ -1,7 +1,7 @@
 # Webpack 5 Boilerplate
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2020?logo=github)
-![webpack-current](https://img.shields.io/badge/webpack-v5.9.0-green?logo=webpack)
+![webpack-current](https://img.shields.io/badge/webpack-v5.11.0-green?logo=webpack)
 ![node-current (scoped)](https://img.shields.io/node/v/@weareathlon/frontend-webpack-boilerplate)
 [![Build Status](https://api.travis-ci.org/weareathlon/frontend-webpack-boilerplate.svg?branch=master)](https://travis-ci.org/weareathlon/frontend-webpack-boilerplate)
 [![GitHub Issues](https://img.shields.io/github/issues-raw/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues)
@@ -49,6 +49,7 @@
 * Integration with [Travis CI](https://travis-ci.org/)
   * [Demo deployment available to GitHub pages](https://weareathlon.github.io/frontend-webpack-boilerplate/)
 * Configured and ready to use **Webpack Dev Server** plugin for faster local development - [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/)
+* Integration with [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) - _Visualize size of webpack output files with an interactive zoomable treemap._
 
 ## Requirements
 
@@ -176,6 +177,14 @@ $ npm run lint:sass
 ```sh
 $ npm run lint:js
 ```
+
+## Run Assets Bundle Analyzer
+
+```sh
+$ npm run stats
+```
+
+> This will open the visualisaion on the default configuraiton URL `localhost:8888`, you can change this following the [package](https://github.com/webpack-contrib/webpack-bundle-analyzer#options-for-cli) documentation.
 
 ## Continuous Integration
 

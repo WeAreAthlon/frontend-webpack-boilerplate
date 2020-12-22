@@ -1,5 +1,37 @@
 # Change log
 
+## [5.2.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.2.0)
+### 22/12/2020
+
+### New Features
+
+* Added [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) - _Visualize size of webpack output files with an interactive zoomable treemap._
+  * You can use this by running `npm run stats` - this will open the visualisaion on the default configuraiton URL `localhost:8888`, you can change this following the package documentation.
+* Added `npm` script `bundle` for more convinient usage in _Docker / Docker Compose_ development environment.
+
+### Updates
+
+* Moved `sass-lint` path configuration from npm script to the `.sasslintrc` file due. See [Lint of styles (SASS) doesn't work](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues/22)
+
+### Packages Major Version Updates
+
++ `ajv@7.0.2` from `6.x` new features can be found on the official [release notes](https://github.com/ajv-validator/ajv/releases/tag/v7.0.0).
++ `copy-webpack-plugin@7.0.0` from `6.x` new features can be found on the official [release notes](https://github.com/webpack-contrib/copy-webpack-plugin/releases/tag/v7.0.0).
++ `image-minimizer-webpack-plugin@2.0.0` from `1.x` ew features can be found on the official [release notes](https://github.com/webpack-contrib/image-minimizer-webpack-plugin/releases/tag/v2.0.0).
+
+### Package Version Updates
+
++ `@babel/preset-env@7.12.11` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.12.11).
++ `@babel/core@7.12.10` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.12.11).
++ `autoprefixer@10.1.0` change log can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/10.1.0).
++ `copy-webpack-plugin@6.4.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/copy-webpack-plugin/releases/tag/v6.4.1).
++ `eslint@7.16.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.16.0).
++ `mini-css-extract-plugin@1.3.3` change log can be found on the official [release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases/tag/v1.3.3).
++ `postcss@8.2.1` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.2.1).
++ `sass@1.30.0` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.29.0).
++ `webpack@5.11.0` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.11.0).
++ `webpack-merge@5.7.2` change log can be found on the official [change log](https://github.com/survivejs/webpack-merge/blob/master/CHANGELOG.md).
+
 ## [5.1.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.1.0)
 ### 01/12/2020
 

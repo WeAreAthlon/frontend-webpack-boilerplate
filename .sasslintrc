@@ -1,6 +1,6 @@
 files:
   # formatter: stylish
-  # include: '**/*.s+(a|c)ss'
+  include: 'src/scss/*'
   ignore:
     - 'src/scss/vendor/**/*.scss'
     - 'src/scss/base/_reset.scss'
