@@ -1,4 +1,4 @@
-# Webpack 5 Boilerplate
+# Webpack 5 Boilerplate Template
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2020?logo=github)
 ![webpack-current](https://img.shields.io/badge/webpack-v5.11.0-green?logo=webpack)
@@ -27,10 +27,10 @@
     "> 5%"
 ]
 ```
-* The built CSS / JavaScript files will respect the **configured supported browsers** using the following tools:
+* The built CSS / JavaScript files will respect the **configured supported browser versions** using the following tools:
   * [`autoprefixer`](https://github.com/postcss/autoprefixer) - automatically adds vendor prefixes to CSS rules
   * [`babel-preset-env`](https://babeljs.io/docs/en/babel-preset-env) - smart preset that allows you to use the latest JavaScript without needing to micromanage which syntax transforms (*and optionally, browser polyfills*) are needed by your target environment(s).
-* Demo project files to be used as a reference and **demo example** building of:
+* Demo project files to be used as a reference and **example demo** building of:
   * *JavaScript*
   * *SASS / PostCSS*
   * *HTML* templates
@@ -40,7 +40,7 @@
   * **Code Minification** of *JavaScript* and *CSS* processed files.
   * **Optimize Assets Loading** - inline and embed **images** / **fonts** files having file size below a *configurable* threshold value.
   * **Images Optimisation** - optimize `jpeg`, `jpg`, `png`, `gif`, `svg` filesize and loading type via [`imagemin`](https://github.com/imagemin/imagemin). Plugin and Loader for webpack to optimize (*compress*) all images using `imagemin`. Do not worry about size of images, now they are always optimized/compressed.
-* Support for **source code syntax style and formatting linters** that analyze source code to flag programming errors, bugs, stylistic errors, and suspicious constructs:
+* Support for **source code syntax style and formatting linters** that analyze source code to flag any programming errors, bugs, stylistic errors or suspicious constructs:
   * **SASS/PostCSS syntax cheker** - you can change or add additional rules in `.sasslintrc` file. Configuration options can be found on [`sass-lint`](https://github.com/sasstools/sass-lint/blob/master/lib/config/sass-lint.yml) documentation.
   * **JavaScript syntax checker** - following the `airbnb` style, you can review and configure the rules in `.eslintrc` file. Configuration options can be found on [`eslint`](https://eslint.org/docs/user-guide/configuring) documentation.
 * Latest [Webpack 5](https://github.com/webpack/webpack) - *JavaScript* module bundler.
@@ -107,7 +107,7 @@ You can additionally configure `webpack` for specific environment:
 ### Assets Source
 
 * **SASS/PostCSS** files are located under `src/scss/`
-* **JavaScript** files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `src/js/`
+* **JavaScript** files with support of latest ECMAScript _ES6 / ECMAScript 2016(ES7)/ etc_ files are located under `src/js/`
 * **Image** files are located under `src/images/`
 * **Font** files are located under `src/fonts/`
 * **HTML** files are located under `src/templates/`
@@ -129,8 +129,7 @@ $ npm run watch
 
 This command is suitable if you develop with external web server.
 
-**Note:** File watching does not work with *NFS* (*Windows*) and machines in *VirtualBox*. 
-Extend the configuration in such cases by:
+**Note:** File watching does not work with *NFS* (*Windows*) and virtual machines under *VirtualBox*. Extend the configuration in such cases by:
 
 ```js
 module.exports = {
@@ -184,7 +183,7 @@ $ npm run lint:js
 $ npm run stats
 ```
 
-> This will open the visualisaion on the default configuraiton URL `localhost:8888`, you can change this following the [package](https://github.com/webpack-contrib/webpack-bundle-analyzer#options-for-cli) documentation.
+> This will open the visualisaion on the default configuraiton URL `localhost:8888`, you can change this URL or port following the [package](https://github.com/webpack-contrib/webpack-bundle-analyzer#options-for-cli) documentation.
 
 ## Continuous Integration
 
