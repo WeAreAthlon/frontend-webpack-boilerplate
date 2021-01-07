@@ -1,5 +1,28 @@
 # Change log
 
+## [5.2.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.2.1)
+### 07/01/2021
+
+## Maintenance Release
+
+* Security dependency updates.
+* _README.md_ minor updates and badges updates.
+
+### Package Versions Update
+
++ `ajv@7.0.3` change log can be found on the official [release notes](https://github.com/epoberezkin/ajv/releases/tag/v7.0.3).
++ `autoprefixer@10.2.0` change log can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/10.2.0).
++ `eslint@7.17.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.17.0).
++ `eslint-plugin-react@7.22.0` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.22.0).
++ `html-webpack-plugin@4.5.1` change log can be found on the official [release notes](https://github.com/jantimon/html-webpack-plugin/releases/tag/v4.5.1).
++ `image-minimizer-webpack-plugin@2.1.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/image-minimizer-webpack-plugin/releases/tag/v2.1.0).
++ `postcss@8.2.3` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.2.3).
++ `sass@1.32.2` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.32.2).
++ `webpack@5.11.1` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.11.1).
++ `webpack-cli@4.3.1` change log can be found on the official [release notes](https://github.com/webpack/webpack-cli/releases/tag/v4.3.1).
++ `webpack-dev-server@3.11.1` change log can be found on the official [release notes](https://github.com/webpack/webpack-dev-server/releases/tag/v3.11.1).
++ `webpack-merge@5.7.3` change log can be found on the official [release notes](https://github.com/survivejs/webpack-merge/blob/master/CHANGELOG.md#573--2020-12-22).
+
 ## [5.2.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.2.0)
 ### 22/12/2020
 
@@ -28,7 +51,7 @@
 + `eslint@7.16.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.16.0).
 + `mini-css-extract-plugin@1.3.3` change log can be found on the official [release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases/tag/v1.3.3).
 + `postcss@8.2.1` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.2.1).
-+ `sass@1.30.0` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.29.0).
++ `sass@1.30.0` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.30.0).
 + `webpack@5.11.0` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.11.0).
 + `webpack-merge@5.7.2` change log can be found on the official [change log](https://github.com/survivejs/webpack-merge/blob/master/CHANGELOG.md).
 
