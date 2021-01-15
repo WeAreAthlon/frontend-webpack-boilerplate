@@ -18,7 +18,7 @@
 + `sass@1.32.4` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.32.4).
 + `sass-loader@10.1.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v10.1.1).
 + `terser-webpack-plugin@5.1.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v5.1.1).
-+ `webpack@5.14.0` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.14.0).
++ `webpack@5.15.0` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.15.0).
 + `webpack-dev-server@3.11.2` change log can be found on the official [release notes](https://github.com/webpack/webpack-dev-server/releases/tag/v3.11.2).
 
 ## [5.2.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.2.1)

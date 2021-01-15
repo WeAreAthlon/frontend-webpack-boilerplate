@@ -1,7 +1,7 @@
 # Webpack 5 Boilerplate Template
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2021?logo=github)
-![webpack-current](https://img.shields.io/badge/webpack-v5.14.0-green?logo=webpack)
+![webpack-current](https://img.shields.io/badge/webpack-v5.15.0-green?logo=webpack)
 ![node-current (scoped)](https://img.shields.io/node/v/@weareathlon/frontend-webpack-boilerplate)
 [![Build Status](https://api.travis-ci.org/weareathlon/frontend-webpack-boilerplate.svg?branch=master)](https://travis-ci.org/weareathlon/frontend-webpack-boilerplate)
 [![GitHub Issues](https://img.shields.io/github/issues-raw/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues)
@@ -44,7 +44,6 @@ Table of Contents
    * [Additional Tools](#additional-tools)
       * [Run Assets Bundle Analyzer](#run-assets-bundle-analyzer)
       * [Continuous Integration](#continuous-integration)
-
 
 ## Features
 
