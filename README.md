@@ -1,7 +1,7 @@
 # Webpack 5 Boilerplate Template
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2021?logo=github)
-![webpack-current](https://img.shields.io/badge/webpack-v5.11.1-green?logo=webpack)
+![webpack-current](https://img.shields.io/badge/webpack-v5.14.0-green?logo=webpack)
 ![node-current (scoped)](https://img.shields.io/node/v/@weareathlon/frontend-webpack-boilerplate)
 [![Build Status](https://api.travis-ci.org/weareathlon/frontend-webpack-boilerplate.svg?branch=master)](https://travis-ci.org/weareathlon/frontend-webpack-boilerplate)
 [![GitHub Issues](https://img.shields.io/github/issues-raw/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues)
@@ -11,6 +11,40 @@
 [![GitHub License](https://img.shields.io/github/license/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/blob/master/LICENSE)
 
 ![Front-end Webpack Boilerplate](https://repository-images.githubusercontent.com/96102257/4be7b600-61f1-11e9-9ebf-67b17d5ba125)
+
+## Demo
+
+* [Demo page demonstrating building - SASS, JavaScript, Images, Fonts, HTML](https://weareathlon.github.io/frontend-webpack-boilerplate/)
+
+Table of Contents
+=================
+
+   * [Webpack 5 Boilerplate Template](#webpack-5-boilerplate-template)
+      * [Demo](#demo)
+      * [Features](#features)
+      * [Requirements](#requirements)
+   * [Setup](#setup)
+      * [Installation](#installation)
+      * [Define Package Metadata](#define-package-metadata)
+   * [Configuration](#configuration)
+      * [Environment Configuration](#environment-configuration)
+      * [Additional webpack configuration](#additional-webpack-configuration)
+   * [Development](#development)
+      * [Assets Source](#assets-source)
+      * [Build Assets](#build-assets)
+         * [One time build assets for development](#one-time-build-assets-for-development)
+         * [Build assets and enable source files watcher](#build-assets-and-enable-source-files-watcher)
+         * [Start a development server - reloading automatically after each file change.](#start-a-development-server---reloading-automatically-after-each-file-change)
+   * [Production](#production)
+      * [Build Assets](#build-assets-1)
+      * [Get Built Assets](#get-built-assets)
+   * [Run Code Style Linters](#run-code-style-linters)
+      * [SASS](#sass)
+      * [JavaScript](#javascript)
+   * [Additional Tools](#additional-tools)
+      * [Run Assets Bundle Analyzer](#run-assets-bundle-analyzer)
+      * [Continuous Integration](#continuous-integration)
+
 
 ## Features
 
@@ -84,9 +118,9 @@ $ npm ci
   * `license` - Announce your code license, figure out the license from [Choose an Open Source License](https://choosealicense.com) .
   * `browserslist` - Specify the supported browsers versions - you can refer to [full list](https://github.com/browserslist/browserslist#full-list) of availalbe options.
 
-## Configuration
+# Configuration
 
-### Environment Configuration
+## Environment Configuration
 
 * Edit the [`configuration/environment.js`](configuration/environment.js) if you want to specify:
   * **`server`**: configure development server, specify `host`, `port`. Refer to the full development server configuration options for [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/).
@@ -94,7 +128,7 @@ $ npm ci
     * Image/Font files size in bytes. Below this value the image file will be served as Data URL (_inline base64_).
   * **`paths`**: `src` or `dist` directories names and file system location.
 
-### Additional `webpack` configuration
+## Additional `webpack` configuration
 
 You can additionally configure `webpack` for specific environment:
 * `development` - [`configuration/webpack.dev.config.js`](configuration/webpack.dev.config.js)
@@ -102,9 +136,9 @@ You can additionally configure `webpack` for specific environment:
   * Note that if you prefer to build and deploy [`sourcemap`](https://webpack.js.org/configuration/devtool/#production) files:
 > You should configure your server to disallow access to the Source Map file for normal users!
 
-## Development
+# Development
 
-### Assets Source
+## Assets Source
 
 * **SASS/PostCSS** files are located under `src/scss/`
 * **JavaScript** files with support of latest ECMAScript _ES6 / ECMAScript 2016(ES7)/ etc_ files are located under `src/js/`
@@ -146,15 +180,17 @@ module.exports = {
 $ npm run dev
 ```
 
-## Production / Build Assets
+# Production 
 
-* Optimize assets for production by:
+## Build Assets
+
+Optimize assets for production by:
 
 ```sh
 $ npm run production
 ```
 
-## Processed Built Assets
+## Get Built Assets
 
 * _CSS_ files are located under `/dist/css/`
 * _JavaScript_ files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `/dist/js/`
@@ -164,18 +200,20 @@ $ npm run production
 * _Fonts_ are located under `/dist/fonts/`
 * _HTML_ files are located under `/dist/`
 
-## Run Code Style Linters
+# Run Code Style Linters
 
-* **SASS**
+## SASS
 
 ```sh
 $ npm run lint:sass
 ```
-* **JS**
+## JavaScript
 
 ```sh
 $ npm run lint:js
 ```
+
+# Additional Tools
 
 ## Run Assets Bundle Analyzer
 

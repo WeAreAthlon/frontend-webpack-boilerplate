@@ -1,5 +1,26 @@
 # Change log
 
+## [5.2.2](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.2.2)
+### 15/01/2021
+
+## Maintenance Release
+
+* Updated _README_
+  * Added Table of Contents (_TOC_)
+
+### Package Versions Update
+
++ `autoprefixer@10.2.1` change log can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/10.2.1).
++ `css-minimizer-webpack-plugin@1.2.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/css-minimizer-webpack-plugin/releases/tag/v1.2.0).
++ `image-minimizer-webpack-plugin@2.2.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/image-minimizer-webpack-plugin/releases/tag/v2.2.0).
++ `mini-css-extract-plugin@1.3.4` change log can be found on the official [release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases/tag/v1.3.4).
++ `postcss@8.2.4` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.2.4).
++ `sass@1.32.4` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.32.4).
++ `sass-loader@10.1.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v10.1.1).
++ `terser-webpack-plugin@5.1.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v5.1.1).
++ `webpack@5.14.0` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.14.0).
++ `webpack-dev-server@3.11.2` change log can be found on the official [release notes](https://github.com/webpack/webpack-dev-server/releases/tag/v3.11.2).
+
 ## [5.2.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.2.1)
 ### 07/01/2021
 
