@@ -1,5 +1,34 @@
 # Change log
 
+## [5.3.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.3.0)
+### 16/02/2021
+
+### Documentation Updates
+
+* _README_ documentacion available as HTML version in the demo page [index.html](src/templates/index.html)
+  * Built demo page is available on https://weareathlon.github.io/frontend-webpack-boilerplate/ 
+
+### Packages Major Version Updates
+
++ `html-webpack-plugin@5.0.1` from `4.x` new features can be found on the official [release notes](https://github.com/jantimon/html-webpack-plugin/blob/master/CHANGELOG.md#500-2021-02-03).
++ `postcss-loader@5.0.0` from `4.x` new features can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v5.0.0).
++ `sass-loader@11.0.1` from `10.x` new features can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v11.0.0). 
+
+### Package Versions Update
+
++ `ajv@7.1.0`
++ `autoprefixer@10.2.4` change log can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/10.2.4).
++ `@babel/preset-env@7.12.16` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.12.16).
++ `@babel/core@7.12.16` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.12.16).
++ `eslint@7.20.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.20.0).
++ `css-loader@5.0.2` change log can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v5.0.2).
++ `mini-css-extract-plugin@1.3.7` change log can be found on the official [release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases/tag/v1.3.7).
++ `postcss@8.2.6` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.2.6).
++ `sass@1.32.7` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.32.7).
++ `webpack@5.22.0` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.22.0).
++ `webpack-bundle-analyzer@4.4.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/webpack-bundle-analyzer/blob/master/CHANGELOG.md#440).
++ `webpack-cli@4.5.0` change log can be found on the official [release notes](https://github.com/webpack/webpack-cli/releases/tag/v4.5.0).
+
 ## [5.2.2](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.2.2)
 ### 15/01/2021
 
