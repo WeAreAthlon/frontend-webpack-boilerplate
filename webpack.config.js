@@ -12,12 +12,15 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const environment = require('./configuration/environment');
 
-const templateFiles = fs.readdirSync(path.resolve(__dirname, environment.paths.source, 'templates'));
+const templateFiles = fs.readdirSync(path.resolve(__dirname, environment.paths.source, 'templates')).map((filename) => ({
+  input: filename,
+  output: filename.replace(/\.ejs$/, '.html'),
+}));
 const htmlPluginEntries = templateFiles.map((template) => new HTMLWebpackPlugin({
   inject: true,
   hash: false,
-  filename: template,
-  template: path.resolve(environment.paths.source, 'templates', template),
+  filename: template.output,
+  template: path.resolve(environment.paths.source, 'templates', template.input),
   favicon: path.resolve(environment.paths.source, 'images', 'favicon.ico'),
 }));
 
