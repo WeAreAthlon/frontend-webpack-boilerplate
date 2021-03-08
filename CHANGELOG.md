@@ -1,5 +1,33 @@
 # Change log
 
+## [5.4.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.4.0)
+### 07/03/2021
+
+### Updates
+
+* **Note** Remove the `src/templates` directory and place the templates directly in `src` to keep assets files path sycned between src and dist paths for better development UX.
+* Update loading priority - compromise in favor of loading `SVG` background images in SASS/PostCSS instead of `SVG` Fonts.
+  * To configure loading SVG fonts instead of SVG background add `svg` extension in `url-loader` for fonts extensions.
+* Update demo HTML template
+  * Document `<title/>`
+  * Base font size
+  * Deleted `.svg` font file.
+
+### Packages Versions Update
+
++ `@babel/core@7.13.8` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.13.8).
++ `@babel/preset-env@7.13.9` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v77.13.9).
++ `autoprefixer@10.2.5` change log can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/10.2.5).
++ `ajv@7.2.1` change log can be found on the official [release notes](https://github.com/epoberezkin/ajv/releases/tag/v7.2.1).
++ `css-loader@5.1.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v5.1.1).
++ `eslint@7.21.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.21.0).
++ `html-webpack-plugin@5.3.0` change log can be found on the official [release notes](https://github.com/jantimon/html-webpack-plugin/blob/main/CHANGELOG.md#530-2021-03-07).
++ `mini-css-extract-plugin@1.3.9` change log can be found on the official [release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases/tag/v1.3.9).
++ `postcss@8.2.7` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.2.7).
+* `postcss-loader@5.1.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v5.1.0).
++ `sass@1.32.8` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.32.8).
++ `webpack@5.24.4` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.24.4).
+
 ## [5.3.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.3.0)
 ### 16/02/2021
 
@@ -16,7 +44,7 @@
 
 ### Package Versions Update
 
-+ `ajv@7.1.0`
++ `ajv@7.1.0` change log can be found on the official [release notes](https://github.com/epoberezkin/ajv/releases/tag/v7.1.0).
 + `autoprefixer@10.2.4` change log can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/10.2.4).
 + `@babel/preset-env@7.12.16` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.12.16).
 + `@babel/core@7.12.16` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.12.16).
