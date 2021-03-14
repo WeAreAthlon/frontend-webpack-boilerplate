@@ -1,7 +1,7 @@
-# Webpack 5 Boilerplate
+# Webpack 5 Boilerplate Template
 
-![Maintenance](https://img.shields.io/maintenance/yes/2020?logo=github)
-![webpack-current](https://img.shields.io/badge/webpack-v5.9.0-green?logo=webpack)
+![Maintenance](https://img.shields.io/maintenance/yes/2021?logo=github)
+![webpack-current](https://img.shields.io/badge/webpack-v5.24.4-green?logo=webpack)
 ![node-current (scoped)](https://img.shields.io/node/v/@weareathlon/frontend-webpack-boilerplate)
 [![Build Status](https://api.travis-ci.org/weareathlon/frontend-webpack-boilerplate.svg?branch=master)](https://travis-ci.org/weareathlon/frontend-webpack-boilerplate)
 [![GitHub Issues](https://img.shields.io/github/issues-raw/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues)
@@ -11,6 +11,39 @@
 [![GitHub License](https://img.shields.io/github/license/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/blob/master/LICENSE)
 
 ![Front-end Webpack Boilerplate](https://repository-images.githubusercontent.com/96102257/4be7b600-61f1-11e9-9ebf-67b17d5ba125)
+
+## Demo
+
+* [Demo page demonstrating building - SASS, JavaScript, Images, Fonts, HTML](https://weareathlon.github.io/frontend-webpack-boilerplate/)
+
+Table of Contents
+=================
+
+   * [Webpack 5 Boilerplate Template](#webpack-5-boilerplate-template)
+      * [Demo](#demo)
+      * [Features](#features)
+      * [Requirements](#requirements)
+   * [Setup](#setup)
+      * [Installation](#installation)
+      * [Define Package Metadata](#define-package-metadata)
+   * [Configuration](#configuration)
+      * [Environment Configuration](#environment-configuration)
+      * [Additional webpack configuration](#additional-webpack-configuration)
+   * [Development](#development)
+      * [Assets Source](#assets-source)
+      * [Build Assets](#build-assets)
+         * [One time build assets for development](#one-time-build-assets-for-development)
+         * [Build assets and enable source files watcher](#build-assets-and-enable-source-files-watcher)
+         * [Start a development server - reloading automatically after each file change.](#start-a-development-server---reloading-automatically-after-each-file-change)
+   * [Production](#production)
+      * [Build Assets](#build-assets-1)
+      * [Get Built Assets](#get-built-assets)
+   * [Run Code Style Linters](#run-code-style-linters)
+      * [SASS](#sass)
+      * [JavaScript](#javascript)
+   * [Additional Tools](#additional-tools)
+      * [Run Assets Bundle Analyzer](#run-assets-bundle-analyzer)
+      * [Continuous Integration](#continuous-integration)
 
 ## Features
 
@@ -27,10 +60,10 @@
     "> 5%"
 ]
 ```
-* The built CSS / JavaScript files will respect the **configured supported browsers** using the following tools:
+* The built CSS / JavaScript files will respect the **configured supported browser versions** using the following tools:
   * [`autoprefixer`](https://github.com/postcss/autoprefixer) - automatically adds vendor prefixes to CSS rules
   * [`babel-preset-env`](https://babeljs.io/docs/en/babel-preset-env) - smart preset that allows you to use the latest JavaScript without needing to micromanage which syntax transforms (*and optionally, browser polyfills*) are needed by your target environment(s).
-* Demo project files to be used as a reference and **demo example** building of:
+* Demo project files to be used as a reference and **example demo** building of:
   * *JavaScript*
   * *SASS / PostCSS*
   * *HTML* templates
@@ -40,7 +73,7 @@
   * **Code Minification** of *JavaScript* and *CSS* processed files.
   * **Optimize Assets Loading** - inline and embed **images** / **fonts** files having file size below a *configurable* threshold value.
   * **Images Optimisation** - optimize `jpeg`, `jpg`, `png`, `gif`, `svg` filesize and loading type via [`imagemin`](https://github.com/imagemin/imagemin). Plugin and Loader for webpack to optimize (*compress*) all images using `imagemin`. Do not worry about size of images, now they are always optimized/compressed.
-* Support for **source code syntax style and formatting linters** that analyze source code to flag programming errors, bugs, stylistic errors, and suspicious constructs:
+* Support for **source code syntax style and formatting linters** that analyze source code to flag any programming errors, bugs, stylistic errors or suspicious constructs:
   * **SASS/PostCSS syntax cheker** - you can change or add additional rules in `.sasslintrc` file. Configuration options can be found on [`sass-lint`](https://github.com/sasstools/sass-lint/blob/master/lib/config/sass-lint.yml) documentation.
   * **JavaScript syntax checker** - following the `airbnb` style, you can review and configure the rules in `.eslintrc` file. Configuration options can be found on [`eslint`](https://eslint.org/docs/user-guide/configuring) documentation.
 * Latest [Webpack 5](https://github.com/webpack/webpack) - *JavaScript* module bundler.
@@ -49,6 +82,7 @@
 * Integration with [Travis CI](https://travis-ci.org/)
   * [Demo deployment available to GitHub pages](https://weareathlon.github.io/frontend-webpack-boilerplate/)
 * Configured and ready to use **Webpack Dev Server** plugin for faster local development - [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/)
+* Integration with [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) - _Visualize size of webpack output files with an interactive zoomable treemap._
 
 ## Requirements
 
@@ -83,9 +117,9 @@ $ npm ci
   * `license` - Announce your code license, figure out the license from [Choose an Open Source License](https://choosealicense.com) .
   * `browserslist` - Specify the supported browsers versions - you can refer to [full list](https://github.com/browserslist/browserslist#full-list) of availalbe options.
 
-## Configuration
+# Configuration
 
-### Environment Configuration
+## Environment Configuration
 
 * Edit the [`configuration/environment.js`](configuration/environment.js) if you want to specify:
   * **`server`**: configure development server, specify `host`, `port`. Refer to the full development server configuration options for [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/).
@@ -93,7 +127,7 @@ $ npm ci
     * Image/Font files size in bytes. Below this value the image file will be served as Data URL (_inline base64_).
   * **`paths`**: `src` or `dist` directories names and file system location.
 
-### Additional `webpack` configuration
+## Additional `webpack` configuration
 
 You can additionally configure `webpack` for specific environment:
 * `development` - [`configuration/webpack.dev.config.js`](configuration/webpack.dev.config.js)
@@ -101,12 +135,12 @@ You can additionally configure `webpack` for specific environment:
   * Note that if you prefer to build and deploy [`sourcemap`](https://webpack.js.org/configuration/devtool/#production) files:
 > You should configure your server to disallow access to the Source Map file for normal users!
 
-## Development
+# Development
 
-### Assets Source
+## Assets Source
 
 * **SASS/PostCSS** files are located under `src/scss/`
-* **JavaScript** files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `src/js/`
+* **JavaScript** files with support of latest ECMAScript _ES6 / ECMAScript 2016(ES7)/ etc_ files are located under `src/js/`
 * **Image** files are located under `src/images/`
 * **Font** files are located under `src/fonts/`
 * **HTML** files are located under `src/templates/`
@@ -128,8 +162,7 @@ $ npm run watch
 
 This command is suitable if you develop with external web server.
 
-**Note:** File watching does not work with *NFS* (*Windows*) and machines in *VirtualBox*. 
-Extend the configuration in such cases by:
+> **Note:** File watching does not work with *NFS* (*Windows*) and virtual machines under *VirtualBox*. Extend the configuration in such cases by:
 
 ```js
 module.exports = {
@@ -146,15 +179,17 @@ module.exports = {
 $ npm run dev
 ```
 
-## Production / Build Assets
+# Production 
 
-* Optimize assets for production by:
+## Build Assets
+
+Optimize assets for production by:
 
 ```sh
 $ npm run production
 ```
 
-## Processed Built Assets
+## Get Built Assets
 
 * _CSS_ files are located under `/dist/css/`
 * _JavaScript_ files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `/dist/js/`
@@ -164,18 +199,28 @@ $ npm run production
 * _Fonts_ are located under `/dist/fonts/`
 * _HTML_ files are located under `/dist/`
 
-## Run Code Style Linters
+# Run Code Style Linters
 
-* **SASS**
+## SASS
 
 ```sh
 $ npm run lint:sass
 ```
-* **JS**
+## JavaScript
 
 ```sh
 $ npm run lint:js
 ```
+
+# Additional Tools
+
+## Run Assets Bundle Analyzer
+
+```sh
+$ npm run stats
+```
+
+> This will open the visualisaion on the default configuraiton URL `localhost:8888`, you can change this URL or port following the [package](https://github.com/webpack-contrib/webpack-bundle-analyzer#options-for-cli) documentation.
 
 ## Continuous Integration
 

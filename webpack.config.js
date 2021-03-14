@@ -12,12 +12,14 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const environment = require('./configuration/environment');
 
-const templateFiles = fs.readdirSync(path.resolve(__dirname, environment.paths.source, 'templates'));
+const templateFiles = fs.readdirSync(environment.paths.source)
+  .filter((file) => path.extname(file).toLowerCase() === '.html');
+
 const htmlPluginEntries = templateFiles.map((template) => new HTMLWebpackPlugin({
   inject: true,
   hash: false,
   filename: template,
-  template: path.resolve(environment.paths.source, 'templates', template),
+  template: path.resolve(environment.paths.source, template),
   favicon: path.resolve(environment.paths.source, 'images', 'favicon.ico'),
 }));
 
@@ -54,7 +56,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        test: /\.(eot|ttf|woff|woff2)$/,
         use: [
           {
             loader: 'url-loader',
@@ -96,6 +98,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin({
       verbose: true,
+      cleanOnceBeforeBuildPatterns: ['**/*', '!stats.json'],
     }),
     new CopyWebpackPlugin({
       patterns: [
