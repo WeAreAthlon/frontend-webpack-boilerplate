@@ -1,5 +1,27 @@
 # Change log
 
+## [5.5.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.5.0)
+### 23/03/2021
+
+### Major Vesions Packages Updates
+
++ `copy-webpack-plugin@8.1.0` from `7.x` new features and breaking changes can be found on the official [release notes](https://github.com/webpack-contrib/copy-webpack-plugin/releases/tag/v8.0.0)
++ `imagemin-svgo@9.0.0` from `8.x` new features can be found on the official [release notes](https://github.com/imagemin/imagemin-svgo/releases/tag/v9.0.0)
+  + **Important Note** - the new version of `imagemin-svgo` requires change in the configuration in the `wepback.config.js` - the way plugin configurations are being passed.
+
+### Packages Versions Update
+
++ `ajv@7.2.3` change log can be found on the official [release notes](https://github.com/epoberezkin/ajv/releases/tag/v7.2.3).
++ `@babel/core@7.13.10` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.13.10).
++ `@babel/preset-env@7.13.12` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v77.13.12).
++ `css-loader@5.1.3` change log can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v5.1.3).
++ `css-minimizer-webpack-plugin@1.3.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/css-minimizer-webpack-plugin/releases/tag/v1.3.0).
++ `eslint@7.22.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.22.0).
++ `html-webpack-plugin@5.3.1` change log can be found on the official [release notes](https://github.com/jantimon/html-webpack-plugin/blob/main/CHANGELOG.md#531-2021-03-09).
++ `postcss@8.2.8` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.2.9).
++ `postcss-loader@5.2.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v5.2.0).
++ `webpack@5.27.2` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.27.2).
+
 ## [5.4.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.4.0)
 ### 07/03/2021
 
