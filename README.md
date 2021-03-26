@@ -144,8 +144,8 @@ You can additionally configure `webpack` for specific environment:
 * **JavaScript** files with support of latest ECMAScript _ES6 / ECMAScript 2016(ES7)/ etc_ files are located under `src/js/`
 * **Image** files are located under `src/images/`
 * **Font** files are located under `src/fonts/`
-* **HTML** files are located under `src/templates/`
-  * It will **automatically** build **all HTML files** placed under `src/templates/` directory, no need to manually configure each template anymore!
+* **HTML** files are located under `src/`
+  * It will **automatically** build **all HTML files** placed under `src/` directory, no need to manually configure each template anymore!
 
 ## Build Assets
 
