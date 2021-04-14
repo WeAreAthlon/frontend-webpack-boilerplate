@@ -1,5 +1,27 @@
 # Change log
 
+## [5.6.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.6.0)
+### 15/04/2021
+
+### Major Vesions Packages Updates
+
++ `css-minimizer-webpack-plugin@2.0.0` from `1.x` new features and breaking changes can be found on the official [release notes](https://github.com/webpack-contrib/css-minimizer-webpack-plugin/releases/tag/v2.0.0)
+
+### Packages Versions Update
+
++ `@babel/core@7.13.15` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.13.15).
++ `@babel/preset-env@7.13.15` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.13.15).
++ `copy-webpack-plugin@8.1.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/copy-webpack-plugin/releases/tag/v8.1.1).
++ `css-loader@5.2.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v5.2.1).
++ `eslint@7.24.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.24.0).
++ `eslint-plugin-react@7.23.2` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.23.2).
++ `mini-css-extract-plugin@1.4.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases/tag/v1.4.1).
++ `postcss@8.2.10` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.2.10).
++ `sass-loader@11.0.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v11.0.1).
++ `webpack@5.32.0` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.32.0).
++ `webpack-bundle-analyzer@4.4.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/webpack-bundle-analyzer/blob/master/CHANGELOG.md#441)
++ `webpack-cli@4.6.0` change log can be found on the official [release notes](https://github.com/webpack/webpack-cli/releases/tag/v4.6.0).
+
 ## [5.5.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.5.0)
 ### 23/03/2021
 
@@ -13,7 +35,7 @@
 
 + `ajv@7.2.3` change log can be found on the official [release notes](https://github.com/epoberezkin/ajv/releases/tag/v7.2.3).
 + `@babel/core@7.13.10` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.13.10).
-+ `@babel/preset-env@7.13.12` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v77.13.12).
++ `@babel/preset-env@7.13.12` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.13.12).
 + `css-loader@5.1.3` change log can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v5.1.3).
 + `css-minimizer-webpack-plugin@1.3.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/css-minimizer-webpack-plugin/releases/tag/v1.3.0).
 + `eslint@7.22.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.22.0).
@@ -147,7 +169,6 @@
 + `@babel/preset-env@7.12.11` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.12.11).
 + `@babel/core@7.12.10` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.12.11).
 + `autoprefixer@10.1.0` change log can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/10.1.0).
-+ `copy-webpack-plugin@6.4.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/copy-webpack-plugin/releases/tag/v6.4.1).
 + `eslint@7.16.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.16.0).
 + `mini-css-extract-plugin@1.3.3` change log can be found on the official [release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases/tag/v1.3.3).
 + `postcss@8.2.1` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.2.1).
