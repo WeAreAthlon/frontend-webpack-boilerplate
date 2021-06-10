@@ -1,5 +1,28 @@
 # Change log
 
+## [5.7.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.7.1)
+### 10/06/2021
+
+### Major Vesions Packages Updates
+
++ `sass-loader@12.0.0` from `11.x` new features and breaking changes can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v12.0.0).
+
+### Package Versions Update
+
++ `@babel/core@7.14.5` 
++ `@babel/preset-env@7.14.5`
++ `autoprefixer@10.2.6`
++ `css-minimizer-webpack-plugin@3.0.1`
++ `eslint-plugin-import@2.23.4`
++ `eslint-plugin-react@7.24.0`
++ `eslint@7.28.0`
++ `postcss@8.3.1`
++ `sass@1.34.1`
++ `terser-webpack-plugin@5.1.3`
++ `webpack-cli@4.7.2`
++ `webpack-merge@5.8.0`
++ `webpack@5.38.1`
+
 ## [5.7.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.7.0)
 ### 25/05/2021
 
