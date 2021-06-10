@@ -9,19 +9,19 @@
 
 ### Package Versions Update
 
-+ `@babel/core@7.14.5` 
-+ `@babel/preset-env@7.14.5`
-+ `autoprefixer@10.2.6`
-+ `css-minimizer-webpack-plugin@3.0.1`
-+ `eslint-plugin-import@2.23.4`
-+ `eslint-plugin-react@7.24.0`
-+ `eslint@7.28.0`
-+ `postcss@8.3.1`
-+ `sass@1.34.1`
-+ `terser-webpack-plugin@5.1.3`
-+ `webpack-cli@4.7.2`
-+ `webpack-merge@5.8.0`
-+ `webpack@5.38.1`
++ `@babel/core@7.14.5` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.14.5).
++ `@babel/preset-env@7.14.5` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.14.5).
++ `autoprefixer@10.2.6` change log can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/10.2.6).
++ `css-minimizer-webpack-plugin@3.0.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/css-minimizer-webpack-plugin/releases/tag/v3.0.1).
++ `eslint-plugin-import@2.23.4` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.23.4).
++ `eslint-plugin-react@7.24.0` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.24.0).
++ `eslint@7.28.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.28.0).
++ `postcss@8.3.1` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.3.1).
++ `sass@1.34.1` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.34.1).
++ `terser-webpack-plugin@5.1.3` change log can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v5.1.3).
++ `webpack-cli@4.7.2` change log can be found on the official [release notes](https://github.com/webpack/webpack-cli/releases/tag/v4.7.2).
++ `webpack-merge@5.8.0` change log can be found on the official [release notes](https://github.com/survivejs/webpack-merge/blob/master/CHANGELOG.md#580--2021-06-07).
++ `webpack@5.38.1` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.38.1).
 
 ## [5.7.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.7.0)
 ### 25/05/2021
@@ -41,7 +41,7 @@
 + `@babel/core@7.14.3` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.14.3).
 + `@babel/preset-env@7.14.2` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.14.2).
 + `css-loader@5.2.6` change log can be found on the official [release notes](https://github.com/webpack-contrib/css-loader/releases/tag/v5.2.6).
-+ `eslint-plugin-import@2.23.3` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.23.3).
++ `eslint-plugin-import@2.23.3` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-import/releases/tag/v7.23.3).
 + `eslint@7.27.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.27.0).
 + `postcss-loader@5.3.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v5.3.0).
 + `postcss@8.3.0` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.3.0).
