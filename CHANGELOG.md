@@ -1,5 +1,17 @@
 # Change log
 
+## [5.7.2](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.7.1)
+### 14/06/2021
+
+### Major Vesions Packages Updates
+
++ `postcss-loader@6.1.0` from `5.x` new features and breaking changes can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v6.1.0).
+
+### Package Versions Update
+
++ `postcss@8.3.2` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.3.2).
++ `sass-loader@12.1.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v12.1.0).
+
 ## [5.7.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.7.1)
 ### 10/06/2021
 
