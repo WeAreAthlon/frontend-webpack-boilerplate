@@ -1,5 +1,31 @@
 # Change log
 
+## [5.8.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.8.0)
+### 14/06/2021
+
+### Updates
+
+* Migration of the CI to https://travis-ci.com
+
+### Major Vesions Packages Updates
+
++ `mini-css-extract-plugin@2.1.0` from `1.x` new features and breaking changes can be found on the official [release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases/tag/v2.0.0).
+
+### Package Versions Update
+
++ `@babel/core@7.14.6` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.14.6).
++ `@babel/preset-env@7.14.7` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.14.7).
++ `autoprefixer@10.3.1` change log can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/10.3.1).
++ `copy-webpack-plugin@9.0.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/copy-webpack-plugin/releases/tag/v9.0.1).
++ `css-minimizer-webpack-plugin@3.0.2` change log can be found on the official [release notes](https://github.com/webpack-contrib/css-minimizer-webpack-plugin/releases/tag/v3.0.2).
++ `eslint@7.30.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.30.0).
++ `html-webpack-plugin@5.3.2` change log can be found on the official [release notes](https://github.com/jantimon/html-webpack-plugin/blob/main/CHANGELOG.md#532-2021-06-22).
++ `postcss@8.3.5` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.3.5).
++ `postcss-loader@6.1.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v6.1.1).
++ `sass@1.35.2` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.35.2).
++ `terser-webpack-plugin@5.1.4` change log can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v5.1.4).
++ `webpack@5.44.0` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.44.0).
+
 ## [5.7.2](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.7.1)
 ### 14/06/2021
 
