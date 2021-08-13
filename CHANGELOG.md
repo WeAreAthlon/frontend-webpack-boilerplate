@@ -1,7 +1,25 @@
 # Change log
 
+## [5.9.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.9.0)
+### 13/08/2021
+
+### Major Vesions Packages Updates
+
++ `css-loader@6.2.0` from `5.x` new features and breaking changes can be found on the official [release notes](https://github.com/webpack-contrib/css-loader/releases/tag/v6.0.0).
+
+### Package Versions Update
+
++ `@babel/core@7.15.0` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.15.0).
++ `@babel/preset-env@7.15.0` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.15.0).
++ `eslint@7.32.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v7.32.0).
++ `eslint-plugin-import@2.24.0` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.24.0).
++ `mini-css-extract-plugin@2.2.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases/tag/v2.2.0).
++ `postcss@8.3.6` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.3.6).
++ `sass@1.37.5` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.37.5).
++ `webpack@5.50.0` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.50.0).
+
 ## [5.8.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.8.0)
-### 14/06/2021
+### 13/07/2021
 
 ### Updates
 

@@ -1,7 +1,7 @@
 # Webpack 5 Boilerplate Template
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2021?logo=github)
-![webpack-current](https://img.shields.io/badge/webpack-v5.44.0-green?logo=webpack)
+![webpack-current](https://img.shields.io/badge/webpack-v5.50.0-green?logo=webpack)
 ![node-current (scoped)](https://img.shields.io/node/v/@weareathlon/frontend-webpack-boilerplate)
 [![Build Status](https://travis-ci.com/WeAreAthlon/frontend-webpack-boilerplate.svg?branch=master)](https://travis-ci.com/WeAreAthlon/frontend-webpack-boilerplate)
 [![@weareathlon/frontend-webpack-boilerplate](https://snyk.io/advisor/npm-package/@weareathlon/frontend-webpack-boilerplate/badge.svg)](https://snyk.io/advisor/npm-package/@weareathlon/frontend-webpack-boilerplate)
