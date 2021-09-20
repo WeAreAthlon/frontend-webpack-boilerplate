@@ -9,7 +9,6 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const { extendDefaultPlugins } = require('svgo');
 
 const environment = require('./configuration/environment');
 
@@ -45,29 +44,27 @@ module.exports = {
       },
       {
         test: /\.(png|gif|jpe?g|svg)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              name: 'images/design/[name].[hash:6].[ext]',
-              publicPath: '../',
-              limit: environment.limits.images,
-            },
+        type: 'asset',
+        parser: {
+          dataUrlCondition: {
+            maxSize: environment.limits.images,
           },
-        ],
+        },
+        generator: {
+          filename: 'images/design/[name].[hash:6][ext]',
+        },
       },
       {
         test: /\.(eot|ttf|woff|woff2)$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              name: 'fonts/[name].[hash:6].[ext]',
-              publicPath: '../',
-              limit: environment.limits.fonts,
-            },
+        type: 'asset',
+        parser: {
+          dataUrlCondition: {
+            maxSize: environment.limits.images,
           },
-        ],
+        },
+        generator: {
+          filename: 'images/design/[name].[hash:6][ext]',
+        },
       },
     ],
   },
@@ -87,12 +84,12 @@ module.exports = {
           [
             'svgo',
             {
-              plugins: extendDefaultPlugins([
+              plugins: [
                 {
                   name: 'removeViewBox',
                   active: false,
                 },
-              ]),
+              ],
             },
           ],
         ],

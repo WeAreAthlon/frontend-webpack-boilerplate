@@ -1,5 +1,36 @@
 # Change log
 
+## [5.10.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.10.0)
+### 20/09/2021
+
+### Updates
+
+* Reconfigure loading of images and fonts from SASS files. - use webpack 5 assets loaders.
+* Removed `url-loader` and `file-loader` packages in flavor of the built-in webpack 5 assets management.
+
+### Resolved Issues
+
+* #38 Images referenced in SASS are not building properly
+* #39 Fonts fail to load 
+* #32 Change loaders to webpack 5 assets mangment
+
+### Major Vesions Packages Updates
+
+* `clean-webpack-plugin@4.0.0` from `3.x` new features and breaking changes can be found on the official [release notes](https://github.com/johnagan/clean-webpack-plugin/releases/tag/v4.0.0).
+* `webpack-dev-server@4.2.1` from `3.x` new features and breaking changes can be found on the official [release notes](https://github.com/webpack/webpack-dev-server/releases/tag/v4.0.0).
++ `postcss-loader@6.3.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v6.3.0).
++ `eslint-plugin-import@2.24.2` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.24.2).
++ `mini-css-extract-plugin@2.3.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases/tag/v2.3.0).
++ `sass@1.41.1` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.41.1).
++ `terser-webpack-plugin@5.2.4` change log can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v5.2.4).
++ `webpack@5.53.0` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.53.0).
+
+### Package Versions Update
+
++ `@babel/preset-env@7.15.6` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.15.6).
++ `autoprefixer@10.3.4` change log can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/10.3.4). 
+
+
 ## [5.9.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.9.0)
 ### 13/08/2021
 
@@ -17,6 +48,7 @@
 + `postcss@8.3.6` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.3.6).
 + `sass@1.37.5` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.37.5).
 + `webpack@5.50.0` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.50.0).
++ `webpack-cli@4.8.0` change log can be found on the official [release notes](https://github.com/webpack/webpack-cli/releases/tag/v4.8.0).
 
 ## [5.8.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.8.0)
 ### 13/07/2021
