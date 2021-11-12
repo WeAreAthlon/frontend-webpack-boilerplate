@@ -1,5 +1,44 @@
 # Change log
 
+## [5.11.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.11.0)
+### 12/11/2021
+
+### Updates
+
+* Removed dependency versions update badge from the README and index template files.
+* Updated `index.html` template to be more SEO friendly.
+
+### Major Vesions Packages Updates
+
+* `eslint@8.2.0` from `7.x` new features and breaking changes can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v8.0.0).
+* `eslint-config-airbnb@19.0.0` from `18.x` new features and breaking changes can be found on the official [release notes](https://github.com/airbnb/javascript/releases/tag/eslint-config-airbnb-v19.0.0).
+
+### Package Versions Update
+
++ `@babel/core@7.16.0` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.16.0).
++ `@babel/preset-env@7.16.0` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.16.0).
++ `autoprefixer@10.4.0` change log can be found on the official [release notes](https://github.com/postcss/autoprefixer/releases/tag/10.4.0).
++ `babel-loader@8.2.3` change log can be found on the official [release notes](https://github.com/babel/babel-loader/releases/tag/v8.2.3).
++ `copy-webpack-plugin@9.1.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/copy-webpack-plugin/releases/tag/v9.1.0).
++ `css-loader@6.5.1` change log can be found on the official [release notes](https://github.com/webpack-contrib/css-loader/releases/tag/v6.5.1).
++ `css-minimizer-webpack-plugin@3.1.3` change log can be found on the official [release notes](https://github.com/webpack-contrib/css-minimizer-webpack-plugin/releases/tag/v3.1.3).
++ `eslint-plugin-import@2.25.3` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.25.3).
++ `eslint-plugin-jsx-a11y@6.5.1` change log can be found on the official [release notes](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/releases/tag/v6.5.1)
++ `eslint-plugin-react@7.27.0` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.27.0).
++ `eslint-plugin-react-hooks@4.3.0` change log can be found on the official [release notes](https://www.npmjs.com/package/eslint-plugin-react-hooks).
++ `html-webpack-plugin@5.5.2` change log can be found on the official [release notes](https://github.com/jantimon/html-webpack-plugin/blob/main/CHANGELOG.md#550-2021-10-25).
++ `mini-css-extract-plugin@2.4.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases/tag/v2.4.0).
++ `postcss@8.3.11` change log can be found on the official [release notes](https://github.com/postcss/postcss/releases/tag/8.3.11).
++ `postcss-loader@6.2.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v6.2.0).
++ `sass@1.43.4` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.43.4).
++ `sass-loader@12.3.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v12.3.0).
++ `terser-webpack-plugin@5.2.5` change log can be found on the official [release notes](https://github.com/webpack-contrib/terser-webpack-plugin/releases/tag/v5.2.5).
++ `webpack@5.64.0` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.64.0).
++ `webpack-bundle-analyzer@4.5.0` change log can be found on the official [release notes](https://github.com/webpack-contrib/webpack-bundle-analyzer/blob/master/CHANGELOG.md#450)
++ `webpack-cli@4.9.1` change log can be found on the official [release notes](https://github.com/webpack/webpack-cli/releases/tag/v4.9.1).
++ `webpack-dev-server@4.4.0` change log can be found on the official [release notes](https://github.com/webpack/webpack-dev-server/releases/tag/v4.4.0).
+
+
 ## [5.10.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.10.0)
 ### 20/09/2021
 
