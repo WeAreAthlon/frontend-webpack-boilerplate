@@ -68,32 +68,40 @@ module.exports = {
       },
     ],
   },
+  optimization: {
+    minimizer: [
+      '...',
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.imageminMinify,
+          options: {
+            // Lossless optimization with custom option
+            // Feel free to experiment with options for better result for you
+            plugins: [
+              ['gifsicle', { interlaced: true }],
+              ['jpegtran', { progressive: true }],
+              ['optipng', { optimizationLevel: 5 }],
+              // Svgo configuration here https://github.com/svg/svgo#configuration
+              [
+                'svgo',
+                {
+                  plugins: [
+                    {
+                      name: 'removeViewBox',
+                      active: false,
+                    },
+                  ],
+                },
+              ],
+            ],
+          },
+        },
+      }),
+    ],
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
-    }),
-    new ImageMinimizerPlugin({
-      test: /\.(jpe?g|png|gif|svg)$/i,
-      minimizerOptions: {
-        // Lossless optimization with custom option
-        // Feel free to experiment with options for better result for you
-        plugins: [
-          ['gifsicle', { interlaced: true }],
-          ['jpegtran', { progressive: true }],
-          ['optipng', { optimizationLevel: 5 }],
-          [
-            'svgo',
-            {
-              plugins: [
-                {
-                  name: 'removeViewBox',
-                  active: false,
-                },
-              ],
-            },
-          ],
-        ],
-      },
     }),
     new CleanWebpackPlugin({
       verbose: true,

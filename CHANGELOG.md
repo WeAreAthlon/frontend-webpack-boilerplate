@@ -1,5 +1,20 @@
 # Change log
 
+## [5.12.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.12.0)
+### 31/01/2022
+
+### Updates
+
+* Updated `webpack.config.js` - moved image optimisation options in the webpack `optimisation` configuration object.
+* Added `imagemin` package as dev dependency as instructed in the [image-minimizer-webpack-plugin@v3.0.0](https://github.com/webpack-contrib/image-minimizer-webpack-plugin/releases/tag/v3.0.0) breaking changes migration guide.
+
+### Major Vesions Packages Updates
+
+* `copy-webpack-plugin@10.2.3` from `9.x` new features and breaking changes can be found on the official [release notes](https://github.com/webpack-contrib/copy-webpack-plugin/releases/tag/v10.0.0).
+* `image-minimizer-webpack-plugin@3.2.3` from `2.x` new features and breaking changes can be found on the official [release notes](https://github.com/webpack-contrib/image-minimizer-webpack-plugin/releases/tag/v3.0.0).
+* `imagemin-svgo@10.0.1` from `9.x` new features and breaking changes can be found on the official [release notes](https://github.com/imagemin/imagemin-svgo/releases/tag/v10.0.0).
+
+
 ## [5.11.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.11.0)
 ### 12/11/2021
 
