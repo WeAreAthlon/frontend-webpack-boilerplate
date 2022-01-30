@@ -80,7 +80,5 @@
     "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json"
   },
   "target": "web",
-  "dependencies": {
-    "svgo": "^2.8.0"
-  }
+  "dependencies": {}
 }
