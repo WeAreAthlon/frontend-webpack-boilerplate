@@ -1,7 +1,15 @@
 # Change log
 
+## [5.12.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.12.1)
+### 01/02/2022
+
+### Updates
+
+* Remove redundant package dependency.
+* Minor dependency package versions updates.
+
 ## [5.12.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.12.0)
-### 31/01/2022
+### 30/01/2022
 
 ### Updates
 
