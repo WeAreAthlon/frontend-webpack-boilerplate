@@ -12,15 +12,17 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const environment = require('./configuration/environment');
 
-const templateFiles = fs.readdirSync(path.resolve(__dirname, environment.paths.source, 'templates')).map((filename) => ({
-  input: filename,
-  output: filename.replace(/\.ejs$/, '.html'),
-}));
+const templateFiles = fs.readdirSync(environment.paths.source)
+  .filter((file) => ['.html', '.ejs'].includes(path.extname(file).toLowerCase())).map((filename) => ({
+    input: filename,
+    output: filename.replace(/\.ejs$/, '.html'),
+  }));
+
 const htmlPluginEntries = templateFiles.map((template) => new HTMLWebpackPlugin({
   inject: true,
   hash: false,
   filename: template.output,
-  template: path.resolve(environment.paths.source, 'templates', template.input),
+  template: path.resolve(environment.paths.source, template.input),
   favicon: path.resolve(environment.paths.source, 'images', 'favicon.ico'),
 }));
 
@@ -45,57 +47,64 @@ module.exports = {
       },
       {
         test: /\.(png|gif|jpe?g|svg)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              name: 'images/design/[name].[hash:6].[ext]',
-              publicPath: '../',
-              limit: environment.limits.images,
-            },
+        type: 'asset',
+        parser: {
+          dataUrlCondition: {
+            maxSize: environment.limits.images,
           },
-        ],
+        },
+        generator: {
+          filename: 'images/design/[name].[hash:6][ext]',
+        },
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              name: 'fonts/[name].[hash:6].[ext]',
-              publicPath: '../',
-              limit: environment.limits.fonts,
-            },
+        test: /\.(eot|ttf|woff|woff2)$/,
+        type: 'asset',
+        parser: {
+          dataUrlCondition: {
+            maxSize: environment.limits.images,
           },
-        ],
+        },
+        generator: {
+          filename: 'images/design/[name].[hash:6][ext]',
+        },
       },
+    ],
+  },
+  optimization: {
+    minimizer: [
+      '...',
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.imageminMinify,
+          options: {
+            // Lossless optimization with custom option
+            // Feel free to experiment with options for better result for you
+            plugins: [
+              ['gifsicle', { interlaced: true }],
+              ['jpegtran', { progressive: true }],
+              ['optipng', { optimizationLevel: 5 }],
+              // Svgo configuration here https://github.com/svg/svgo#configuration
+              [
+                'svgo',
+                {
+                  plugins: [
+                    {
+                      name: 'removeViewBox',
+                      active: false,
+                    },
+                  ],
+                },
+              ],
+            ],
+          },
+        },
+      }),
     ],
   },
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
-    }),
-    new ImageMinimizerPlugin({
-      test: /\.(jpe?g|png|gif|svg)$/i,
-      minimizerOptions: {
-        // Lossless optimization with custom option
-        // Feel free to experiment with options for better result for you
-        plugins: [
-          ['gifsicle', { interlaced: true }],
-          ['jpegtran', { progressive: true }],
-          ['optipng', { optimizationLevel: 5 }],
-          [
-            'svgo',
-            {
-              plugins: [
-                {
-                  removeViewBox: false,
-                },
-              ],
-            },
-          ],
-        ],
-      },
     }),
     new CleanWebpackPlugin({
       verbose: true,

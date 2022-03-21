@@ -1,12 +1,12 @@
 # Webpack 5 Boilerplate Template
 
-![Maintenance](https://img.shields.io/maintenance/yes/2021?logo=github)
-![webpack-current](https://img.shields.io/badge/webpack-v5.22.0-green?logo=webpack)
+![Maintenance](https://img.shields.io/maintenance/yes/2022?logo=github)
+![webpack-current](https://img.shields.io/badge/webpack-v5.69.1-green?logo=webpack)
 ![node-current (scoped)](https://img.shields.io/node/v/@weareathlon/frontend-webpack-boilerplate)
-[![Build Status](https://api.travis-ci.org/weareathlon/frontend-webpack-boilerplate.svg?branch=master)](https://travis-ci.org/weareathlon/frontend-webpack-boilerplate)
+[![Build Status](https://app.travis-ci.com/WeAreAthlon/frontend-webpack-boilerplate.svg?branch=master)](https://app.travis-ci.com/github/WeAreAthlon/frontend-webpack-boilerplate)
+[![@weareathlon/frontend-webpack-boilerplate](https://snyk.io/advisor/npm-package/@weareathlon/frontend-webpack-boilerplate/badge.svg)](https://snyk.io/advisor/npm-package/@weareathlon/frontend-webpack-boilerplate)
 [![GitHub Issues](https://img.shields.io/github/issues-raw/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues)
 [![Known Vulnerabilities](https://snyk.io/test/github/WeAreAthlon/frontend-webpack-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/WeAreAthlon/frontend-webpack-boilerplate?targetFile=package.json)
-[![devDependency Status](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate/dev-status.svg)](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate?type=dev)
 [![npm](https://img.shields.io/npm/dm/@weareathlon/frontend-webpack-boilerplate)](https://www.npmjs.com/package/@weareathlon/frontend-webpack-boilerplate)
 [![GitHub License](https://img.shields.io/github/license/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/blob/master/LICENSE)
 
@@ -79,14 +79,14 @@ Table of Contents
 * Latest [Webpack 5](https://github.com/webpack/webpack) - *JavaScript* module bundler.
 * Latest [SASS/PostCSS](https://github.com/sass/sass) compiler based on Dart `sass`.
 * Latest [Babel 7](https://github.com/babel/babel) (`@babel/core`) - JavaScript compiler - _Use next generation JavaScript, today._
-* Integration with [Travis CI](https://travis-ci.org/)
+* Integration with [Travis CI](https://travis-ci.com/)
   * [Demo deployment available to GitHub pages](https://weareathlon.github.io/frontend-webpack-boilerplate/)
 * Configured and ready to use **Webpack Dev Server** plugin for faster local development - [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/)
 * Integration with [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) - _Visualize size of webpack output files with an interactive zoomable treemap._
 
 ## Requirements
 
-* `node` : `^10 || ^12 || >=14`
+* `node` : `^12 || >=14`
 * `npm`
 
 # Setup
@@ -143,8 +143,8 @@ You can additionally configure `webpack` for specific environment:
 * **JavaScript** files with support of latest ECMAScript _ES6 / ECMAScript 2016(ES7)/ etc_ files are located under `src/js/`
 * **Image** files are located under `src/images/`
 * **Font** files are located under `src/fonts/`
-* **HTML** files are located under `src/templates/`
-  * It will **automatically** build **all HTML files** placed under `src/templates/` directory, no need to manually configure each template anymore!
+* **HTML** files are located under `src/`
+  * It will **automatically** build **all HTML files** placed under `src/` directory, no need to manually configure each template anymore!
 
 ## Build Assets
 

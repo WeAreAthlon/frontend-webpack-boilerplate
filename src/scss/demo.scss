@@ -2,7 +2,7 @@ body {
   background: $body-background-color;
   color: $foreground-color;
   font-family: 'DINP-R', arial, serif;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 header {
@@ -55,6 +55,8 @@ main {
 }
 
 .badges {
+  line-height: .5em;
+
   img {
     display: inline;
   }
