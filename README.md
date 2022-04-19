@@ -1,7 +1,7 @@
 # Webpack 5 Boilerplate Template
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2022?logo=github)
-![webpack-current](https://img.shields.io/badge/webpack-v5.69.1-green?logo=webpack)
+![webpack-current](https://img.shields.io/badge/webpack-v5.72.0-green?logo=webpack)
 ![node-current (scoped)](https://img.shields.io/node/v/@weareathlon/frontend-webpack-boilerplate)
 [![Build Status](https://app.travis-ci.com/WeAreAthlon/frontend-webpack-boilerplate.svg?branch=master)](https://app.travis-ci.com/github/WeAreAthlon/frontend-webpack-boilerplate)
 [![@weareathlon/frontend-webpack-boilerplate](https://snyk.io/advisor/npm-package/@weareathlon/frontend-webpack-boilerplate/badge.svg)](https://snyk.io/advisor/npm-package/@weareathlon/frontend-webpack-boilerplate)
@@ -68,6 +68,7 @@ Table of Contents
   * *SASS / PostCSS*
   * *HTML* templates
   * *Images* (*CSS backgrounds and image tags*)
+  * *Videos*
   * *Fonts*
 * Support for **assets optimization** for production environment with ability to configure:
   * **Code Minification** of *JavaScript* and *CSS* processed files.

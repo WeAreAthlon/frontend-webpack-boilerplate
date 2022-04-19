@@ -1,5 +1,23 @@
 # Change log
 
+## [5.13.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.13.0)
+### 19/04/2022
+
+### New Features
+
+* Add support for videos in the default webpack configuration. ([Issue #45 Video Assets](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues/45))
+  * HTML `<video>` tag.
+* Add support for [`ejs`](https://www.npmjs.com/package/ejs) template files. ([PR#28 Add support ejs files](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/28))
+
+### Package Versions Update
+
++ `@babel/core@7.17.9` change log can be found on the official [release notes](https://github.com/babel/babel/releases/tag/v7.17.9).
++ `eslint@8.13.0` change log can be found on the official [release notes](https://github.com/eslint/eslint/releases/tag/v8.13.0).
++ `eslint-plugin-import@2.26.0` change log can be found on the official [release notes](https://github.com/yannickcr/eslint-plugin-react/releases/tag/v7.26.0).
++ `sass@1.50.1` change log can be found on the official [release notes](https://github.com/sass/dart-sass/releases/tag/1.50.1).
++ `webpack@5.72.0` change log can be found on the official [release notes](https://github.com/webpack/webpack/releases/tag/v5.72.0).
++ `webpack-dev-server@4.8.1` change log can be found on the official [release notes](https://github.com/webpack/webpack-dev-server/releases/tag/v4.8.1).
+
 ## [5.12.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.12.1)
 ### 01/02/2022
 
