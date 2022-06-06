@@ -2,7 +2,7 @@ language: node_js
 dist: xenial
 os: linux
 node_js:
-  - node
+  - 17
   - lts/*
 install:
   - npm ci
