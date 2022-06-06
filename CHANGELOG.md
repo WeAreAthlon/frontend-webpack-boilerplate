@@ -1,5 +1,16 @@
 # Change log
 
+## [5.14.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.14.0)
+### 06/06/2022
+
+### Major Package Versions Update
+
++ `copy-webpack-plugin@11.0.0` from `10.x` new features and breaking changes can be found on the official [release notes](https://github.com/webpack-contrib/copy-webpack-plugin/releases/tag/v11.0.0).
++ `css-minimizer-webpack-plugin@4.0.0` from `3.x` new features and breaking changes can be found on the official [release notes](https://github.com/webpack-contrib/css-minimizer-webpack-plugin/releases/tag/v4.0.0).
++ `postcss-loader@7.0.0` from `6.x` new features and breaking changes can be found on the official [release notes](https://github.com/webpack-contrib/postcss-loader/releases/tag/v6.2.0). 
++ `sass-loader@13.0.0` from `12.x` new features and breaking changes can be found on the official [release notes](https://github.com/webpack-contrib/sass-loader/releases/tag/v12.3.0).
+
+
 ## [5.13.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.13.0)
 ### 19/04/2022
 
