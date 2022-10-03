@@ -134,7 +134,7 @@ You can additionally configure `webpack` for specific environment:
 * `development` - [`configuration/webpack.dev.config.js`](configuration/webpack.dev.config.js)
 * `production` - [`configuration/webpack.prod.config.js`](configuration/webpack.prod.config.js)
   * Note that if you prefer to build and deploy [`sourcemap`](https://webpack.js.org/configuration/devtool/#production) files:
-> You should configure your server to disallow access to the Source Map file for normal users!
+> You should configure your server to disallow access to the _Source Map_ files for normal users!
 
 # Development
 
@@ -221,7 +221,7 @@ $ npm run lint:js
 $ npm run stats
 ```
 
-> This will open the visualisaion on the default configuraiton URL `localhost:8888`, you can change this URL or port following the [package](https://github.com/webpack-contrib/webpack-bundle-analyzer#options-for-cli) documentation.
+> This will open the visualisaion on the default configuraiton URL `localhost:8888`, you can change this URL or port following the [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer#options-for-cli) documentation.
 
 ## Continuous Integration
 
