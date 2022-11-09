@@ -3,7 +3,6 @@ dist: xenial
 os: linux
 node_js:
   - 17
-  - lts/*
 install:
   - npm ci
 script:
