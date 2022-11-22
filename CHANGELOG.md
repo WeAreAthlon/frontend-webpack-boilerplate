@@ -1,5 +1,18 @@
 # Change log
 
+## [5.15.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.15.0)
+### 06/06/2022
+
+### Node Version Notes
+
+* The current release supports the following list of node versions: `>=14`. All other versions have no security updates anymore.
+  * Updated the _README_ to note this change.
+
+### Major Package Versions Update
+
++ `babel-loader@9.1.0` from `8.x` new features and breaking changes can be found on the official [release notes](https://github.com/babel/babel-loader/releases/tag/v9.0.0).
++ `webpack-cli@5.0.0` from `4.x` new features and breaking changes can be found on the official [release notes](https://github.com/webpack/webpack-cli/releases/tag/webpack-cli%405.0.0).
+
 ## [5.14.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.14.0)
 ### 06/06/2022
 
