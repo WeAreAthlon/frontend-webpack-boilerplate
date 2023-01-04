@@ -1,7 +1,15 @@
 # Change log
 
+## [5.16.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.16.0)
+### 04/01/2023
+
+### Updates
+
+* Minor dependency package versions updates.
+* Update copyright and all releated references from year 2022 to year 2023.
+
 ## [5.15.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.15.0)
-### 06/06/2022
+### 22/11/2022
 
 ### Node Version Notes
 
