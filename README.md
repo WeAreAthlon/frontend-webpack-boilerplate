@@ -1,9 +1,9 @@
 # Webpack 5 Boilerplate Template
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2023?logo=github)
+![Build Status](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/actions/workflows/deploy.yml/badge.svg)
 ![webpack-current](https://img.shields.io/badge/webpack-v5.88.2-green?logo=webpack)
 ![node-current (scoped)](https://img.shields.io/node/v/@weareathlon/frontend-webpack-boilerplate)
-[![Build Status](https://app.travis-ci.com/WeAreAthlon/frontend-webpack-boilerplate.svg?branch=master)](https://app.travis-ci.com/github/WeAreAthlon/frontend-webpack-boilerplate)
 [![@weareathlon/frontend-webpack-boilerplate](https://snyk.io/advisor/npm-package/@weareathlon/frontend-webpack-boilerplate/badge.svg)](https://snyk.io/advisor/npm-package/@weareathlon/frontend-webpack-boilerplate)
 [![GitHub Issues](https://img.shields.io/github/issues-raw/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues)
 [![Known Vulnerabilities](https://snyk.io/test/github/WeAreAthlon/frontend-webpack-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/WeAreAthlon/frontend-webpack-boilerplate?targetFile=package.json)
@@ -80,7 +80,7 @@ Table of Contents
 * Latest [Webpack 5](https://github.com/webpack/webpack) - *JavaScript* module bundler.
 * Latest [SASS/PostCSS](https://github.com/sass/sass) compiler based on Dart `sass`.
 * Latest [Babel 7](https://github.com/babel/babel) (`@babel/core`) - JavaScript compiler - _Use next generation JavaScript, today._
-* Integration with [Travis CI](https://travis-ci.com/)
+* Integration with [Github Actions](https://github.com/features/actions)
   * [Demo deployment available to GitHub pages](https://weareathlon.github.io/frontend-webpack-boilerplate/)
 * Configured and ready to use **Webpack Dev Server** plugin for faster local development - [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/)
 * Integration with [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) - _Visualize size of webpack output files with an interactive zoomable treemap._
@@ -225,6 +225,6 @@ $ npm run stats
 
 ## Continuous Integration
 
-This boilerplate template contains integration with [Travis CI](https://travis-ci.org/). The build system runs all linting scripts and deploys production optimized pages to _GitHub_ pages upon push to the `master` branch. However, note that this deployment flow only works for _Project Pages_, as User and Organization pages [only support the master branch flow](https://help.github.com/articles/user-organization-and-project-pages/).
+This boilerplate template contains integration with [Github Actions](https://github.com/features/actions/). The build system runs all linting scripts and deploys production optimized pages to _GitHub_ pages upon push to the `master` branch. However, note that this deployment flow only works for _Project Pages_, as User and Organization pages [only support the master branch flow](https://help.github.com/articles/user-organization-and-project-pages/).
 
-For more information on how to set up alternative deployment processes, check out the [Travis CI documentation on deployment](https://docs.travis-ci.com/user/deployment). The service can deploy to dozens of cloud providers, including Heroku, AWS, and Firebase.
+For more information on how to set up alternative deployment processes, check out the [Github Actions documentation on deployment](https://docs.github.com/en/actions/deployment/about-deployments/deploying-with-github-actions). The service can deploy to dozens of cloud providers, including Heroku, AWS, and Firebase.

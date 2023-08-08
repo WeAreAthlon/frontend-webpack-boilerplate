@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: '16.17.0'
       
-      - name: Install and Lint 🔧
+      - name: Install and Lint 🚦
         run: |
           npm ci
           npm run lint:sass
