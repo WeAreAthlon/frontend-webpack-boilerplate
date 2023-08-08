@@ -15,9 +15,14 @@ jobs:
         with:
           node-version: '16.17.0'
       
-      - name: Install and Build 🔧
+      - name: Install and Lint 🔧
         run: |
           npm ci
+          npm run lint:sass
+          npm run lint:js
+      
+      - name: Build for production 🔧
+        run: |
           npm run production
 
       - name: Deploy 🚀
