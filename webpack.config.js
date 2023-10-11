@@ -66,7 +66,7 @@ module.exports = {
           },
         },
         generator: {
-          filename: 'images/fonts/[name].[hash:6][ext]',
+          filename: 'fonts/[name].[hash:6][ext]',
         },
       },
     ],
