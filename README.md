@@ -47,6 +47,7 @@ Table of Contents
 
 ## Features
 
+* 0 dependencies
 * **Simple setup** instructions
   * Start development of a project right away with **simple**, **configured**, **linter enabled**, **browser synced** asset files.
 * Configuration per **environment**
