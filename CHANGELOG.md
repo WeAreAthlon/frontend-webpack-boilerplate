@@ -1,5 +1,14 @@
 # Change log
 
+## [5.17.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.17.1)
+### 02/11/2023
+
+### Updates
+
+* Minor dependency packages versions updates.
+* Minor Demo page UI updates.
+* Bugfix: Update webpack configuration to build font files in dedicated `fonts` directory.
+
 ## [5.17.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.17.0)
 ### 15/09/2023
 
@@ -9,10 +18,9 @@
 
 ### Updates
 
-* Updated README - CI / Demo via GitHub actions
-* Minor dependency package versions updates.
+* Updated README - CI / Demo via GitHub actions.
+* Minor dependency packages versions updates.
 * Bugfix: Update webpack configuration to build font files in dedicated `fonts` directory.
-
 
 ## [5.16.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.16.0)
 ### 04/01/2023
