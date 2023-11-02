@@ -15,6 +15,7 @@ header {
   width: 90%;
   margin: 20px auto;
   position: relative;
+  border-radius: 5px;
 
   small {
     font-size: .5em;
@@ -32,6 +33,7 @@ main {
   margin: 20px auto;
   padding: 40px;
   width: 90%;
+  border-radius: 5px;
 
   h1 {
     font-size: 2em;
@@ -53,9 +55,14 @@ main {
     padding: 10px;
   }
 
+  img {
+    border-radius: 5px;
+  }
+
   video {
     margin: 0 auto;
     display: block;
+    width: 100%;
   }
 }
 
@@ -128,7 +135,7 @@ ul ol {
 blockquote {
   background: $light-gray;
   border-left: 4px solid $link-color;
-  border-radius: 3px;
+  border-radius: 5px;
   margin: 10px 0;
   padding: 10px 10px 10px 20px;
 }
@@ -139,7 +146,7 @@ code {
   background-color: $light-gray;
   padding: 2px;
   font-size: 1em;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 footer {
