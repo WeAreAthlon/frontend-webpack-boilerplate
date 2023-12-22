@@ -1,7 +1,6 @@
 /**
  * Webpack main configuration file
  */
-
 const path = require('path');
 const fs = require('fs');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -12,19 +11,24 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const environment = require('./configuration/environment');
 
-const templateFiles = fs.readdirSync(environment.paths.source)
-  .filter((file) => ['.html', '.ejs'].includes(path.extname(file).toLowerCase())).map((filename) => ({
+const templateFiles = fs
+  .readdirSync(environment.paths.source)
+  .filter((file) => ['.html', '.ejs'].includes(path.extname(file).toLowerCase()))
+  .map((filename) => ({
     input: filename,
     output: filename.replace(/\.ejs$/, '.html'),
   }));
 
-const htmlPluginEntries = templateFiles.map((template) => new HTMLWebpackPlugin({
-  inject: true,
-  hash: false,
-  filename: template.output,
-  template: path.resolve(environment.paths.source, template.input),
-  favicon: path.resolve(environment.paths.source, 'images', 'favicon.ico'),
-}));
+const htmlPluginEntries = templateFiles.map(
+  (template) =>
+    new HTMLWebpackPlugin({
+      inject: true,
+      hash: false,
+      filename: template.output,
+      template: path.resolve(environment.paths.source, template.input),
+      favicon: path.resolve(environment.paths.source, 'images', 'favicon.ico'),
+    })
+);
 
 module.exports = {
   entry: {
