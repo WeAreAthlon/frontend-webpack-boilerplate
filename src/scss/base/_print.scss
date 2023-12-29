@@ -1,9 +1,7 @@
-/**
- * Print Stylesheet
-*/
-
 @media print {
-  @page { margin: 1cm; }
+  @page {
+    margin: 1cm;
+  }
 
   body {
     background: $white;
@@ -23,7 +21,9 @@
     page-break-inside: avoid;
   }
 
-  ul, ol, dl  {
+  ul,
+  ol,
+  dl {
     page-break-before: avoid;
   }
 }

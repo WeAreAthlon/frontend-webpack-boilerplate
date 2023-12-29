@@ -1,0 +1,23 @@
+// Auxiliary colours
+$black: #000;
+$white: #fff;
+
+// Brand colours
+$brand-black: #111111;
+$brand-body-black: #212529;
+$brand-grey-1: #8d8380;
+$brand-grey-2: #6c757d;
+$brand-pale-pink: #fbf7f4;
+$brand-dark-purple: #3f3980;
+
+// Layout
+$document-background: $brand-pale-pink;
+$headings: $brand-black;
+$body-copy: $brand-body-black;
+
+// Components
+$cta-primary: $brand-dark-purple;
+$table-heading: $brand-dark-purple;
+$table-body: $brand-body-black;
+$card-border: change-color($brand-dark-purple, $alpha: 0.2);
+$card-shadow: change-color($brand-grey-2, $alpha: 0.15);
