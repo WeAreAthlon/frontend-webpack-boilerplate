@@ -2,7 +2,7 @@
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2024?logo=github)
 ![Build Status](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/actions/workflows/deploy.yml/badge.svg)
-![webpack-current](https://img.shields.io/badge/webpack-v5.89.0-green?logo=webpack)
+![webpack-current](https://img.shields.io/badge/webpack-v5.90.3-green?logo=webpack)
 ![node-current (scoped)](https://img.shields.io/node/v/@weareathlon/frontend-webpack-boilerplate)
 [![@weareathlon/frontend-webpack-boilerplate](https://snyk.io/advisor/npm-package/@weareathlon/frontend-webpack-boilerplate/badge.svg)](https://snyk.io/advisor/npm-package/@weareathlon/frontend-webpack-boilerplate)
 [![GitHub Issues](https://img.shields.io/github/issues-raw/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues)
