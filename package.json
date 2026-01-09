@@ -55,7 +55,7 @@
     "webpack-merge": "^5.8.0"
   },
   "engines": {
-    "node": ">=18.12.0"
+    "node": ">=18.19.0"
   },
   "keywords": [
     "webpack",
@@ -79,6 +79,5 @@
     "lint:js": "eslint --ext .js src/js/",
     "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json"
   },
-  "target": "web",
-  "dependencies": {}
+  "target": "web"
 }

@@ -88,7 +88,7 @@
 
 ## Requirements
 
-- `node` : `>=18.12.0`
+- `node` : `>=18.19.0`
 - `npm`
 
 # Setup
