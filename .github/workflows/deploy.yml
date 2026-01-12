@@ -13,14 +13,14 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: '16.17.0'
-      
+          node-version: '22.0.0'
+
       - name: Install and Lint 🚦
         run: |
           npm ci
           npm run lint:sass
           npm run lint:js
-      
+
       - name: Build for production 🔧
         run: |
           npm run production
