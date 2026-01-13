@@ -39,6 +39,10 @@ main {
     border-radius: 5px;
   }
 
+  .cover {
+    width: 100%;
+  }
+
   video {
     margin: 0 auto;
     display: block;
@@ -52,9 +56,9 @@ header {
   font-size: 2em;
   color: vars.$caption-color;
   text-align: center;
-  background: vars.$foreground-color url('../images/design/heading.png') center 20px no-repeat;
-  padding: 60px 30px 30px;
-  background-size: 160px;
+  background: vars.$foreground-color url('../images/design/athlon_technology_logo.svg') center 30px no-repeat;
+  padding: 100px 30px 30px;
+  background-size: 180px;
   width: 90%;
   margin: 20px auto;
   position: relative;
