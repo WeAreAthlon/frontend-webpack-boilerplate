@@ -3,30 +3,8 @@
 body {
   background: vars.$body-background-color;
   color: vars.$foreground-color;
-  font-family: 'DINP-R', arial, serif;
+  font-family: DINP-R, arial, serif;
   font-size: 1.3em;
-}
-
-header {
-  font-size: 2em;
-  color: vars.$caption-color;
-  text-align: center;
-  background: vars.$foreground-color url('../images/design/heading.png') center 20px no-repeat;
-  padding: 60px 30px 30px;
-  background-size: 160px;
-  width: 90%;
-  margin: 20px auto;
-  position: relative;
-  border-radius: 5px;
-
-  small {
-    font-size: .5em;
-
-    img {
-      display: inline;
-      width: 20px;
-    }
-  }
 }
 
 main {
@@ -70,6 +48,28 @@ main {
   }
 }
 
+header {
+  font-size: 2em;
+  color: vars.$caption-color;
+  text-align: center;
+  background: vars.$foreground-color url('../images/design/heading.png') center 20px no-repeat;
+  padding: 60px 30px 30px;
+  background-size: 160px;
+  width: 90%;
+  margin: 20px auto;
+  position: relative;
+  border-radius: 5px;
+
+  small {
+    font-size: .5em;
+
+    img {
+      display: inline;
+      width: 20px;
+    }
+  }
+}
+
 .badges {
   line-height: .5em;
 
@@ -92,19 +92,6 @@ a {
 
 address {
   color: vars.$accent-color;
-}
-
-pre {
-  margin: 10px;
-  padding: 20px;
-
-  code {
-    display: block;
-    background: vars.$body-background-color;
-    color: vars.$white;
-    padding: 10px;
-    border-left: 6px solid vars.$link-color;
-  }
 }
 
 .logo {
@@ -145,12 +132,25 @@ blockquote {
 }
 
 code {
-  font-family: Consolas, 'courier new';
+  font-family: Consolas, 'courier new', monospace;
   color: vars.$link-color;
   background-color: vars.$light-gray;
   padding: 2px;
   font-size: 1em;
   border-radius: 5px;
+}
+
+pre {
+  margin: 10px;
+  padding: 20px;
+
+  code {
+    display: block;
+    background: vars.$body-background-color;
+    color: vars.$white;
+    padding: 10px;
+    border-left: 6px solid vars.$link-color;
+  }
 }
 
 footer {
@@ -194,28 +194,28 @@ footer {
   }
 }
 
-@media (max-width: 500px) {
+@media (width <= 500px) {
   .github-corner {
+    .octo-arm {
+      animation: octocat-wave 560ms ease-in-out;
+    }
+    
     &:hover {
       .octo-arm {
         animation: none;
       }
     }
-
-    .octo-arm {
-      animation: octocat-wave 560ms ease-in-out;
-    }
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (width >= 1024px) {
   header,
   main {
     width: 60%;
   }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (width <= 1023px) {
   main {
     h1 {
       font-size: 1.3em;

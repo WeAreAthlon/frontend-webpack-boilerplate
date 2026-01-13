@@ -76,7 +76,7 @@
   - **Optimize Assets Loading** - inline and embed **images** / **fonts** files having file size below a _configurable_ threshold value.
   - **Images Optimisation** - optimize `jpeg`, `jpg`, `png`, `gif`, `svg` filesize and loading type via [`imagemin`](https://github.com/imagemin/imagemin). Plugin and Loader for webpack to optimize (_compress_) all images using `imagemin`. Do not worry about size of images, now they are always optimized/compressed.
 - Support for **source code syntax style and formatting linters** that analyze source code to flag any programming errors, bugs, stylistic errors or suspicious constructs:
-  - **SASS/PostCSS syntax cheker** - you can change or add additional rules in `.sasslintrc` file. Configuration options can be found on [`sass-lint`](https://github.com/sasstools/sass-lint/blob/master/lib/config/sass-lint.yml) documentation.
+  - **SASS/PostCSS syntax cheker** - you can change or add additional rules in `.sasslintrc` file. Configuration options can be found on [`stylelint`](https://stylelint.io) documentation.
   - **JavaScript syntax checker** - following the `airbnb` style, you can review and configure the rules in `.eslintrc` file. Configuration options can be found on [`eslint`](https://eslint.org/docs/user-guide/configuring) documentation.
 - Latest [Webpack 5](https://github.com/webpack/webpack) - _JavaScript_ module bundler.
 - Latest [SASS/PostCSS](https://github.com/sass/sass) compiler based on Dart `sass`.

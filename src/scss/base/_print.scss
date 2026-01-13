@@ -13,19 +13,19 @@
   }
 
   a {
-    page-break-inside: avoid;
+    break-inside: avoid;
   }
 
   blockquote {
-    page-break-inside: avoid;
+    break-inside: avoid;
   }
 
   table,
   pre {
-    page-break-inside: avoid;
+    break-inside: avoid;
   }
 
   ul, ol, dl  {
-    page-break-before: avoid;
+    break-before: avoid;
   }
 }
