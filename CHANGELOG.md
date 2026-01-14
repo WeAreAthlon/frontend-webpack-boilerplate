@@ -1,5 +1,84 @@
 # Change log
 
+## [6.0.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v6.0.0)
+### 14/01/2026
+
+## Important Updates and Breaking Chages
+
+* The min supported `node` version has been bumped to `node v22.0.0`
+* Switch to use (`stylelint`)[https://stylelint.io] and drop usage of `sass-lint`
+* Update to (`ESLint 9`)[https://eslint.org/blog/2024/04/eslint-v9.0.0-released/]
+
+## What's been updated
+
+* Bump sass from 1.71.0 to 1.71.1 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/253
+* Bump eslint from 8.56.0 to 8.57.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/254
+* Bump sass-loader from 14.1.0 to 14.1.1 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/256
+* Bump @babel/preset-env from 7.23.9 to 7.24.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/257
+* Bump mini-css-extract-plugin from 2.8.0 to 2.8.1 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/258
+* Bump postcss-loader from 8.1.0 to 8.1.1 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/259
+* Bump @babel/core from 7.23.9 to 7.24.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/260
+* Bump follow-redirects from 1.15.4 to 1.15.6 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/261
+* Bump eslint-plugin-react from 7.33.2 to 7.34.1 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/262
+* Bump postcss from 8.4.35 to 8.4.36 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/263
+* Bump sass from 1.71.1 to 1.72.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/264
+* Bump webpack-dev-middleware from 5.3.3 to 5.3.4 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/266
+* Bump webpack from 5.90.3 to 5.91.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/268
+* Bump @babel/preset-env from 7.24.0 to 7.24.3 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/269
+* Bump express from 4.18.2 to 4.19.2 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/270
+* Bump autoprefixer from 10.4.17 to 10.4.19 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/271
+* Bump postcss from 8.4.36 to 8.4.38 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/273
+* Bump @babel/core from 7.24.0 to 7.24.4 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/274
+* Bump @babel/preset-env from 7.24.3 to 7.24.4 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/276
+* Bump sass from 1.72.0 to 1.75.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/279
+* Bump webpack-bundle-analyzer from 4.10.1 to 4.10.2 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/280
+* Bump sass-loader from 14.1.1 to 14.2.1 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/282
+* Bump eslint-plugin-react-hooks from 4.6.0 to 4.6.2 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/283
+* Bump mini-css-extract-plugin from 2.8.1 to 2.9.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/284
+* Bump @babel/preset-env from 7.24.4 to 7.24.5 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/288
+* Bump braces from 3.0.2 to 3.0.3 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/293
+* Bump webpack from 5.91.0 to 5.94.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/301
+* Bump body-parser and express by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/304
+* Bump imagemin from 8.0.1 to 9.0.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/286
+* Bump css-minimizer-webpack-plugin from 6.0.0 to 7.0.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/290
+* Bump eslint-plugin-jsx-a11y from 6.8.0 to 6.10.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/308
+* Bump eslint-plugin-import from 2.29.1 to 2.31.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/315
+* Bump @babel/preset-env from 7.24.5 to 7.26.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/319
+* Bump cookie and express by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/320
+* Bump image-minimizer-webpack-plugin from 4.0.0 to 4.1.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/316
+* Bump babel-loader from 9.1.3 to 9.2.1 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/321
+* Bump mini-css-extract-plugin from 2.9.0 to 2.9.2 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/325
+* Bump html-webpack-plugin from 5.6.0 to 5.6.3 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/327
+* Bump imagemin-jpegtran from 7.0.0 to 8.0.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/322
+* Bump sass from 1.75.0 to 1.83.4 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/332
+* Bump http-proxy-middleware from 2.0.6 to 2.0.9 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/343
+* Bump node-forge from 1.3.1 to 1.3.2 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/356
+* Bump js-yaml from 3.14.1 to 3.14.2 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/355
+* Bump qs and express by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/357
+* Bump on-headers and compression by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/353
+* Bump ws by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/354
+* Bump css-loader from 6.10.0 to 7.1.2 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/291
+* Bump webpack-cli from 5.1.4 to 6.0.1 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/330
+
+**Full Changelog**: https://github.com/WeAreAthlon/frontend-webpack-boilerplate/compare/v5.18.0...v6.0.0
+
+## What's Changed
+
+* Bumb package dependenices.
+
+## [5.18.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.18.0)
+### 23/02/2024
+
+## Important updates
+
+* The min supported `node` version has been bumped to `node v18.12.0`
+
+## What's Changed
+
+* Bumb package dependenices.
+
+**Full Changelog**: https://github.com/WeAreAthlon/frontend-webpack-boilerplate/compare/v5.17.1...v5.18.0
+
 ## [5.17.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v5.17.1)
 ### 02/11/2023
 

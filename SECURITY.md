@@ -7,12 +7,12 @@ currently being supported with security updates.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 5.x   | :white_check_mark: |
-| < 4.x | :x:                |
+| 6.x    | :white_check_mark: |
+| <= 5.x | :x:                |
 
 ## Reporting a Vulnerability
 
-If you discover a security issue in this webpack boilerplate, please report it by sending an email to plamen@athlonsofia.com.
+If you discover a security issue in this webpack boilerplate, please report it by sending an email to plamen@weareathlon.com.
 
 This will allow us to assess the risk, and make a fix available before we add a bug report to the GitHub repository.
 

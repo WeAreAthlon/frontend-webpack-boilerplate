@@ -1,7 +1,7 @@
 {
-  "author": "WeAreAthlon <hello@weareathlon.com> (https://www.weareathlon.com)",
+  "author": "Athlon Technology <hi@athlon.technlogy> (https://www.athlon.technology)",
   "name": "@weareathlon/frontend-webpack-boilerplate",
-  "version": "5.18.0",
+  "version": "6.0.0",
   "description": "Starter project template boilerplate based on Webpack with SASS/PostCSS and babel ES6/7 support.",
   "homepage": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate#readme",
   "browserslist": [
@@ -10,7 +10,7 @@
   ],
   "bugs": {
     "url": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues",
-    "email": "plamen@athlonsofia.com"
+    "email": "plamen@weareathlon.com"
   },
   "contributors": [
     {
