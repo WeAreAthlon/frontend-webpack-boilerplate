@@ -1,7 +1,7 @@
 {
   "author": "Athlon Technology <hi@athlon.technlogy> (https://www.athlon.technology)",
   "name": "@weareathlon/frontend-webpack-boilerplate",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "description": "Starter project template boilerplate based on Webpack with SASS/PostCSS and babel ES6/7 support.",
   "homepage": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate#readme",
   "browserslist": [

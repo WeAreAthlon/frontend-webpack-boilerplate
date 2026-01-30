@@ -2,7 +2,7 @@
 
 ## [6.1.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v6.1.0)
 
-### 14/01/2026
+### 30/01/2026
 
 ## What's been updated
 
