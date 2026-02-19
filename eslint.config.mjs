@@ -1,16 +1,16 @@
-import { defineConfig } from 'eslint/config';
 import globals from 'globals';
+import * as js from '@eslint/js';
+import prettierPlugin from 'eslint-plugin-prettier';
+import * as prettierConfig from 'eslint-config-prettier';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import jsxA11y from 'eslint-plugin-jsx-a11y';
-import * as airbnbExtendedModule from 'eslint-config-airbnb-extended';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export default defineConfig([
+export default [
   {
-    ...(airbnbExtendedModule.default || []),
+    ...(js.configs && js.configs.recommended ? js.configs.recommended : {}),
 
     languageOptions: {
       globals: {
@@ -23,11 +23,17 @@ export default defineConfig([
       },
     },
 
-    plugins: {
-      'jsx-a11y': jsxA11y, // Explicitly define the plugin namespace
-    },
+    plugins: { prettier: prettierPlugin },
 
     rules: {
+      ...(prettierConfig &&
+      prettierConfig.configs &&
+      prettierConfig.configs.recommended &&
+      prettierConfig.configs.recommended.rules
+        ? prettierConfig.configs.recommended.rules
+        : {}),
+      'prettier/prettier': 'error',
+
       'no-use-before-define': 0,
       'func-names': 0,
       'prefer-arrow-callback': 0,
@@ -39,17 +45,9 @@ export default defineConfig([
       'prefer-template': 0,
       'import/no-amd': 0,
       'space-before-function-paren': 0,
-      'jsx-a11y/href-no-hash': 'off',
-
-      'jsx-a11y/anchor-is-valid': [
-        'warn',
-        {
-          aspects: ['invalidHref'],
-        },
-      ],
 
       'import/no-unresolved': 0,
       'import/extensions': 0,
     },
   },
-]);
+];
