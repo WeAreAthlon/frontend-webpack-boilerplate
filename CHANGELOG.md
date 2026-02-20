@@ -1,5 +1,34 @@
 # Change log
 
+## [6.2.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v6.2.0)
+
+### 20/02/2026
+
+## Important Updates
+
+- The min supported `node` version has been bumped to `node v22.13.0`
+- Update to (`ESLint v10`)[https://eslint.org/blog/2026/02/eslint-v10.0.0-released/]
+
+## What's been updated
+
+- Bump autoprefixer from 10.4.23 to 10.4.24 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/364
+- Bump @eslint/compat from 2.0.1 to 2.0.2 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/365
+- Bump globals from 17.2.0 to 17.3.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/366
+- Bump stylelint from 17.0.0 to 17.1.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/367
+- Bump webpack-bundle-analyzer from 4.10.2 to 5.2.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/368
+- Bump webpack from 5.104.1 to 5.105.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/369
+- Bump @babel/core from 7.28.6 to 7.29.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/370
+- Bump stylelint from 17.1.0 to 17.1.1 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/371
+- Bump imagemin-svgo from 10.0.1 to 11.0.1 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/372
+- Bump @eslint/js from 9.39.2 to 10.0.1 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/373
+- Bump qs from 6.14.1 to 6.14.2 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/374
+- Bump sass-loader from 16.0.6 to 16.0.7 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/375
+- Bump stylelint from 17.1.1 to 17.3.0 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/376
+- Bump webpack from 5.105.0 to 5.105.2 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/377
+- Bump postcss-loader from 8.2.0 to 8.2.1 by @dependabot[bot] in https://github.com/WeAreAthlon/frontend-webpack-boilerplate/pull/378
+
+**Full Changelog**: https://github.com/WeAreAthlon/frontend-webpack-boilerplate/compare/v6.1.0...v6.2.0
+
 ## [6.1.0](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v6.1.0)
 
 ### 30/01/2026
