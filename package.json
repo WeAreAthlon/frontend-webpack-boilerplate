@@ -59,7 +59,7 @@
     "webpack-merge": "^6.0.1"
   },
   "engines": {
-    "node": ">=22.13.0"
+    "node": ">=22.15.0"
   },
   "keywords": [
     "webpack",
