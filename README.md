@@ -86,7 +86,7 @@
 
 ## Requirements
 
-- `node` : `>=22.13.0`
+- `node` : `>=22.15.0`
 - `npm`
 
 # Setup
